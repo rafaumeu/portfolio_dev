@@ -26,4 +26,35 @@
   --subtitle: 16px 400/140% var(--font-inconsolata);
   --text-md: 16px 400/140% var(--font-maven);
   --text-sm: 14px 400/140% var(--font-maven);
+  --title-lg: 700 56px/120% Asap;
+}
+
+body {
+  background-color: var(--gray-300);
+  color: var(--gray-500)
+}
+
+.bg-intro {
+  max-width: 1366px;
+  background: url(../assets/images/Background_intro.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.container {  
+  max-width: 1040px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--blue);
 }
