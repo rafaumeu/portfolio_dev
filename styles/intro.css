@@ -108,14 +108,14 @@
     }
   
     .presentation p {
-      font-size: 0.75rem; /* Reduzindo para 12px */
-      line-height: 1.2rem; /* Ajustando o espaçamento entre linhas */
-      margin-block: 0.5rem; /* Ajustando a margem */
+      font-size: 0.75rem; 
+      line-height: 1.2rem; 
+      margin-block: 0.5rem; 
     }
   }
 
   
-  @media (max-width: 1024px) {
+  @media (min-width: 48rem) and (max-width: 64rem)  {
     #intro {
       flex-direction: column;
       padding: 1rem; 
@@ -148,7 +148,7 @@
     #badges {
       flex-direction: column; 
       align-items: center; 
-      /* margin-bottom: 2rem;  */
+
     }
   
     #badges ul {

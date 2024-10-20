@@ -65,10 +65,31 @@ body {
   padding: 0.75rem; 
   flex-direction: column;
   align-items: start;
-  /* gap: 1.25rem;  */
+  gap: 1.25rem; 
   flex-shrink: 0;
-  border-radius: 0.5rem; 
+  border-radius: 0.75rem; 
   background-color: var(--gray-300);
+}
+.header-span {
+  color: var(--red, #E3646E);
+  text-align: center;
+  font-family: var(--font-inconsolata);
+  font-size: 1.25rem; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;   
+}
+
+/* Classe utilitária para o h2 do cabeçalho */
+.header-title {
+  font-family: 'Maven Pro', sans-serif; /* Adicione 'sans-serif' como fallback */
+  font-size: 1.5rem; 
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; 
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--gray-600);
 }
 
 ul li {
@@ -94,7 +115,7 @@ a:hover {
   align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px)  {
   body {
     overflow-x: hidden;
   }
