@@ -7,65 +7,96 @@
   align-items: center;
   background-color: var(--gray-100);
   width: 100%;
-  max-width: 85.375rem; 
+  max-width: 85.375rem;
   margin: 0 auto;
 }
-#services  header {
+
+#services header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
+
 .cards {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 24px;
+  gap: 1.5rem; /* Convertido de 24px para rem */
   flex-wrap: wrap;
 }
 
 #services > div.cards > div > div {
   display: flex;
-  width: 280px;
+  width: 17.5rem; /* Convertido de 280px para rem */
   height: auto;
-  padding: 20px;
+  padding: 1.25rem; /* Convertido de 20px para rem */
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: transparent;
-  border-radius: 12px;
-  border: 2px solid var(--Base-gray-200, #16181D);
+  border-radius: 0.75rem; /* Convertido de 12px para rem */
+  border: 0.125rem solid var(--gray-200); /* Usando a variável para borda */
 }
-#services > div.cards > div.grid-item> div > img {
-  width: 48px;
-  height: 48px;
+
+#services > div.cards > div.grid-item > div > img {
+  width: 3rem; /* Convertido de 48px para rem */
+  height: 3rem; /* Convertido de 48px para rem */
 }
+
 #services > div.cards > div.grid-item > div > h3 {
-  color: var(--Base-gray-600, #E2E4E9);
+  color: var(--gray-600); /* Usando a variável de cor */
 
   /* Title Sm */
   font-family: Asap;
-  font-size: 16px;
+  font-size: 1rem; /* Convertido de 16px para rem */
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 19.2px */
-  margin-block: 20px 8px;
+  line-height: 1.2rem; /* Convertido de 19.2px para rem */
+  margin-block: 1.25rem 0.5rem; /* Convertido de 20px 8px para rem */
 }
+
 #services > div.cards > div.grid-item > div > p {
-  color: var(--Base-gray-500, #C0C4CE);
+  color: var(--gray-500); /* Usando a variável de cor */
   margin-top: 0px;
+
   /* Text Sm */
-  font-family: "Maven Pro";
-  font-size: 14px;
+  font-family: var(--font-maven); /* Usando a variável de fonte */
+  font-size: 0.875rem; /* Convertido de 14px para rem */
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 1.4rem; /* Convertido de 19.6px para rem */
 }
-@media (min-width: 768px) and (max-width: 1024px)  {
+
+/* Melhoria na responsividade */
+
+@media (max-width: 64rem) { /* Convertido de 1024px para rem */
+  #services {
+    padding: 4rem 3rem; /* Convertido para rem */
+  }
+  
+  .cards {
+    gap: 2rem; /* Convertido de 24px para rem */
+  }
+  
   #services > div.cards > div > div {
-    width: 100%;
-    height: auto;
+    width: 45%; /* Ajusta a largura dos cards para 45% da tela */
+  }
+}
+
+@media (max-width: 48rem) { /* Convertido de 768px para rem */
+  #services {
+    padding: 3rem 2rem; /* Convertido para rem */
+  }
+  
+  .cards {
+    gap: 1.5rem; /* Convertido para rem */
+  }
+
+  #services > div.cards > div > div {
+    width: 100%; /* Faz os cards ocuparem 100% da largura em telas menores */
+    padding: 1rem; /* Convertido de 20px para rem */
   }
 }
