@@ -1,58 +1,109 @@
 #jobs {
   display: flex;
-  padding: 72px 120px 144px 120px;
+  padding: 4.5rem 7.5rem 9rem 7.5rem; /* 72px 120px 144px 120px */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 56px;
+  gap: 3.5rem; /* 56px */
   background-color: var(--gray-200);
-  width: 1366px;
+  width: 100%; /* Mudança para responsividade */
+  max-width: 85.375rem; /* 1366px */
   margin: 0 auto;
-  & header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    & span {
-      color: var(--red, #E3646E);
-      text-align: center;
-      /* Subtitle */
-      -webkit-text-stroke-width: 1;
-      -webkit-text-stroke-color: var(--colors-base-black, #000);
-      font-family: var(--font-inconsolata);
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%; /* 24px */
-    }
-    & h2 {
-      font-family: Maven Pro;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 120%; /* 60px */
-      letter-spacing: 0em;
-      text-align: center;
-      color: var(--gray-600);
-    }
+}
+
+#jobs header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+#jobs header span {
+  color: var(--red, #E3646E);
+  text-align: center;
+  /* -webkit-text-stroke-width: 0.0625rem; 1px
+  -webkit-text-stroke-color: var(--colors-base-black, #000); */
+  font-family: var(--font-inconsolata);
+  font-size: 1.25rem; /* 20px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 24px */
+}
+
+#jobs header h2 {
+  font-family: Maven Pro;
+  font-size: 1.5rem; /* 24px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; /* 60px */
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+#projects > div > img {
+  width: 19.125rem; /* 306px */
+  height: 9.75rem; /* 156px */
+  border-radius: 0.5rem; /* 8px */
+}
+
+#projects > div > h3 {
+  font-family: Asap;
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 24px */
+  color: var(--gray-600);
+  margin-block: 20px 8px;
+}
+
+#projects > div > p {
+  color: var(--gray-500);
+  font-family: Maven Pro;
+  font-size: 0.875rem; /* 14px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 24px */
+}
+
+/* Ajustes para telas de até 768px */
+@media (max-width: 768px) {
+  #jobs {
+    padding: 3rem 3.75rem 6rem 3.75rem; /* 48px 60px 96px 60px */
   }
+
   #projects > div > img {
-    width: 306px;
-    height: 156px;
-    border-radius: 8px;
+    width: 15rem; /* 240px */
+    height: 8rem; /* 128px */
   }
-  #projects > div > h3 {
-    font-family: Asap;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; 
-    color: var(--gray-600);
+
+  #jobs header h2 {
+    font-size: 1.25rem; /* 20px */
   }
-  #projects > div > p {
-    font: var(--text-sm);
-    color: var(--gray-500)
+
+  #jobs header span {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* Ajustes para telas de até 480px */
+@media (max-width: 480px) {
+  #jobs {
+    padding: 2rem 1.875rem 4.5rem 1.875rem; /* 32px 30px 72px 30px */
+  }
+
+  #projects > div > img {
+    width: 100%;
+    height: auto;
+  }
+
+  #jobs header h2 {
+    font-size: 1rem; /* 16px */
+  }
+
+  #jobs header span {
+    font-size: 0.875rem; /* 14px */
   }
 }
