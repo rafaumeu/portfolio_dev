@@ -53,6 +53,27 @@ body {
   margin: 0 auto;
 }
 
+.grid-container {
+  display: flex;
+  width: 1040px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.grid-item {
+  display: flex;
+  width: 330px;
+  height: 280px;
+  padding: 12px;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: var(--gray-300);
+}
 
 ul li {
   list-style: none;
@@ -67,7 +88,7 @@ a:hover {
   color: var(--blue);
 }
 #background-gradient {
-  background: linear-gradient(180deg, var(--gray-100), transparent);
+  background: linear-gradient(180deg, var(--gray-100), var(--gray-200));
   padding-block: 5.875rem 3.5625rem;
   margin: 0 auto;
   display: flex;
