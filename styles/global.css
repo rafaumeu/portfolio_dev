@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +6,22 @@
 }
 
 :root {
-  /* Cores Principais */
+
   --red: #E3646E;
   --purple: #BB72E9;
-  --blue: #3996DB ;
-  --green: #82BC4F ;
+  --blue: #3996DB;
+  --green: #82BC4F;
   --yellow: #EABD5F;
 
-  /* Cores Base*/
+
   --gray-100: #0D0E11;
   --gray-200: #16181D;
   --gray-300: #292C34;
   --gray-400: #878EA1;
-  --gray-500: #C0C4CE; 
+  --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
 
-  /* Tipografia */
+
   --font-inconsolata: 'Inconsolata', monospace;
   --font-maven: 'Maven Pro', sans-serif;
   --subtitle: 16px 400/140% var(--font-inconsolata);
@@ -31,7 +32,9 @@
 
 body {
   background-color: var(--gray-300);
-  color: var(--gray-500)
+  color: var(--gray-500);
+  z-index: 1;
+  overflow: initial;
 }
 
 .bg-intro {
@@ -39,17 +42,22 @@ body {
   background: url(../assets/images/Background_intro.png) no-repeat;
   background-size: cover;
   margin: 0 auto;
+  z-index: -1;
+  overflow: hidden;
 }
-.container {  
+
+.container {
   max-width: 1040px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
+
 ul li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -57,4 +65,73 @@ a {
 
 a:hover {
   color: var(--blue);
+}
+#background-gradient {
+  background: linear-gradient(180deg, var(--gray-100), transparent);
+  padding-block: 5.875rem 3.5625rem;
+  margin: 0 auto;
+  display: flex;
+  width: 1366px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --subtitle: 14px 400/140% var(--font-inconsolata);
+    --text-md: 14px 400/140% var(--font-maven);
+    --text-sm: 12px 400/140% var(--font-maven);
+    --title-lg: 600 48px/120% Asap;
+  }
+
+  .bg-intro {
+    padding: 1rem;
+    position: relative;
+    max-height: 450px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+  }
+
+  #background-gradient {
+    padding-block: 4rem 2rem;
+    margin: 0 auto;
+    width: 768px;
+    display: flex;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+  }
+
+  .presentation h1 {
+    font-size: 1.8rem;
+  }
+
+  .presentation p {
+    margin-block: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --subtitle: .5rem 400/140% var(--font-inconsolata);
+    --text-md: 12px 400/140% var(--font-maven);
+    --text-sm: 10px 400/140% var(--font-maven);
+    --title-lg: 600 36px/120% Asap;
+  }
+  
+  #background-gradient {
+    padding-block: 3rem 1.5rem; 
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
