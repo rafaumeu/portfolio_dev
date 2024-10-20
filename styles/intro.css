@@ -1,37 +1,51 @@
 #intro {
   width: 100%;
   display: flex;
+  max-height: 750px;
   flex-direction: column;
   align-items: center;
-  .profile {
-    width: 87.273px;
-    height: 87.273px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-block: 120px 56px;
-    border: 2px solid var(--red);
-    padding: 4px;
+  position: relative;
+  #profile-container {
+    position: relative;
+    display: inline-block;
+    margin-block: 7.5rem 3.5rem;
+    & .profile {
+      width: 5.45rem;
+      height: 5.45rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: .125rem solid var(--red);
+      padding: .25rem;
+      position: relative;
+    }
+    & .code {
+      width: 2rem; 
+      position: absolute;
+      bottom: 0;   
+      right: 0;    
+    }
   }
+
   .presentation {
       display: flex;
-      max-width: 680px;
+      max-width: 42.5rem;
       flex-direction: column;
       align-items: center;
       text-align: center;
-    span {
+    & span {
       font: var(--subtitle);
       font-family: var(--font-inconsolata);
       color: var(--gray-500);
     }
-    span .name {
+    & span .name {
       color: var(--red);
     }
-    h1 {
+    & h1 {
       font: var(--title-lg);
       color: var(--gray-600)
     }
-    p {
-      margin-block: 20px 80px; 
+    & p {
+      margin-block: 1.25rem 5rem; 
       font: var(--text-sm);
       color: var(--gray-400);
     }
@@ -40,28 +54,28 @@
     display: flex;
     justify-content: space-between; 
     width: 100%;
-    ul {
+    & ul {
       display: flex;
       flex-direction: row;
-      gap: 16px;
+      gap: 1rem;
     }
-    ul li {
+    & ul li {
       display: flex;
       flex-direction: row;
-      padding-block: 8px;
-      padding-inline: 16px;
-      background-color: var(--gray-300);
+      padding-block: .5rem;
+      padding-inline: 1rem;
       border-radius: 45px;
+      background-color: var(--gray-300);
       justify-content: center;
       align-items: center;
-      margin-bottom: 94px;
-      gap: 8px
+      
+      gap: .5rem;
     }
-    ul li:hover {
-      border: 1px solid var(--blue);
+    & ul li:hover {
+      border: 1.5px solid var(--blue);
     }
-    ul li img {
-      width: 24px;
+    & ul li img {
+      width: 1.5rem;
     }
     .github {
       filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(94%) contrast(86%);
@@ -80,6 +94,75 @@
     }
     .node {
       filter: invert(79%) sepia(48%) saturate(551%) hue-rotate(39deg) brightness(83%) contrast(81%);
+    }
+  }
+  @media (max-width: 480px) {
+    .bg-intro {
+      padding: 1rem;
+      position: relative;
+      max-height: 450px;
+      z-index: 0;
+    }
+    .presentation h1 {
+      font-size: 1.5rem;
+    }
+  
+    .presentation p {
+      font-size: 0.8rem;
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    #intro {
+      flex-direction: column;
+      padding: 1rem; 
+    }
+  
+    #profile-container {
+      margin-block: 3rem 1.5rem; 
+    }
+    .bg-intro {
+      position: relative;
+      max-height: 450px;
+      z-index: 0
+    }
+    .presentation {
+      max-width: 100%; 
+      padding: 0 1rem; 
+    }
+  
+    .presentation h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .presentation p {
+      margin-block: 1rem; 
+      font-size: 0.875rem; 
+    }
+  
+    #badge {
+      flex-direction: column; 
+      align-items: center; 
+      /* margin-bottom: 2rem;  */
+    }
+  
+    #badge ul {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+      gap: 0.125rem;
+      margin-inline: 0.5rem; 
+    }
+  
+    #badge ul li {
+      padding: 0.5rem; 
+      flex-basis: calc(30% - 0.125rem); 
+      margin-bottom: 0.5rem; 
+    }
+  
+    .github, .html, .css, .js, .react, .node {
+      width: 2rem; 
     }
   }
   
