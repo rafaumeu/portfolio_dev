@@ -75,7 +75,9 @@
   width: 28px;
   height: 28px;
 }
-
+#contact > div:nth-child(2) > div > a > img:hover {
+  filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
+}
 #contact > div:nth-child(2) > div > a > span {
   flex: 1 0 0;
   color: var(--gray-500);
@@ -86,7 +88,7 @@
   line-height: 140%; /* 22.4px */
 }
 
-@media (min-width: 45rem) and (max-width: 64rem) {
+@media (min-width: 48rem) and (max-width: 64rem) {
   #contact {
     padding-top: 64px;
     padding-bottom: 24px;
@@ -119,7 +121,7 @@
   }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 480px) {
   #contact {
     padding-top: 48px;
     padding-bottom: 16px;
