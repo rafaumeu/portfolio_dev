@@ -142,7 +142,9 @@
       margin-block: 1rem; 
       font-size: 0.875rem; 
     }
-  
+    .badge:hover  {
+      color: var(--blue);
+    }
     #badges {
       flex-direction: column; 
       align-items: center; 
