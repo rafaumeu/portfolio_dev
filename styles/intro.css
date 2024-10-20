@@ -50,7 +50,7 @@
       color: var(--gray-400);
     }
   }
-  #badge {
+  #badges {
     display: flex;
     justify-content: space-between; 
     width: 100%;
@@ -115,7 +115,7 @@
   }
 
   
-  @media (min-width: 768px) {
+  @media (max-width: 1024px) {
     #intro {
       flex-direction: column;
       padding: 1rem; 
@@ -143,13 +143,13 @@
       font-size: 0.875rem; 
     }
   
-    #badge {
+    #badges {
       flex-direction: column; 
       align-items: center; 
       /* margin-bottom: 2rem;  */
     }
   
-    #badge ul {
+    #badges ul {
       display: flex;
       flex-wrap: wrap; 
       justify-content: space-between; 
@@ -157,7 +157,7 @@
       margin-inline: 0.5rem; 
     }
   
-    #badge ul li {
+    #badges ul li {
       padding: 0.5rem; 
       flex-basis: calc(30% - 0.125rem); 
       margin-bottom: 0.5rem; 
