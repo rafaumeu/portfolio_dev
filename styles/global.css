@@ -110,9 +110,11 @@ a:hover {
   padding-block: 5.875rem 3.5625rem; 
   margin: 0 auto;
   display: flex;
-  width: 85.375rem; 
+  width: 100vw; /* Garante que o elemento ocupe toda a largura da viewport */
+  min-width: 1366px; /* Define uma largura mínima para telas maiores */
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 1024px)  {
@@ -145,21 +147,25 @@ a:hover {
     width: 45%;
     height: auto;
   }
+  .header-title {
+    font-size: 1.25rem; /* Ajusta o tamanho da fonte para telas médias */
+    line-height: 2.5rem; /* Ajusta a altura da linha */
+  }
 
   #background-gradient {
-    padding-block: 4rem 2rem; 
-    margin: 0 auto;
-    width: 100%; 
-    display: flex;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
+    min-width: 100vw; /* Garante que o elemento ocupe toda a largura da viewport */
+    padding-block: 4rem 2rem; /* Ajuste de padding para telas médias */
+    justify-content: center; 
+  }
+  #background-gradient img {
+    width: 36px; /* Ajuste de tamanho para telas menores */
+    height: 36px;
   }
 
   .presentation h1 {
     font-size: 1.8rem; 
   }
-
+  
   .presentation p {
     margin-block: 1rem;
     font-size: 0.9rem; 
@@ -180,7 +186,10 @@ a:hover {
   .presentation span {
     width: 12rem; 
   }
-
+  .header-title {
+    font-size: 0.875rem; /* Fonte menor para dispositivos muito pequenos */
+    line-height: 1.5rem; /* Mantém o texto compacto e legível */
+  }
   #background-gradient {
     padding-block: 3rem 1.5rem; 
     margin: 0 auto;
@@ -189,6 +198,10 @@ a:hover {
     bottom: 0;
     left: 0;
     z-index: 1;
+  }
+  #background-gradient img {
+    width: 24px; /* Ajuste de tamanho para telas muito pequenas */
+    height: 24px;
   }
 
   .grid-container {

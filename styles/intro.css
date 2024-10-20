@@ -52,50 +52,60 @@
   }
   #badges {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
-    & ul {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-    }
-    & ul li {
-      display: flex;
-      flex-direction: row;
-      padding-block: .5rem;
-      padding-inline: 1rem;
-      border-radius: 45px;
-      background-color: var(--gray-300);
-      justify-content: center;
-      align-items: center;
-      
-      gap: .5rem;
-    }
-    & ul li:hover {
-      border: 1.5px solid var(--blue);
-    }
-    & ul li img {
-      width: 1.5rem;
-    }
-    .github {
-      filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(94%) contrast(86%);
-    }
-    .html {
-      filter: invert(28%) sepia(58%) saturate(3291%) hue-rotate(316deg) brightness(94%) contrast(97%);
-    }
-    .css {
-      filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
-    }
-    .js {
-      filter: invert(78%) sepia(60%) saturate(339%) hue-rotate(339deg) brightness(99%) contrast(96%);
-    }
-    .react {
-      filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
-    }
-    .node {
-      filter: invert(79%) sepia(48%) saturate(551%) hue-rotate(39deg) brightness(83%) contrast(81%);
-    }
   }
+  
+  #badges ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #badges ul li {
+    display: flex;
+    flex-direction: row;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 45px;
+    background-color: var(--gray-300);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  #badges ul li:hover {
+    border: 1.5px solid var(--blue);
+  }
+  
+  #badges ul li img {
+    width: 1.5rem;
+  }
+  
+  .github {
+    filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(94%) contrast(86%);
+  }
+  
+  .html {
+    filter: invert(28%) sepia(58%) saturate(3291%) hue-rotate(316deg) brightness(94%) contrast(97%);
+  }
+  
+  .css {
+    filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
+  }
+  
+  .js {
+    filter: invert(78%) sepia(60%) saturate(339%) hue-rotate(339deg) brightness(99%) contrast(96%);
+  }
+  
+  .react {
+    filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
+  }
+  
+  .node {
+    filter: invert(79%) sepia(48%) saturate(551%) hue-rotate(39deg) brightness(83%) contrast(81%);
+  }
+  
   @media (max-width: 480px) {
     .bg-intro {
       padding: 1rem;
@@ -111,6 +121,10 @@
       font-size: 0.75rem; 
       line-height: 1.2rem; 
       margin-block: 0.5rem; 
+    }
+    #badges ul li {
+      flex-basis: calc(50% - 0.5rem); /* Cada badge ocupará 50% da largura do container */
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -160,9 +174,8 @@
     }
   
     #badges ul li {
-      padding: 0.5rem; 
-      flex-basis: calc(30% - 0.125rem); 
-      margin-bottom: 0.5rem; 
+      flex-basis: calc(33.33% - 0.5rem); /* Cada badge ocupa 33.33% da largura */
+      margin-bottom: 0.5rem;
     }
   
     .github, .html, .css, .js, .react, .node {
