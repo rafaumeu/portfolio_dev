@@ -97,7 +97,7 @@
       filter: invert(79%) sepia(48%) saturate(551%) hue-rotate(39deg) brightness(83%) contrast(81%);
     }
   }
-  @media (min-width: 375px) and (max-width: 480px) {
+  @media (min-width: 375px) and (max-width: 30rem) {
     .presentation h1 {
       font-size: 1.5rem;
     }
@@ -129,7 +129,7 @@
   }
 
   
-  @media (min-width: 48rem) and (max-width: 64rem)  {
+  @media (min-width: 45rem) and (max-width: 64rem)  {
     #intro {
       flex-direction: column;
       padding: 1rem; 
