@@ -115,7 +115,7 @@
   }
 
   
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     #intro {
       flex-direction: column;
       padding: 1rem; 
