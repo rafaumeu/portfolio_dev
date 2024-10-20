@@ -75,7 +75,7 @@
   }
 
   #projects > div > img {
-    width: 15rem; /* 240px */
+    width: 100%; /* 240px */
     height: 8rem; /* 128px */
   }
 
