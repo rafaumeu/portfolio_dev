@@ -1,71 +1,72 @@
-# Portfólio de Rafael Zendron
 
-![Banner do Portfólio](assets/images/banner.jpg)
+# Rafael Zendron's Portfolio
 
-## Sobre Mim
+![Portfolio Banner](assets/images/banner.jpg)
 
-Olá! Sou Rafael Zendron, um desenvolvedor Fullstack apaixonado por tecnologia e inovação. Com um olhar atento para as necessidades dos usuários, transformo ideias em aplicações funcionais e impactantes. Minha jornada no desenvolvimento web me permitiu adquirir habilidades em diversas tecnologias, sempre buscando soluções criativas para desafios complexos.
+## About Me
 
-## Tecnologias
+Hello! I'm Rafael Zendron, a Fullstack developer passionate about technology and innovation. With a keen eye for user needs, I transform ideas into functional and impactful applications. My journey in web development has allowed me to acquire skills in various technologies, always seeking creative solutions to complex challenges.
+
+## Technologies
 
 - **Frontend:** HTML, CSS, JavaScript, React
 - **Backend:** Node.js, Express
-- **Banco de Dados:** MongoDB, SQL
+- **Database:** MongoDB, SQL
 - **DevOps:** Docker, CI/CD
 
-## Meus Trabalhos
+## My Works
 
-Aqui estão alguns dos projetos em destaque que desenvolvi:
+Here are some of the featured projects I've developed:
 
 ### [Travelgram](https://rafaumeu.github.io/projeto_travelgram/)
 
-Uma rede social onde as pessoas compartilham suas experiências de viagem e fotos.
+A social network where people share their travel experiences and photos.
 
 ![Travelgram](assets/images/Thumbnail_Project-01.png)
 
 ### [Tech News](https://rafaumeu.github.io/fullstack_portal_de_noticias/)
 
-Homepage de um portal de notícias focado em tecnologia, com artigos atualizados frequentemente.
+Homepage of a technology news portal with frequently updated articles.
 
 ![Tech News](assets/images/Thumbnail_Project-02.png)
 
-### [Página de Receita](https://rafaumeu.github.io/projeto/)
+### [Recipe Page](https://rafaumeu.github.io/projeto/)
 
-Uma página interativa que fornece uma receita passo a passo para deliciosos cupcakes.
+An interactive page that provides a step-by-step recipe for delicious cupcakes.
 
-![Página de Receita](assets/images/Thumbnail_Project-03.png)
+![Recipe Page](assets/images/Thumbnail_Project-03.png)
 
 ### [Zingen](https://rafaumeu.github.io/zingen/)
 
-Landing Page responsiva para um aplicativo de gerenciamento de tarefas.
+A responsive landing page for a task management app.
 
 ![Zingen](assets/images/Thumbnail_Project-04.png)
 
 ### [Refund](https://rafaumeu.github.io/refund/)
 
-Um sistema que facilita o pedido e acompanhamento de reembolsos.
+A system that simplifies refund requests and tracking.
 
 ![Refund](assets/images/Thumbnail_Project-05.png)
 
-### [Página de Turismo](http://rafaumeu.github.io/local_turistico/)
+### [Tourism Page](http://rafaumeu.github.io/local_turistico/)
 
-Página com informações essenciais para turistas que desejam explorar novos destinos.
+A page with essential information for tourists who want to explore new destinations.
 
-![Página de Turismo](assets/images/Thumbnail_Project-06.png)
+![Tourism Page](assets/images/Thumbnail_Project-06.png)
 
-## Meus Serviços
+## My Services
 
-Estou aqui para ajudar seu negócio a crescer com os seguintes serviços:
+I'm here to help your business grow with the following services:
 
-- **Desenvolvimento de Websites e Aplicativos:** Criação de interfaces responsivas e intuitivas.
-- **API e Banco de Dados:** Desenvolvimento de serviços e gerenciamento de dados.
-- **DevOps:** Gestão e infraestrutura de aplicações para garantir desempenho e escalabilidade.
+- **Website and Application Development:** Creating responsive and intuitive interfaces.
+- **API and Database:** Developing services and managing data.
+- **DevOps:** Application management and infrastructure to ensure performance and scalability.
 
-## Contato
+## Contact
 
-Gostou do meu trabalho? Vamos conversar! Você pode me encontrar nas seguintes plataformas:
+Liked my work? Let's talk! You can find me on the following platforms:
 
 - [LinkedIn](https://www.linkedin.com/in/rafael-dias-zendron-528290132/)
 - [Instagram](https://www.instagram.com/rafaeldiaszendron/)
 - [GitHub](https://github.com/rafaumeu)
-- [E-mail](mailto:rafael.zendron22@gmail.com)
+- [Email](mailto:rafael.zendron22@gmail.com)
