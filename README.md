@@ -1,7 +1,7 @@
 
 # Rafael Zendron's Portfolio
 
-![Portfolio Banner](assets/images/banner.jpg)
+![Portfolio Banner](https://github.com/user-attachments/assets/ff16cb08-7290-4089-b8a0-1ead55d40e5e)
 
 ## About Me
 
