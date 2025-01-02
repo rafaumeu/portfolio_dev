@@ -16,30 +16,50 @@ const Contact: React.FC = () => {
       </div>
       <div className="container">
         <div className="social">
-          <a href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/" target="_blank" rel="noopener noreferrer" className="social-button">
+          <a
+            href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-button"
+          >
             <FaLinkedin />
             <span>Linkedin</span>
-            <img src={arrowUp} alt='' />
+            <img src={arrowUp} alt="" />
           </a>
-          <a href="https://www.instagram.com/rafaeldiaszendron/" target="_blank" rel="noopener noreferrer" className="social-button">
+          <a
+            href="https://www.instagram.com/rafaeldiaszendron/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-button"
+          >
             <FaInstagram />
             <span>Instagram</span>
-            <img src={arrowUp} alt='' />
+            <img src={arrowUp} alt="" />
           </a>
-          <a href="https://github.com/rafaumeu" target="_blank" rel="noopener noreferrer" className="social-button">
+          <a
+            href="https://github.com/rafaumeu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-button"
+          >
             <FaGithub />
             <span>GitHub</span>
-            <img src={arrowUp} alt='' />
+            <img src={arrowUp} alt="" />
           </a>
-          <a href="mailto:rafael.zendron22@gmail.com" target="_blank" rel="noopener noreferrer" className="social-button">
+          <a
+            href="mailto:rafael.zendron22@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-button"
+          >
             <MdEmail />
             <span>E-mail</span>
-            <img src={arrowUp} alt='' />
+            <img src={arrowUp} alt="" />
           </a>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

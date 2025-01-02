@@ -1,6 +1,12 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
-import { SiCss3, SiHtml5, SiJavascript, SiNodedotjs, SiReact } from 'react-icons/si'
+import {
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+  SiNodedotjs,
+  SiReact,
+} from 'react-icons/si'
 import caretDoubleDown from '../assets/icons/CaretDoubleDown.svg'
 import codeImage from '../assets/icons/code.svg'
 import profileImage from '../assets/images/1532522347212.jpg'
@@ -14,15 +20,25 @@ const Header: React.FC = () => {
           <div className="container">
             <div id="intro" className="container">
               <div id="profile-container">
-                <img className="profile" src={profileImage} alt="foto de perfil" />
+                <img
+                  className="profile"
+                  src={profileImage}
+                  alt="foto de perfil"
+                />
                 <img className="code" src={codeImage} alt="" />
               </div>
               <div className="presentation">
-                <span>Hello World! Meu nome é 
-                  <span className="name"> Rafael Zendron {' '}</span>
-                  e sou</span>
+                <span>
+                  Hello World! Meu nome é
+                  <span className="name"> Rafael Zendron </span>e sou
+                </span>
                 <h1>Desenvolvedor Fullstack</h1>
-                <p className="container">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+                <p className="container">
+                  Transformo necessidades em aplicações reais, evolventes e
+                  funcionais. Desenvolvo sistemas através da minha paixão pela
+                  tecnologia, contribuindo com soluções inovadoras e eficazes
+                  para desafios complexos.
+                </p>
               </div>
               <nav id="badges">
                 <ul className="container">
@@ -59,12 +75,12 @@ const Header: React.FC = () => {
       <div className="container">
         <div id="background-gradient">
           <a href="#jobs">
-            <img src={caretDoubleDown} alt=""/>
+            <img src={caretDoubleDown} alt="" />
           </a>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
