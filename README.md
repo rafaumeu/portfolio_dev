@@ -1,72 +1,100 @@
-
 # Rafael Zendron's Portfolio
 
-![Portfolio Banner](https://github.com/user-attachments/assets/ff16cb08-7290-4089-b8a0-1ead55d40e5e)
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%9B%8D-Rafael%20Zendron%27s%20Portfolio-blueviolet?style=for-the-badge" alt="Rafael Zendron's Portfolio">
+</p>
 
-## About Me
+## 🛍️ Overview
 
-Hello! I'm Rafael Zendron, a Fullstack developer passionate about technology and innovation. With a keen eye for user needs, I transform ideas into functional and impactful applications. My journey in web development has allowed me to acquire skills in various technologies, always seeking creative solutions to complex challenges.
+Rafael Zendron's Portfolio is a showcase of my work as a Fullstack developer, highlighting my skills in modern web development practices and technologies.
 
-## Technologies
+---
 
-- **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express
-- **Database:** MongoDB, SQL
-- **DevOps:** Docker, CI/CD
+## 🎯 Project Motivation
 
-## My Works
+This portfolio is designed to:
 
-Here are some of the featured projects I've developed:
+- 🧠 Showcase my projects and skills in web development
+- 💡 Implement best practices in React and TypeScript
+- 🔧 Provide a responsive and user-friendly interface
+- 📊 Explore modern tools and frameworks
 
-### [Travelgram](https://rafaumeu.github.io/projeto_travelgram/)
+---
 
-A social network where people share their travel experiences and photos.
+## 🌟 Current Features
 
-![Travelgram](assets/images/Thumbnail_Project-01.png)
+- 🎨 Responsive design with modern UI components
+- 🖼️ Dynamic project showcase with images and links
+- 💻 Built with React, TypeScript, and Vite
+- 📱 Mobile-friendly layout
 
-### [Tech News](https://rafaumeu.github.io/fullstack_portal_de_noticias/)
+---
 
-Homepage of a technology news portal with frequently updated articles.
+## 🛠️ Technology Stack
 
-![Tech News](assets/images/Thumbnail_Project-02.png)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" alt="Yarn">
+</p>
 
-### [Recipe Page](https://rafaumeu.github.io/projeto/)
+---
 
-An interactive page that provides a step-by-step recipe for delicious cupcakes.
+## 📂 Project Structure
 
-![Recipe Page](assets/images/Thumbnail_Project-03.png)
+```plaintext
+portfolio/
+├── src/
+│   ├── assets/            # Static assets (images, logos)
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Main pages of the portfolio
+│   ├── styles/            # Global styles and themes
+│   └── utils/            # Helper functions
+├── public/                # Public assets
+└── package.json          # Project metadata and dependencies
+```
 
-### [Zingen](https://rafaumeu.github.io/zingen/)
+---
 
-A responsive landing page for a task management app.
+## 📈 Development Progress
 
-![Zingen](assets/images/Thumbnail_Project-04.png)
+### Completed Features
 
-### [Refund](https://rafaumeu.github.io/refund/)
+- [x] Project Setup and Configuration
+- [x] Responsive Design Implementation
+- [x] Project Showcase with links and images
 
-A system that simplifies refund requests and tracking.
+### Next Steps
 
-![Refund](assets/images/Thumbnail_Project-05.png)
+- [ ] Add more projects to showcase
+- [ ] Improve SEO and performance
+- [ ] Implement user authentication
 
-### [Tourism Page](http://rafaumeu.github.io/local_turistico/)
+---
 
-A page with essential information for tourists who want to explore new destinations.
+## 👥 Contributing
 
-![Tourism Page](assets/images/Thumbnail_Project-06.png)
+Contributions are welcome! If you'd like to improve this portfolio, feel free to fork the repository and submit a pull request.
 
-## My Services
+---
 
-I'm here to help your business grow with the following services:
+## 📜 License
 
-- **Website and Application Development:** Creating responsive and intuitive interfaces.
-- **API and Database:** Developing services and managing data.
-- **DevOps:** Application management and infrastructure to ensure performance and scalability.
+This project is licensed under the [MIT License](LICENSE).
 
-## Contact
+---
 
-Liked my work? Let's talk! You can find me on the following platforms:
-
-- [LinkedIn](https://www.linkedin.com/in/rafael-dias-zendron-528290132/)
-- [Instagram](https://www.instagram.com/rafaeldiaszendron/)
-- [GitHub](https://github.com/rafaumeu)
-- [Email](mailto:rafael.zendron22@gmail.com)
+<p align="center">
+  <img src="https://github.com/rafaumeu.png" width="100" height="100" style="border-radius: 50%;">
+</p>
+<h3 align="center">🚀 Built with ❤️ by Rafael Zendron</h3>
+<p align="center">
+  <a href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/rafaumeu/portfolio">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
