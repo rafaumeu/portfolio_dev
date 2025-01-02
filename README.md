@@ -2,6 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%9B%8D-Rafael%20Zendron%27s%20Portfolio-blueviolet?style=for-the-badge" alt="Rafael Zendron's Portfolio">
+  <a href="https://portfoliordz.netlify.app/">
+  <img src="https://api.netlify.com/api/v1/badges/7974b103-1d88-4c27-be47-c9099d353500/deploy-status">
+  </a>
+  
 </p>
 
 ## 🛍️ Overview
