@@ -1,0 +1,213 @@
+#intro {
+  width: 100%;
+  display: flex;
+  max-height: 750px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#profile-container {
+  position: relative;
+  display: inline-block;
+  margin-block: 7.5rem 3.5rem;
+}
+
+#profile-container .profile {
+  max-width: 100%; /* Ensure profile image is responsive */
+  width: 5.45rem;
+  height: 5.45rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.125rem solid var(--red);
+  padding: 0.25rem;
+  position: relative;
+}
+
+#profile-container .code {
+  width: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.presentation {
+  display: flex;
+  max-width: 42.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation span {
+  font: var(--subtitle);
+  font-family: var(--font-inconsolata);
+  color: var(--gray-500);
+}
+
+.presentation span .name {
+  color: var(--red);
+}
+
+.presentation h1 {
+  font: var(--title-lg);
+  color: var(--gray-600);
+}
+
+.presentation p {
+  margin-block: 1.25rem 5rem;
+  font: var(--text-sm);
+  color: var(--gray-400);
+}
+
+#badges {
+  display: flex;
+  justify-content: center; /* Center badges for better alignment */
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem; /* Add gap for spacing between badges */
+}
+
+#badges ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#badges ul li {
+  display: flex;
+  flex-direction: row;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 45px;
+  background-color: var(--gray-300);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#badges ul li:hover {
+  border: 1.5px solid var(--blue);
+}
+
+#badges ul li img {
+  width: 1.5rem;
+}
+
+.github {
+  filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(180deg) brightness(94%)
+    contrast(86%);
+}
+
+.html {
+  filter: invert(28%) sepia(58%) saturate(3291%) hue-rotate(316deg)
+    brightness(94%) contrast(97%);
+}
+
+.css {
+  filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg)
+    brightness(97%) contrast(94%);
+}
+
+.js {
+  filter: invert(78%) sepia(60%) saturate(339%) hue-rotate(339deg)
+    brightness(99%) contrast(96%);
+}
+
+.react {
+  filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg)
+    brightness(97%) contrast(94%);
+}
+
+.node {
+  filter: invert(79%) sepia(48%) saturate(551%) hue-rotate(39deg)
+    brightness(83%) contrast(81%);
+}
+
+@media (min-width: 375px) and (max-width: 30rem) {
+  .presentation h1 {
+    font-size: 1.5rem;
+  }
+
+  .presentation p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-block: 0.5rem;
+  }
+
+  #badges {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Prevenir overflow */
+  }
+
+  #badges ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.125rem;
+    margin-inline: 0.5rem;
+  }
+
+  #badges ul li {
+    flex-basis: calc(50% - 0.5rem); /* Cada badge ocupa 50% da largura */
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 45rem) and (max-width: 64rem) {
+  #intro {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #profile-container {
+    margin-block: 3rem 1.5rem;
+  }
+
+  .presentation {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .presentation h1 {
+    font-size: 1.5rem;
+  }
+
+  .presentation p {
+    margin-block: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .badge:hover {
+    color: var(--blue);
+  }
+
+  #badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #badges ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.125rem;
+    margin-inline: 0.5rem;
+  }
+
+  #badges ul li {
+    padding: 0.5rem;
+    flex-basis: calc(30% - 0.125rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .github,
+  .html,
+  .css,
+  .js,
+  .react,
+  .node {
+    width: 2rem;
+  }
+}

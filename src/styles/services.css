@@ -41,7 +41,7 @@
   border: 0.125rem solid var(--gray-200); /* Usando a variável para borda */
 }
 
-#services > div.cards > div.grid-item > div > img {
+.grid-item > img {
   width: 3rem; /* Convertido de 48px para rem */
   height: 3rem; /* Convertido de 48px para rem */
 }
@@ -72,25 +72,27 @@
 
 /* Melhoria na responsividade */
 
-@media (max-width: 64rem) { /* Convertido de 1024px para rem */
+@media (max-width: 64rem) {
+  /* Convertido de 1024px para rem */
   #services {
     padding: 4rem 3rem; /* Convertido para rem */
   }
-  
+
   .cards {
     gap: 2rem; /* Convertido de 24px para rem */
   }
-  
+
   #services > div.cards > div > div {
     width: 45%; /* Ajusta a largura dos cards para 45% da tela */
   }
 }
 
-@media (max-width: 48rem) { /* Convertido de 768px para rem */
+@media (max-width: 48rem) {
+  /* Convertido de 768px para rem */
   #services {
     padding: 3rem 2rem; /* Convertido para rem */
   }
-  
+
   .cards {
     gap: 1.5rem; /* Convertido para rem */
   }

@@ -5,25 +5,25 @@
 }
 
 :root {
-  --red: #E3646E;
-  --purple: #BB72E9;
-  --blue: #3996DB;
-  --green: #82BC4F;
-  --yellow: #EABD5F;
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
 
-  --gray-100: #0D0E11;
-  --gray-200: #16181D;
-  --gray-300: #292C34;
-  --gray-400: #878EA1;
-  --gray-500: #C0C4CE;
-  --gray-600: #E2E4E9;
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
 
   --font-inconsolata: 'Inconsolata', monospace;
   --font-maven: 'Maven Pro', sans-serif;
-  --subtitle: 1rem 400/140% var(--font-inconsolata); 
-  --text-md: 1rem 400/140% var(--font-maven); 
-  --text-sm: 0.875rem 400/140% var(--font-maven); 
-  --title-lg: 700 3.5rem/120% Asap; 
+  --subtitle: 1rem 400/140% var(--font-inconsolata);
+  --text-md: 1rem 400/140% var(--font-maven);
+  --text-sm: 0.875rem 400/140% var(--font-maven);
+  --title-lg: 700 3.5rem/120% Asap;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 .bg-intro {
-  max-width: 85.375rem; 
+  max-width: 85.375rem;
   background: url(../assets/images/Background_Intro.png) no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {
 }
 
 .container {
-  max-width: 65rem; 
+  max-width: 65rem;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -50,43 +50,48 @@ body {
 
 .grid-container {
   display: flex;
-  width: 65rem; 
+  width: 65rem;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 1.5rem; 
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .grid-item {
   display: flex;
-  width: 20.625rem; 
-  height: 17.5rem; 
-  padding: 0.75rem; 
+  width: 100%; /* Change to 100% for better responsiveness */
+  max-width: 20.625rem; /* Maintain a max width */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 0.75rem;
   flex-direction: column;
   align-items: start;
-  gap: 1.25rem; 
-  flex-shrink: 0;
-  border-radius: 0.75rem; 
+  gap: 1.25rem;
+  border-radius: 0.75rem;
   background-color: var(--gray-300);
 }
+
+.grid-item img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
 .header-span {
-  color: var(--red, #E3646E);
+  color: var(--red, #e3646e);
   text-align: center;
   font-family: var(--font-inconsolata);
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem;   
+  line-height: 1.5rem;
 }
 
 /* Classe utilitária para o h2 do cabeçalho */
 .header-title {
   font-family: 'Maven Pro', sans-serif; /* Adicione 'sans-serif' como fallback */
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.75rem; 
+  line-height: 3.75rem;
   letter-spacing: 0em;
   text-align: center;
   color: var(--gray-600);
@@ -107,7 +112,7 @@ a:hover {
 
 #background-gradient {
   background: linear-gradient(180deg, var(--gray-100), var(--gray-200));
-  padding-block: 5.875rem 3.5625rem; 
+  padding-block: 5.875rem 3.5625rem;
   margin: 0 auto;
   display: flex;
   width: 100%; /* Ocupa 100% da largura disponível */
@@ -117,21 +122,20 @@ a:hover {
   position: relative;
 }
 
-
-@media (min-width: 45rem) and (max-width: 1024px)  {
+@media (min-width: 45rem) and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
   :root {
-    --subtitle: 0.875rem 400/140% var(--font-inconsolata); 
-    --text-md: 0.875rem 400/140% var(--font-maven); 
-    --text-sm: 0.75rem 400/140% var(--font-maven); 
-    --title-lg: 600 3rem/120% Asap; 
+    --subtitle: 0.875rem 400/140% var(--font-inconsolata);
+    --text-md: 0.875rem 400/140% var(--font-maven);
+    --text-sm: 0.75rem 400/140% var(--font-maven);
+    --title-lg: 600 3rem/120% Asap;
   }
 
   .bg-intro {
     padding: 1rem;
-    max-height: 24.750rem; 
+    max-height: 24.75rem;
   }
 
   .container {
@@ -156,7 +160,7 @@ a:hover {
   #background-gradient {
     min-width: 100vw; /* Garante que o elemento ocupe toda a largura da viewport */
     padding-block: 4rem 2rem; /* Ajuste de padding para telas médias */
-    justify-content: center; 
+    justify-content: center;
   }
   #background-gradient img {
     width: 36px; /* Ajuste de tamanho para telas menores */
@@ -164,12 +168,12 @@ a:hover {
   }
 
   .presentation h1 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
-  
+
   .presentation p {
     margin-block: 1rem;
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
 
@@ -178,14 +182,14 @@ a:hover {
     overflow-x: hidden;
   }
   :root {
-    --subtitle: 0.5rem 400/140% var(--font-inconsolata); 
-    --text-md: 0.75rem 400/140% var(--font-maven); 
-    --text-sm: 0.625rem 400/140% var(--font-maven); 
-    --title-lg: 600 2.25rem/120% Asap; 
+    --subtitle: 0.5rem 400/140% var(--font-inconsolata);
+    --text-md: 0.75rem 400/140% var(--font-maven);
+    --text-sm: 0.625rem 400/140% var(--font-maven);
+    --title-lg: 600 2.25rem/120% Asap;
   }
 
   .presentation span {
-    width: 12rem; 
+    width: 12rem;
   }
   .header-title {
     font-size: 0.875rem; /* Fonte menor para dispositivos muito pequenos */
@@ -193,11 +197,11 @@ a:hover {
   }
   .bg-intro {
     padding: 1rem;
-    max-height: 45rem; 
+    max-height: 45rem;
     height: 90vh;
   }
   #background-gradient {
-    padding-block: 3rem 1.5rem; 
+    padding-block: 3rem 1.5rem;
     margin: 0 auto;
     display: flex;
     width: 100%;
@@ -211,7 +215,7 @@ a:hover {
 
   .grid-container {
     flex-direction: column;
-    gap: 1rem; 
+    gap: 1rem;
     width: 100%;
   }
 
