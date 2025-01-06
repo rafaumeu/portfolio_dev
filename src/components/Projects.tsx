@@ -11,12 +11,14 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+  const [imageLoading, setImageLoading] = useState(true) // Inicializa o estado de loading
   const { projects, loading } = useGitHubProjects('rafaumeu')
   const [images, setImages] = useState<Record<string, string>>({})
   const [validProjects, setValidProjects] = useState<Project[]>([])
 
   useEffect(() => {
     const loadImages = async () => {
+      setImageLoading(true) // Define loading como true antes de começar a buscar as imagens
       const tempValidProjects: Project[] = []
 
       for (const project of projects) {
@@ -32,13 +34,14 @@ const Projects: React.FC = () => {
         })
 
         if (Object.keys(imageMap).length > 0) {
-          tempValidProjects.push(project)
+          tempValidProjects.push(project) // Adiciona apenas projetos com imagens válidas
         }
 
         setImages((prevImages) => ({ ...prevImages, ...imageMap }))
       }
 
       setValidProjects(tempValidProjects)
+      setImageLoading(false) // Define loading como false após todas as imagens serem buscadas
     }
 
     if (projects.length > 0) {
@@ -61,7 +64,7 @@ const Projects: React.FC = () => {
         </header>
       </div>
       <div id="projects" className="grid-container">
-        {loading
+        {loading || imageLoading // Mostra o skeleton se qualquer estado de loading for verdadeiro
           ? Array.from({ length: 6 }).map((_, index) => (
               <ProjectSkeleton key={index} />
             ))
