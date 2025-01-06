@@ -1,21 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { fetchImageList } from '../utils/githubImageFetcher'
 import useGitHubProjects from '../utils/useGitHubProjects'
 
-const projectImages: { [key: string]: string } = {
-  Travelgram: 'assets/images/Thumbnail_Project-01.png',
-  'Tech News': 'assets/images/Thumbnail_Project-02.png',
-  'Página de receita': 'assets/images/Thumbnail_Project-03.png',
-  Zingen: 'assets/images/Thumbnail_Project-04.png',
-  Refund: 'assets/images/Thumbnail_Project-05.png',
-  'Página de turismo': 'assets/images/Thumbnail_Project-06.png',
+interface Project {
+  id: number
+  name: string
+  html_url: string
+  description: string
 }
 
 const Projects: React.FC = () => {
-  const { projects, loading, error } = useGitHubProjects('rafaumeu') // Usando 'rafaumeu' como nome de usuário
+  const { projects, loading, error } = useGitHubProjects('rafaumeu') // Using 'rafaumeu' as the username
+  const [images, setImages] = useState<Record<string, string>>({}) // Define type for images
+  const [validProjects, setValidProjects] = useState<Project[]>([]) // Array para armazenar projetos válidos
 
-  if (loading) return <div>Loading...</div>
+  useEffect(() => {
+    const loadImages = async () => {
+      const tempValidProjects: Project[] = [] // Array temporário para armazenar projetos válidos
+
+      for (const project of projects) {
+        const repoName = project.name // Extract the repository name
+        const imageList = await fetchImageList(repoName) // Pass repoName to fetchImageList
+        console.log(`Repositório: ${repoName}`)
+        console.log(`Lista de imagens retornadas:`, imageList)
+        const imageMap: Record<string, string> = {}
+
+        imageList.forEach((url) => {
+          const fileName = url.split('/').pop() // Extract file name from URL
+          if (fileName) {
+            imageMap[fileName] = url // Map file name to URL
+          }
+        })
+
+        if (Object.keys(imageMap).length > 0) {
+          tempValidProjects.push(project) // Adiciona o projeto se houver imagens
+        }
+
+        setImages((prevImages) => ({ ...prevImages, ...imageMap })) // Atualiza o estado das imagens
+      }
+
+      setValidProjects(tempValidProjects) // Atualiza o estado com projetos válidos
+    }
+
+    loadImages()
+  }, [projects]) // Add projects as a dependency
+
+  if (loading) return <div>Loading projects...</div>
   if (error) return <div>Error: {error}</div>
-
   const limitDescription = (description: string, limit: number) => {
     return description.length > limit
       ? description.substring(0, limit) + '...'
@@ -31,7 +62,7 @@ const Projects: React.FC = () => {
         </header>
       </div>
       <div id="projects" className="grid-container">
-        {projects.map((project) => (
+        {validProjects.map((project: Project) => (
           <div className="grid-item" key={project.id}>
             <a
               href={project.html_url}
@@ -40,10 +71,11 @@ const Projects: React.FC = () => {
             >
               <img
                 src={
-                  projectImages[project.name] || 'https://placehold.co/306x156'
+                  images[`${project.id}.png`] || 'https://placehold.co/306x156'
                 }
                 alt={project.name}
               />
+
               <h3>{project.name}</h3>
               <p>
                 {limitDescription(

@@ -8,7 +8,6 @@ interface Project {
 }
 
 const useGitHubProjects = (username: string = 'rafaumeu') => {
-  // Usando 'rafaumeu' como padrão
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -16,14 +15,29 @@ const useGitHubProjects = (username: string = 'rafaumeu') => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch(
-          `https://api.github.com/users/${username}/repos`,
-        )
-        if (!response.ok) {
-          throw new Error('Failed to fetch projects')
+        let allProjects: Project[] = []
+        let page = 1
+        let hasMore = true
+
+        while (hasMore) {
+          const response = await fetch(
+            `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`,
+            {
+              headers: {
+                Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`, // Use the new environment variable
+              },
+            },
+          )
+          if (!response.ok) {
+            throw new Error('Failed to fetch projects')
+          }
+          const data = await response.json()
+          allProjects = allProjects.concat(data)
+          hasMore = data.length > 0
+          page++
         }
-        const data = await response.json()
-        setProjects(data)
+
+        setProjects(allProjects)
       } catch (err: unknown) {
         if (err instanceof Error) {
           setError(err.message)
