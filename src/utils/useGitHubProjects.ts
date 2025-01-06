@@ -24,7 +24,7 @@ const useGitHubProjects = (username: string = 'rafaumeu') => {
             `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`,
             {
               headers: {
-                Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`, // Use the new environment variable
+                Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
               },
             },
           )

@@ -11,7 +11,7 @@ export const fetchImageList = async (repoName: string): Promise<string[]> => {
   try {
     const response = await axios.get(url, {
       headers: {
-        Authorization: `token ${process.env.GITHUB_TOKEN}`, // Use the environment variable
+        Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
       },
     })
 
@@ -27,7 +27,7 @@ export const fetchImageList = async (repoName: string): Promise<string[]> => {
       `Erro ao buscar imagens para o repositório ${repoName}:`,
       error,
     )
-    return ['https://placehold.co/306x156'] // Retorna a URL padrão em caso de erro
+    return ['https://placehold.co/306x156']
   }
 }
 
@@ -42,10 +42,18 @@ export const fetchImageContent = async (
   repoName: string,
 ): Promise<string | null> => {
   const url = `https://api.github.com/repos/rafaumeu/${repoName}/contents/screenshots/${fileName}`
-  const response = await axios.get(url, {
-    headers: {
-      Authorization: `token ${process.env.GITHUB_TOKEN}`, // Use the environment variable
-    },
-  })
-  return response.data.content // Base64 content
+  try {
+    const response = await axios.get(url, {
+      headers: {
+        Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+      },
+    })
+    return response.data.content
+  } catch (error) {
+    console.error(
+      `Erro ao buscar conteúdo da imagem para o repositório ${repoName}:`,
+      error,
+    )
+    return null
+  }
 }

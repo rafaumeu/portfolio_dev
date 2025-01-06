@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { fetchImageList } from '../utils/githubImageFetcher'
 import useGitHubProjects from '../utils/useGitHubProjects'
+import ProjectSkeleton from './ProjectSkeleton'
 
 interface Project {
   id: number
@@ -10,43 +11,41 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-  const { projects, loading, error } = useGitHubProjects('rafaumeu') // Using 'rafaumeu' as the username
-  const [images, setImages] = useState<Record<string, string>>({}) // Define type for images
-  const [validProjects, setValidProjects] = useState<Project[]>([]) // Array para armazenar projetos válidos
+  const { projects, loading } = useGitHubProjects('rafaumeu')
+  const [images, setImages] = useState<Record<string, string>>({})
+  const [validProjects, setValidProjects] = useState<Project[]>([])
 
   useEffect(() => {
     const loadImages = async () => {
-      const tempValidProjects: Project[] = [] // Array temporário para armazenar projetos válidos
+      const tempValidProjects: Project[] = []
 
       for (const project of projects) {
-        const repoName = project.name // Extract the repository name
-        const imageList = await fetchImageList(repoName) // Pass repoName to fetchImageList
-        console.log(`Repositório: ${repoName}`)
-        console.log(`Lista de imagens retornadas:`, imageList)
+        const repoName = project.name
+        const imageList = await fetchImageList(repoName)
         const imageMap: Record<string, string> = {}
 
         imageList.forEach((url) => {
-          const fileName = url.split('/').pop() // Extract file name from URL
+          const fileName = url.split('/').pop()
           if (fileName) {
-            imageMap[fileName] = url // Map file name to URL
+            imageMap[fileName] = url
           }
         })
 
         if (Object.keys(imageMap).length > 0) {
-          tempValidProjects.push(project) // Adiciona o projeto se houver imagens
+          tempValidProjects.push(project)
         }
 
-        setImages((prevImages) => ({ ...prevImages, ...imageMap })) // Atualiza o estado das imagens
+        setImages((prevImages) => ({ ...prevImages, ...imageMap }))
       }
 
-      setValidProjects(tempValidProjects) // Atualiza o estado com projetos válidos
+      setValidProjects(tempValidProjects)
     }
 
-    loadImages()
-  }, [projects]) // Add projects as a dependency
+    if (projects.length > 0) {
+      loadImages()
+    }
+  }, [projects])
 
-  if (loading) return <div>Loading projects...</div>
-  if (error) return <div>Error: {error}</div>
   const limitDescription = (description: string, limit: number) => {
     return description.length > limit
       ? description.substring(0, limit) + '...'
@@ -62,30 +61,34 @@ const Projects: React.FC = () => {
         </header>
       </div>
       <div id="projects" className="grid-container">
-        {validProjects.map((project: Project) => (
-          <div className="grid-item" key={project.id}>
-            <a
-              href={project.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={
-                  images[`${project.id}.png`] || 'https://placehold.co/306x156'
-                }
-                alt={project.name}
-              />
-
-              <h3>{project.name}</h3>
-              <p>
-                {limitDescription(
-                  project.description || 'Descrição não disponível',
-                  45,
-                )}
-              </p>
-            </a>
-          </div>
-        ))}
+        {loading
+          ? Array.from({ length: 6 }).map((_, index) => (
+              <ProjectSkeleton key={index} />
+            ))
+          : validProjects.map((project: Project) => (
+              <div className="grid-item" key={project.id}>
+                <a
+                  href={project.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={
+                      images[`${project.id}.png`] ||
+                      'https://placehold.co/306x156'
+                    }
+                    alt={project.name}
+                  />
+                  <h3>{project.name}</h3>
+                  <p>
+                    {limitDescription(
+                      project.description || 'Descrição não disponível',
+                      45,
+                    )}
+                  </p>
+                </a>
+              </div>
+            ))}
       </div>
     </section>
   )
