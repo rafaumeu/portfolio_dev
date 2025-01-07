@@ -75,7 +75,6 @@ const Projects: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {console.log(`${project.name} - ${project.id}`)}
                   <img
                     src={
                       images[`${project.id}.png`] ||

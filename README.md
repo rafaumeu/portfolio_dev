@@ -3,36 +3,21 @@
 <p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%9B%8D-Rafael%20Zendron%27s%20Portfolio-blueviolet?style=for-the-badge" alt="Rafael Zendron's Portfolio">
   <a href="https://portfoliordz.netlify.app/">
-  <img src="https://api.netlify.com/api/v1/badges/7974b103-1d88-4c27-be47-c9099d353500/deploy-status">
+    <img src="https://api.netlify.com/api/v1/badges/7974b103-1d88-4c27-be47-c9099d353500/deploy-status" alt="Netlify Status">
   </a>
-  
 </p>
 
-## 🛍️ Overview
+## 🚀 Overview
 
-Rafael Zendron's Portfolio is a showcase of my work as a Fullstack developer, highlighting my skills in modern web development practices and technologies.
+Welcome to my portfolio! As a passionate Fullstack Developer, this showcase demonstrates my expertise in modern web development, featuring a carefully crafted collection of projects built with cutting-edge technologies and best practices. Experience a blend of performance optimization, responsive design, and seamless user experience.
 
----
+## 🎯 Key Features
 
-## 🎯 Project Motivation
-
-This portfolio is designed to:
-
-- 🧠 Showcase my projects and skills in web development
-- 💡 Implement best practices in React and TypeScript
-- 🔧 Provide a responsive and user-friendly interface
-- 📊 Explore modern tools and frameworks
-
----
-
-## 🌟 Current Features
-
-- 🎨 Responsive design with modern UI components
-- 🖼️ Dynamic project showcase with images and links
-- 💻 Built with React, TypeScript, and Vite
-- 📱 Mobile-friendly layout
-
----
+- **💻 Dynamic Project Showcase**: Real-time integration with GitHub API to display live project data and images
+- **🎨 Modern UI/UX**: Sleek, responsive design with smooth animations and transitions
+- **⚡ Performance-First**: Optimized loading times with skeleton loading states and Vite build system
+- **📱 Cross-Device Compatible**: Seamless experience across desktop, tablet, and mobile devices
+- **🔒 Type-Safe Development**: Robust TypeScript integration for enhanced code reliability
 
 ## 🛠️ Technology Stack
 
@@ -41,64 +26,74 @@ This portfolio is designed to:
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" alt="Yarn">
+  <img src="https://img.shields.io/badge/GitHub_API-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify">
 </p>
 
----
-
-## 📂 Project Structure
+## 📂 Project Architecture
 
 ```plaintext
 portfolio/
 ├── src/
-│   ├── assets/            # Static assets (images, logos)
-│   ├── components/        # Reusable UI components
-│   ├── pages/             # Main pages of the portfolio
-│   ├── styles/            # Global styles and themes
-│   └── utils/            # Helper functions
-├── public/                # Public assets
-└── package.json          # Project metadata and dependencies
+│   ├── assets/          # Static assets and media resources
+│   ├── components/      # Reusable UI components
+│   │   ├── layout/     # Layout components (Header, Footer, etc.)
+│   │   ├── shared/     # Shared components (Button, Card, etc.)
+│   │   └── features/   # Feature-specific components
+│   ├── pages/          # Page components and routes
+│   ├── styles/         # Global styles, themes, and variables
+│   ├── hooks/          # Custom React hooks
+│   ├── services/       # API and external service integrations
+│   └── utils/          # Helper functions and utilities
+├── public/             # Static files served by the web server
+├── tests/              # Test suites and fixtures
+└── package.json        # Project configuration and dependencies
 ```
 
----
+## 🎯 Development Roadmap
 
-## 📈 Development Progress
+### ✅ Completed
 
-### Completed Features
+- Full TypeScript integration with strict type checking
+- Responsive design system with modern CSS practices
+- GitHub API integration for dynamic project display
+- CI/CD pipeline with GitHub Actions and Netlify
+- Performance optimization with lazy loading and code splitting
 
-- [x] Project Setup and Configuration
-- [x] Responsive Design Implementation
-- [x] Project Showcase with links and images
+### 🔜 Coming Soon
 
-### Next Steps
+- Advanced animation system for enhanced UX
+- Blog section with MDX support
+- Dark mode toggle with theme persistence
+- Internationalization (i18n) support
+- Improved accessibility features (a11y)
+- Analytics dashboard for visitor insights
 
-- [ ] Add more projects to showcase
-- [ ] Improve SEO and performance
-- [ ] Implement user authentication
+## 🤝 Contributing
 
----
+Contributions are always welcome! To contribute:
 
-## 👥 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Contributions are welcome! If you'd like to improve this portfolio, feel free to fork the repository and submit a pull request.
+## 📄 License
 
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center">
   <img src="https://github.com/rafaumeu.png" width="100" height="100" style="border-radius: 50%;">
 </p>
-<h3 align="center">🚀 Built with ❤️ by Rafael Zendron</h3>
+<h3 align="center">Built with 💜 by Rafael Zendron</h3>
 <p align="center">
   <a href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://github.com/rafaumeu/portfolio">
+  <a href="https://github.com/rafaumeu">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
 </p>
