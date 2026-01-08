@@ -1,14 +1,16 @@
 #contact {
   background: url(../assets/images/Background_Contacts.png) no-repeat;
   background-size: cover;
-  width: 100%; /* Altera a largura para 100% para telas menores */
-  max-width: 1366px; /* Mantém o limite de largura máxima */
+  width: 100%;
+  /* Altera a largura para 100% para telas menores */
+  max-width: 1366px;
+  /* Mantém o limite de largura máxima */
   margin: 0 auto;
   padding-top: 128px;
   padding-bottom: 48px;
 }
 
-#contact > div > header {
+#contact>div>header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,38 +18,41 @@
   gap: 8px;
 }
 
-#contact > div > header > span {
+#contact>div>header>span {
   color: var(--Main-Purple, #BB72E9);
   text-align: center;
   font-family: Inconsolata;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 24px */
+  line-height: 120%;
+  /* 24px */
 }
 
-#contact > div > header > h2 {
+#contact>div>header>h2 {
   color: var(--Base-gray-600, #E2E4E9);
   text-align: center;
   font-family: Asap;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
+  /* 28.8px */
 }
 
-#contact > div > header > p {
+#contact>div>header>p {
   color: var(--Base-gray-500, #C0C4CE);
   text-align: center;
   font-family: "Maven Pro";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
   margin-bottom: 48px;
 }
 
-#contact > div > div {
+#contact .social-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -55,37 +60,51 @@
   margin-bottom: 200px;
 }
 
-#contact > div > div > a {
+#contact .social-links a {
   display: flex;
-  width: 100%; /* Ocupa toda a largura */
-  max-width: 400px; /* Define o limite máximo */
-  padding: 20px;
-  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  /* 16px */
+  justify-content: space-between;
   align-items: center;
   gap: 12px;
   border-radius: 8px;
   background: var(--gray-300, #292C34);
+  border: 1.5px solid transparent;
+  /* Ensure border exists for transition */
+  transition: all 0.3s ease;
 }
 
-#contact > div > div > a:hover {
-  border: 1.5px solid var(--blue);
+#contact .social-links a:hover {
+  border-color: var(--hover-color);
 }
 
-#contact > div:nth-child(2) > div > a > img {
-  width: 28px;
-  height: 28px;
+#contact .social-links img,
+#contact .social-links i {
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease;
+  color: var(--gray-400);
+  /* Darker gray for icons by default */
 }
-#contact > div:nth-child(2) > div > a > img:hover {
-  filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
+
+#contact .social-links a:hover i {
+  color: var(--hover-color);
 }
-#contact > div:nth-child(2) > div > a > span {
-  flex: 1 0 0;
-  color: var(--gray-500);
-  font-family: "Maven Pro";
-  font-size: 16px;
-  font-style: normal;
+
+#contact .social-links a span {
+  flex: 1;
+  color: var(--gray-400) !important;
+  /* Force text color to stay gray (darker) */
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 
 @media (min-width: 48rem) and (max-width: 64rem) {
@@ -94,29 +113,31 @@
     padding-bottom: 24px;
   }
 
-  #contact > div > header > span {
-    font-size: 18px; /* Reduz o tamanho da fonte */
+  #contact>div>header>span {
+    font-size: 18px;
   }
 
-  #contact > div > header > h2 {
-    font-size: 20px; /* Ajusta o título para telas menores */
+  #contact>div>header>h2 {
+    font-size: 20px;
   }
 
-  #contact > div > header > p {
-    font-size: 14px; /* Ajusta o tamanho do texto */
+  #contact>div>header>p {
+    font-size: 14px;
   }
 
-  #contact > div > div > a {
+  #contact .social-links a {
     padding: 16px;
-    max-width: 100%; /* Remove a largura fixa para adaptabilidade */
+    max-width: 100%;
   }
 
-  #contact > div:nth-child(2) > div > a > img {
+  #contact .social-links img,
+  #contact .social-links i {
     width: 24px;
     height: 24px;
+    font-size: 24px;
   }
 
-  #contact > div:nth-child(2) > div > a > span {
+  #contact .social-links a span {
     font-size: 14px;
   }
 }
@@ -127,28 +148,28 @@
     padding-bottom: 16px;
   }
 
-  #contact > div > header > span {
+  #contact>div>header>span {
     font-size: 16px;
   }
 
-  #contact > div > header > h2 {
+  #contact>div>header>h2 {
     font-size: 18px;
   }
 
-  #contact > div > header > p {
+  #contact>div>header>p {
     font-size: 12px;
   }
 
-  #contact > div > div > a {
+  #contact>div>div>a {
     padding: 12px;
   }
 
-  #contact > div:nth-child(2) > div > a > img {
+  #contact>div:nth-child(2)>div>a>img {
     width: 20px;
     height: 20px;
   }
 
-  #contact > div:nth-child(2) > div > a > span {
+  #contact>div:nth-child(2)>div>a>span {
     font-size: 12px;
   }
 }

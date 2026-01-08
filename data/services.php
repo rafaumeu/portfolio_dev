@@ -1,6 +1,24 @@
 <?php
 $services = [
-  ['title' => 'Websites e Aplicativos', 'icon' => 'assets/icons/devices.svg', 'description' => 'Desenvolvimento de interfaces'],
-  ['title' => 'API e banco de dados', 'icon' => 'assets/icons/hardDrives.svg', 'description' => 'Criação de serviços do sistema'],
-  ['title' => 'DevOps', 'icon' => 'assets/icons/infinity.svg', 'description' => 'Gestão e infraestrutura da aplicação'],
+  [
+    'title' => 'Websites e Aplicativos',
+    'description' => 'Desenvolvimento de interfaces',
+    'icon' => 'ph ph-devices',
+    'color' => 'text-brand-purple',
+    'hover_color' => 'var(--purple)'
+  ],
+  [
+    'title' => 'API e banco de dados',
+    'description' => 'Criação de serviços do sistema',
+    'icon' => 'ph ph-hard-drives',
+    'color' => 'text-brand-yellow',
+    'hover_color' => 'var(--yellow)'
+  ],
+  [
+    'title' => 'DevOps',
+    'description' => 'Gestão e infraestrutura da aplicação',
+    'icon' => 'ph ph-infinity',
+    'color' => 'text-brand-green',
+    'hover_color' => 'var(--green)'
+  ],
 ];
