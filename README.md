@@ -1,72 +1,61 @@
-
-# Rafael Zendron's Portfolio
+# Portfolio - Rafael Zendron
 
 ![Portfolio Banner](https://github.com/user-attachments/assets/ff16cb08-7290-4089-b8a0-1ead55d40e5e)
 
-## About Me
+Welcome to my portfolio! This project showcases my skills, projects, and professional trajectory as a Fullstack Developer.
 
-Hello! I'm Rafael Zendron, a Fullstack developer passionate about technology and innovation. With a keen eye for user needs, I transform ideas into functional and impactful applications. My journey in web development has allowed me to acquire skills in various technologies, always seeking creative solutions to complex challenges.
+## 🚀 Technologies
 
-## Technologies
+This project was built using a modern and modular approach:
 
-- **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express
-- **Database:** MongoDB, SQL
-- **DevOps:** Docker, CI/CD
+<div style="display: inline_block"><br>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</div>
 
-## My Works
+## 📂 Project Structure
 
-Here are some of the featured projects I've developed:
+The project is organized to be maintainable and scalable:
 
-### [Travelgram](https://rafaumeu.github.io/projeto_travelgram/)
+- `components/`: Reusable UI parts (Header, ProjectCards, Services, Contact...).
+- `data/`: PHP arrays containing content (Projects, Services, Socials...).
+- `styles/`: CSS files for specific layouts (Intro, Services, Contact).
+- `index.php`: Main entry point assembling the page.
 
-A social network where people share their travel experiences and photos.
+## 🛠️ How to Run
 
-![Travelgram](assets/images/Thumbnail_Project-01.png)
+To run this project locally, you need **PHP** installed on your machine.
 
-### [Tech News](https://rafaumeu.github.io/fullstack_portal_de_noticias/)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rafaumeu/portfolio_ui_php.git
+   cd portfolio_ui_php
+   ```
 
-Homepage of a technology news portal with frequently updated articles.
+2. **Start the local server:**
+   You can use PHP's built-in server. Run the following command in the project root:
+   ```bash
+   php -S localhost:8000
+   ```
 
-![Tech News](assets/images/Thumbnail_Project-02.png)
+3. **Access the portfolio:**
+   Open your browser and navigate to:
+   [http://localhost:8000](http://localhost:8000)
 
-### [Recipe Page](https://rafaumeu.github.io/projeto/)
+## 👨‍💻 Author
 
-An interactive page that provides a step-by-step recipe for delicious cupcakes.
+**Rafael Zendron**
+Fullstack Developer passionate about transforming needs into functional applications.
 
-![Recipe Page](assets/images/Thumbnail_Project-03.png)
+<div align="center">
+Developed with 💓 during Rocketseat's course
+</div>
+<div align="center">
+<img src="https://github.com/rafaumeu.png" width="100" height="100" style="border-radius: 50%;">
 
-### [Zingen](https://rafaumeu.github.io/zingen/)
-
-A responsive landing page for a task management app.
-
-![Zingen](assets/images/Thumbnail_Project-04.png)
-
-### [Refund](https://rafaumeu.github.io/refund/)
-
-A system that simplifies refund requests and tracking.
-
-![Refund](assets/images/Thumbnail_Project-05.png)
-
-### [Tourism Page](http://rafaumeu.github.io/local_turistico/)
-
-A page with essential information for tourists who want to explore new destinations.
-
-![Tourism Page](assets/images/Thumbnail_Project-06.png)
-
-## My Services
-
-I'm here to help your business grow with the following services:
-
-- **Website and Application Development:** Creating responsive and intuitive interfaces.
-- **API and Database:** Developing services and managing data.
-- **DevOps:** Application management and infrastructure to ensure performance and scalability.
-
-## Contact
-
-Liked my work? Let's talk! You can find me on the following platforms:
-
-- [LinkedIn](https://www.linkedin.com/in/rafael-dias-zendron-528290132/)
-- [Instagram](https://www.instagram.com/rafaeldiaszendron/)
-- [GitHub](https://github.com/rafaumeu)
-- [Email](mailto:rafael.zendron22@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafael-dias-zendron-528290132/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafaumeu)
+</div>
