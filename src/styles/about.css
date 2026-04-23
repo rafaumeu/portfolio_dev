@@ -1,0 +1,49 @@
+.about-section {
+  padding: 80px 120px;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+}
+
+.about-bio {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.about-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 64px 24px;
+  }
+}
