@@ -1,100 +1,96 @@
-import React, { useEffect, useState } from 'react'
-import { fetchImageList } from '../utils/githubImageFetcher'
-import useGitHubProjects from '../utils/useGitHubProjects'
-import ProjectSkeleton from './ProjectSkeleton'
+import { type ReactNode } from 'react'
+import '../styles/projects.css'
 
 interface Project {
-  id: number
+  icon: string
   name: string
-  html_url: string
   description: string
+  tags: string[]
+  link: string
 }
 
-const Projects: React.FC = () => {
-  const [imageLoading, setImageLoading] = useState(true) // Inicializa o estado de loading
-  const { projects, loading } = useGitHubProjects('rafaumeu')
-  const [images, setImages] = useState<Record<string, string>>({})
-  const [validProjects, setValidProjects] = useState<Project[]>([])
-
-  useEffect(() => {
-    const loadImages = async () => {
-      setImageLoading(true) // Define loading como true antes de começar a buscar as imagens
-      const tempValidProjects: Project[] = []
-
-      for (const project of projects) {
-        const repoName = project.name
-        const imageList = await fetchImageList(repoName)
-        const imageMap: Record<string, string> = {}
-
-        imageList.forEach((url) => {
-          const fileName = url.split('/').pop()
-          if (fileName) {
-            imageMap[fileName] = url
-          }
-        })
-
-        if (Object.keys(imageMap).length > 0) {
-          tempValidProjects.push(project) // Adiciona apenas projetos com imagens válidas
-        }
-
-        setImages((prevImages) => ({ ...prevImages, ...imageMap }))
-      }
-
-      setValidProjects(tempValidProjects)
-      setImageLoading(false) // Define loading como false após todas as imagens serem buscadas
-    }
-
-    if (projects.length > 0) {
-      loadImages()
-    }
-  }, [projects])
-
-  const limitDescription = (description: string, limit: number) => {
-    return description.length > limit
-      ? description.substring(0, limit) + '...'
-      : description
+const projects: Project[] = [
+  {
+    icon: '📞',
+    name: 'ignitecall-app',
+    description: 'Scheduling application with Google Calendar/Meet integration. Complete CI/CD pipeline with Docker and automated tests.',
+    tags: ['Next.js', 'TypeScript', 'NextAuth', 'Docker'],
+    link: 'https://github.com/rafaumeu/ignitecall-app'
+  },
+  {
+    icon: '🍕',
+    name: 'pizza-shop',
+    description: 'Restaurant management system with modern UI, authentication via magic link, and comprehensive E2E testing.',
+    tags: ['React', 'Tailwind', 'Vitest', 'Playwright'],
+    link: 'https://github.com/rafaumeu/pizza-shop'
+  },
+  {
+    icon: '🚀',
+    name: 'pocket-api',
+    description: 'RESTful API with Drizzle ORM, PostgreSQL, and automated Swagger documentation. Clean and performant backend.',
+    tags: ['Fastify', 'Drizzle', 'PostgreSQL', 'Swagger'],
+    link: 'https://github.com/rafaumeu/pocket-api'
+  },
+  {
+    icon: '📄',
+    name: 'cv',
+    description: 'Creative developer CV with i18n support (PT-BR/EN), dynamic profiles, and print-optimized layout.',
+    tags: ['React', 'TypeScript', 'i18n', 'Vercel'],
+    link: 'https://github.com/rafaumeu/cv'
+  },
+  {
+    icon: '🃏',
+    name: 'super-trunfo',
+    description: 'Classic card game implemented in C with 3 difficulty levels. Academic project demonstrating algorithmic thinking.',
+    tags: ['C', 'Algorithms', 'Game Dev'],
+    link: 'https://github.com/rafaumeu/super-trunfo'
+  },
+  {
+    icon: '💬',
+    name: 'forum',
+    description: 'Discussion platform built with Domain-Driven Design and Clean Architecture. Showcases advanced backend patterns.',
+    tags: ['DDD', 'Clean Arch', 'TypeScript', 'Express'],
+    link: 'https://github.com/rafaumeu/forum'
   }
+]
 
+function ProjectCard({ project }: { project: Project }): ReactNode {
   return (
-    <section id="jobs">
-      <div className="container">
-        <header>
-          <span className="header-span">Meus trabalhos</span>
-          <h2 className="header-title">Veja os projetos em destaque</h2>
-        </header>
+    <article className="project-card">
+      <span className="project-icon">{project.icon}</span>
+      <h3 className="project-name">{project.name}</h3>
+      <p className="project-description">{project.description}</p>
+      <div className="project-tags">
+        {project.tags.map((tag) => (
+          <span key={tag} className="project-tag">{tag}</span>
+        ))}
       </div>
-      <div id="projects" className="grid-container">
-        {loading || imageLoading // Mostra o skeleton se qualquer estado de loading for verdadeiro
-          ? Array.from({ length: 6 }).map((_, index) => (
-              <ProjectSkeleton key={index} />
-            ))
-          : validProjects.map((project: Project) => (
-              <div className="grid-item" key={project.id}>
-                <a
-                  href={project.html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={
-                      images[`${project.id}.png`] ||
-                      'https://placehold.co/306x156'
-                    }
-                    alt={project.name}
-                  />
-                  <h3>{project.name}</h3>
-                  <p>
-                    {limitDescription(
-                      project.description || 'Descrição não disponível',
-                      45,
-                    )}
-                  </p>
-                </a>
-              </div>
-            ))}
+      <div className="project-link-row">
+        <a
+          className="project-link"
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project →
+        </a>
+      </div>
+    </article>
+  )
+}
+
+export default function Projects(): ReactNode {
+  return (
+    <section id="projects" className="projects-section">
+      <h2 className="projects-heading">Featured Projects</h2>
+      <p className="projects-subtitle">
+        A selection of projects showcasing my expertise in full-stack development
+      </p>
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
       </div>
     </section>
   )
 }
-
-export default Projects
