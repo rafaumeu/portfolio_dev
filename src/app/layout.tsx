@@ -31,14 +31,18 @@ export const metadata: Metadata = {
     'Rafael Dias Zendron',
   ],
   authors: [{ name: 'Rafael Dias Zendron' }],
+  alternates: {
+    canonical: 'https://portfoliodev-blush-pi.vercel.app',
+  },
   openGraph: {
     title: 'Rafael Dias Zendron — Software Engineer',
     description:
       'Software Engineer specializing in Clean Architecture, DDD, and modern web technologies.',
-    url: 'https://rafaeldiaszendron.dev',
+    url: 'https://portfoliodev-blush-pi.vercel.app',
     siteName: 'Rafael Dias Zendron Portfolio',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Rafael Dias Zendron Portfolio' }],
   },
   twitter: {
     card: 'summary_large_image',
