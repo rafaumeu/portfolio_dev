@@ -1,154 +1,59 @@
-#contact {
-  background: url(../assets/images/Background_Contacts.png) no-repeat;
-  background-size: cover;
-  width: 100%; /* Altera a largura para 100% para telas menores */
-  max-width: 1366px; /* Mantém o limite de largura máxima */
-  margin: 0 auto;
-  padding-top: 128px;
-  padding-bottom: 48px;
-}
-
-#contact > div > header {
+.contact {
+  background-color: var(--color-bg-dark);
+  padding: 80px 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  text-align: center;
 }
 
-#contact > div > header > span {
-  color: var(--Main-Purple, #BB72E9);
-  text-align: center;
-  font-family: Inconsolata;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 24px */
-}
-
-#contact > div > header > h2 {
-  color: var(--Base-gray-600, #E2E4E9);
-  text-align: center;
-  font-family: Asap;
-  font-size: 24px;
-  font-style: normal;
+.contact__heading {
+  font-family: 'Geist', sans-serif;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 120%; /* 28.8px */
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
 }
 
-#contact > div > header > p {
-  color: var(--Base-gray-500, #C0C4CE);
-  text-align: center;
-  font-family: "Maven Pro";
+.contact__subtitle {
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 22.4px */
-  margin-bottom: 48px;
+  color: var(--color-text-muted);
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
-#contact > div > div {
+.contact__socials {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 200px;
-}
-
-#contact > div > div > a {
-  display: flex;
-  width: 100%; /* Ocupa toda a largura */
-  max-width: 400px; /* Define o limite máximo */
-  padding: 20px;
+  gap: 24px;
   justify-content: center;
+}
+
+.contact__social-link {
+  width: 48px;
+  height: 48px;
+  display: flex;
   align-items: center;
-  gap: 12px;
-  border-radius: 8px;
-  background: var(--gray-300, #292C34);
+  justify-content: center;
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 12px;
+  color: var(--color-text-muted);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
-#contact > div > div > a:hover {
-  border: 1.5px solid var(--blue);
+.contact__social-link:hover {
+  border-color: var(--color-accent-purple);
+  transform: translateY(-2px);
+  color: var(--color-text-primary);
 }
 
-#contact > div:nth-child(2) > div > a > img {
-  width: 28px;
-  height: 28px;
-}
-#contact > div:nth-child(2) > div > a > img:hover {
-  filter: invert(53%) sepia(86%) saturate(743%) hue-rotate(167deg) brightness(97%) contrast(94%);
-}
-#contact > div:nth-child(2) > div > a > span {
-  flex: 1 0 0;
-  color: var(--gray-500);
-  font-family: "Maven Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 22.4px */
-}
-
-@media (min-width: 48rem) and (max-width: 64rem) {
-  #contact {
-    padding-top: 64px;
-    padding-bottom: 24px;
-  }
-
-  #contact > div > header > span {
-    font-size: 18px; /* Reduz o tamanho da fonte */
-  }
-
-  #contact > div > header > h2 {
-    font-size: 20px; /* Ajusta o título para telas menores */
-  }
-
-  #contact > div > header > p {
-    font-size: 14px; /* Ajusta o tamanho do texto */
-  }
-
-  #contact > div > div > a {
-    padding: 16px;
-    max-width: 100%; /* Remove a largura fixa para adaptabilidade */
-  }
-
-  #contact > div:nth-child(2) > div > a > img {
-    width: 24px;
-    height: 24px;
-  }
-
-  #contact > div:nth-child(2) > div > a > span {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact {
-    padding-top: 48px;
-    padding-bottom: 16px;
-  }
-
-  #contact > div > header > span {
-    font-size: 16px;
-  }
-
-  #contact > div > header > h2 {
-    font-size: 18px;
-  }
-
-  #contact > div > header > p {
-    font-size: 12px;
-  }
-
-  #contact > div > div > a {
-    padding: 12px;
-  }
-
-  #contact > div:nth-child(2) > div > a > img {
-    width: 20px;
-    height: 20px;
-  }
-
-  #contact > div:nth-child(2) > div > a > span {
-    font-size: 12px;
-  }
+.contact__divider {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background-color: var(--color-border-subtle);
+  margin-top: 80px;
 }
