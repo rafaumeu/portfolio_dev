@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "toggle": "Abrir navegação",
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "Disponível para Trabalho",
+    "headline": "Engenheiro de Software especializado em Clean Architecture & DDD",
+    "subtitle": "Construindo aplicações escaláveis com tecnologias modernas. Apaixonado por Domain-Driven Design, testes e clean code.",
+    "ctaProjects": "Ver Projetos",
+    "ctaContact": "Contato"
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Uma seleção dos meus trabalhos recentes",
+    "liveDemo": "Demo ao Vivo",
+    "source": "Código",
+    "items": {
+      "tesourosPortal": {
+        "name": "Tesouros Portal",
+        "description": "Plataforma de gestão de clube com PWA offline-first, gamificação e conformidade LGPD"
+      },
+      "ignitecall": {
+        "name": "IgniteCall",
+        "description": "App de agendamento com Google Calendar OAuth, Design System e CI/CD"
+      },
+      "devStore": {
+        "name": "DevStore",
+        "description": "E-commerce SSR com pagamentos Stripe e design responsivo"
+      },
+      "pizzaShop": {
+        "name": "Pizza Shop",
+        "description": "App de delivery com testes E2E e autenticação via magic link"
+      },
+      "forumApi": {
+        "name": "Forum API",
+        "description": "API com Domain-Driven Design e Clean Architecture"
+      },
+      "pocketApi": {
+        "name": "Pocket API",
+        "description": "API REST com Drizzle ORM, documentação Swagger e testes automatizados"
+      },
+      "cv": {
+        "name": "CV",
+        "description": "Currículo dinâmico com i18n, otimizado para impressão com múltiplos perfis"
+      },
+      "superTrunfo": {
+        "name": "Super Trunfo",
+        "description": "Jogo de cartas com 3 níveis de dificuldade e gerenciamento de estado"
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificações",
+    "subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
+    "countLabel": "Certificações"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "bio": "Sou um Engenheiro de Software apaixonado por construir aplicações limpas e manuteníveis. Com expertise em Domain-Driven Design e Clean Architecture, foco em criar soluções elegantes e escaláveis. Atualmente buscando oportunidades para contribuir em projetos de impacto.",
+    "techStack": "Tecnologias"
+  },
+  "contact": {
+    "title": "Vamos Trabalhar Juntos",
+    "subtitle": "Estou atualmente aberto a novas oportunidades. Seja para uma pergunta ou só um oi, fique à vontade para entrar em contato!",
+    "findMeOn": "Me encontre em",
+    "successMessage": "Obrigado pelo contato! Responderei em breve.",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "message": "Mensagem",
+    "messagePlaceholder": "No que está pensando?",
+    "send": "Enviar Mensagem"
+  },
+  "footer": {
+    "copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
+    "builtWith": "Feito com Next.js • Aberto a Oportunidades"
+  },
+  "theme": {
+    "switchToLight": "Mudar para modo claro",
+    "switchToDark": "Mudar para modo escuro"
+  },
+  "language": {
+    "pt": "🇧🇷 PT",
+    "en": "🇺🇸 EN"
+  }
+}

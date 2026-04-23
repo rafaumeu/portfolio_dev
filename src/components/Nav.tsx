@@ -1,19 +1,22 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from '@/i18n';
+import LanguageToggle from './LanguageToggle';
 import '@/styles/nav.css';
 
-const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+const NAV_KEYS = [
+  { labelKey: 'nav.home', href: '#home' },
+  { labelKey: 'nav.projects', href: '#projects' },
+  { labelKey: 'nav.about', href: '#about' },
+  { labelKey: 'nav.contact', href: '#contact' },
 ];
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const menuId = 'mobile-menu';
+  const { t } = useTranslation();
 
   const close = useCallback(() => setIsOpen(false), []);
 
@@ -58,34 +61,37 @@ export default function Nav() {
   }, [isOpen, close]);
 
   return (
-    <nav className="nav" role="banner" ref={navRef}>
+    <nav className="nav" ref={navRef}>
       <div className="nav-inner">
         <span className="nav-logo">Rafael Dias Zendron</span>
-        <button
-          className="nav-hamburger"
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-expanded={isOpen}
-          aria-controls={menuId}
-          aria-label="Toggle navigation"
-          type="button"
-        >
-          <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
-          <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
-          <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
-        </button>
+        <div className="nav-actions">
+          <LanguageToggle />
+          <button
+            className="nav-hamburger"
+            onClick={() => setIsOpen((prev) => !prev)}
+            aria-expanded={isOpen}
+            aria-controls={menuId}
+            aria-label={t('nav.toggle')}
+            type="button"
+          >
+            <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
+            <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
+            <span className={`nav-hamburger-line ${isOpen ? 'open' : ''}`} />
+          </button>
+        </div>
         <ul
           className={`nav-links ${isOpen ? 'nav-links--open' : ''}`}
           id={menuId}
           role="list"
         >
-          {NAV_LINKS.map((link) => (
+          {NAV_KEYS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 aria-current={link.href === '#home' ? 'page' : undefined}
                 onClick={close}
               >
-                {link.label}
+                {t(link.labelKey)}
               </a>
             </li>
           ))}
