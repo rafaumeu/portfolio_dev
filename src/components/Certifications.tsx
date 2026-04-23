@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslation } from '@/i18n';
 import '@/styles/certifications.css';
 
 const CERTIFICATIONS = [
@@ -38,15 +41,17 @@ const CERTIFICATIONS = [
 ];
 
 export default function Certifications() {
+  const { t } = useTranslation();
+
   return (
     <section className="certifications-section" id="certifications">
       <div className="certifications-header">
-        <h2>Certifications</h2>
+        <h2>{t('certifications.title')}</h2>
         <p className="certifications-subtitle">
-          35 Rocketseat certifications in modern web development
+          {t('certifications.subtitle', { count: CERTIFICATIONS.length })}
         </p>
         <span className="certifications-count">
-          {CERTIFICATIONS.length} Certifications
+          {CERTIFICATIONS.length} {t('certifications.countLabel')}
         </span>
       </div>
       <div className="certifications-grid">

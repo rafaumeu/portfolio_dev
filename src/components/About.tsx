@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslation } from '@/i18n';
 import '@/styles/about.css';
 
 const SKILL_ROWS = [
@@ -7,17 +10,15 @@ const SKILL_ROWS = [
 ];
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-section" id="about">
-      <h2>About Me</h2>
+      <h2>{t('about.title')}</h2>
       <p className="about-bio">
-        I&apos;m a Software Engineer passionate about building clean,
-        maintainable applications. With expertise in Domain-Driven Design and
-        Clean Architecture, I focus on creating solutions that are both elegant
-        and scalable. Currently seeking opportunities to contribute to impactful
-        projects.
+        {t('about.bio')}
       </p>
-      <h3>Tech Stack</h3>
+      <h3>{t('about.techStack')}</h3>
       <div className="about-skills">
         {SKILL_ROWS.flat().map((skill) => (
           <span key={skill} className="skill-badge">
