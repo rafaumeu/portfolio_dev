@@ -1,17 +1,16 @@
-import Contact from './components/Contact'
-import Header from './components/Header'
-import Projects from './components/Projects'
-import Services from './components/Services'
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import './index.css';
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Header />
-      <Projects />
-      <Services />
-      <Contact />
-    </div>
-  )
+    <>
+      <Nav />
+      <Hero />
+      <section id="projects" />
+      <section id="about" />
+      <section id="contact" />
+      <footer />
+    </>
+  );
 }
-
-export default App

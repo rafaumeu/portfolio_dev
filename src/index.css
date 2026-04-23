@@ -1,5 +1,3 @@
-@import url('./styles/global.css');
-@import url('./styles/intro.css');
-@import url('./styles/jobs.css');
-@import url('./styles/services.css');
-@import url('./styles/contact.css');
+@import './styles/global.css';
+@import './styles/nav.css';
+@import './styles/hero.css';
