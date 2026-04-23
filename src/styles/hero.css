@@ -73,6 +73,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease;
   font-family: var(--font-inter), 'Inter', sans-serif;
+  min-height: 44px;
 }
 
 .cta-primary:hover {
@@ -90,6 +91,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease;
   font-family: var(--font-inter), 'Inter', sans-serif;
+  min-height: 44px;
 }
 
 .cta-secondary:hover {

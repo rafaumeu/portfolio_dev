@@ -71,8 +71,8 @@ export default function Contact() {
 
         <div className="contact-form-col">
           {submitted ? (
-            <div className="contact-success">
-              <span className="contact-success-icon">✓</span>
+            <div className="contact-success" role="status" aria-live="polite">
+              <span className="contact-success-icon" aria-hidden="true">✓</span>
               <p>{t('contact.successMessage')}</p>
             </div>
           ) : (
