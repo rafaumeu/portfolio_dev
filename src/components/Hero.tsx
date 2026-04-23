@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       {/* TODO: Add photo */}
-      <div className="hero-photo" aria-label="Profile photo placeholder" />
+      <div className="hero-photo" role="img" aria-label="Profile photo placeholder" />
       <div className="hero-badge">
         <span className="hero-badge-dot" />
         Open to Work
