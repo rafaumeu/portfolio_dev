@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
     label: 'GitHub',
   },
   {
-    href: 'https://linkedin.com/in/rafaeldiaszendron',
+    href: 'https://www.linkedin.com/in/rafael-dias-zendron-528290132/',
     icon: FaLinkedin,
     label: 'LinkedIn',
   },
@@ -21,7 +21,7 @@ const SOCIAL_LINKS = [
     label: 'Twitter',
   },
   {
-    href: 'mailto:rafaelzendron@gmail.com',
+    href: 'mailto:rafael.zendron22@gmail.com',
     icon: HiEnvelope,
     label: 'Email',
   },
