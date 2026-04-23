@@ -1,65 +1,39 @@
-import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
-import arrowUp from '../assets/icons/arrow-up.svg'
-import '../styles/contact.css'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi2';
+import '../styles/contact.css';
 
-const Contact: React.FC = () => {
+const socialLinks = [
+  { href: 'https://github.com/rafaumeu', icon: FaGithub, label: 'GitHub' },
+  { href: 'https://linkedin.com/in/rafaeldiaszendron', icon: FaLinkedin, label: 'LinkedIn' },
+  { href: 'https://twitter.com/rafaumeu', icon: FaTwitter, label: 'Twitter' },
+  { href: 'mailto:rafaelzendron@gmail.com', icon: HiMail, label: 'Email' },
+];
+
+function Contact() {
   return (
-    <section id="contact">
-      <div className="container">
-        <header>
-          <span>Contato</span>
-          <h2>Gostou do meu trabalho?</h2>
-          <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
-        </header>
+    <section id="contact" className="contact">
+      <h2 className="contact__heading">Let's Work Together</h2>
+      <p className="contact__subtitle">
+        I'm currently open to new opportunities. Whether you have a question or
+        just want to say hi, feel free to reach out!
+      </p>
+      <div className="contact__socials">
+        {socialLinks.map(({ href, icon: Icon, label }) => (
+          <a
+            key={label}
+            href={href}
+            className="contact__social-link"
+            target={label === 'Email' ? undefined : '_blank'}
+            rel={label === 'Email' ? undefined : 'noopener noreferrer'}
+            aria-label={label}
+          >
+            <Icon size={20} />
+          </a>
+        ))}
       </div>
-      <div className="container">
-        <div className="social">
-          <a
-            href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button"
-          >
-            <FaLinkedin />
-            <span>Linkedin</span>
-            <img src={arrowUp} alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/rafaeldiaszendron/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button"
-          >
-            <FaInstagram />
-            <span>Instagram</span>
-            <img src={arrowUp} alt="" />
-          </a>
-          <a
-            href="https://github.com/rafaumeu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button"
-          >
-            <FaGithub />
-            <span>GitHub</span>
-            <img src={arrowUp} alt="" />
-          </a>
-          <a
-            href="mailto:rafael.zendron22@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-button"
-          >
-            <MdEmail />
-            <span>E-mail</span>
-            <img src={arrowUp} alt="" />
-          </a>
-        </div>
-      </div>
+      <div className="contact__divider" />
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
