@@ -1,0 +1,116 @@
+.hero {
+  padding: 100px 120px 80px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-purple);
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0D3320;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  color: #22C55E;
+  margin-bottom: 24px;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+.hero-badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22C55E;
+}
+
+.hero-headline {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  max-width: 800px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cta-primary {
+  background: var(--accent-purple);
+  color: var(--text-primary);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+.cta-primary:hover {
+  opacity: 0.9;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--accent-purple);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--accent-purple);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+.cta-secondary:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 64px 24px 48px 24px;
+  }
+
+  .hero-headline {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
