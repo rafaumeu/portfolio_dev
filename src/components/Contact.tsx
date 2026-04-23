@@ -1,12 +1,12 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi2';
+import { HiEnvelope } from 'react-icons/hi2';
 import '../styles/contact.css';
 
 const socialLinks = [
   { href: 'https://github.com/rafaumeu', icon: FaGithub, label: 'GitHub' },
   { href: 'https://linkedin.com/in/rafaeldiaszendron', icon: FaLinkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com/rafaumeu', icon: FaTwitter, label: 'Twitter' },
-  { href: 'mailto:rafaelzendron@gmail.com', icon: HiMail, label: 'Email' },
+  { href: 'mailto:rafaelzendron@gmail.com', icon: HiEnvelope, label: 'Email' },
 ];
 
 function Contact() {
