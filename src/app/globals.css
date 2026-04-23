@@ -1,0 +1,54 @@
+:root {
+  --bg-dark: #0A0A0A;
+  --text-primary: #FFFFFF;
+  --text-muted: #71717A;
+  --accent-purple: #A855F7;
+  --accent-cyan: #06B6D4;
+  --accent-pink: #EC4899;
+  --surface-card: #181818;
+  --card-bg: #111111;
+  --border-subtle: #1A1A1A;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-inner,
+  .hero,
+  .projects-section,
+  .about-section,
+  .contact-section,
+  .footer-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
