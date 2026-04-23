@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--color-bg-dark);
+  padding: 32px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__copyright {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.footer__built-with {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #52525B;
+  text-align: center;
+}
