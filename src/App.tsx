@@ -1,16 +1,20 @@
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import './index.css';
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import './index.css'
 
 export default function App() {
   return (
     <>
       <Nav />
       <Hero />
-      <section id="projects" />
-      <section id="about" />
-      <section id="contact" />
-      <footer />
+      <Projects />
+      <About />
+      <Contact />
+      <Footer />
     </>
-  );
+  )
 }
