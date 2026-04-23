@@ -3,33 +3,35 @@
 import { useState, FormEvent } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { HiEnvelope } from 'react-icons/hi2';
+import { useTranslation } from '@/i18n';
 import '@/styles/contact.css';
 
 const SOCIAL_LINKS = [
   {
     href: 'https://github.com/rafaumeu',
     icon: FaGithub,
-    label: 'GitHub',
+    labelKey: 'GitHub',
   },
   {
     href: 'https://www.linkedin.com/in/rafael-dias-zendron-528290132/',
     icon: FaLinkedin,
-    label: 'LinkedIn',
+    labelKey: 'LinkedIn',
   },
   {
     href: 'https://twitter.com/rafaumeu',
     icon: FaTwitter,
-    label: 'Twitter',
+    labelKey: 'Twitter',
   },
   {
     href: 'mailto:rafael.zendron22@gmail.com',
     icon: HiEnvelope,
-    label: 'Email',
+    labelKey: 'Email',
   },
 ];
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const { t } = useTranslation();
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -38,19 +40,18 @@ export default function Contact() {
 
   return (
     <section className="contact-section" id="contact">
-      <h2>Let&apos;s Work Together</h2>
+      <h2>{t('contact.title')}</h2>
       <p className="contact-subtitle">
-        I&apos;m currently open to new opportunities. Whether you have a
-        question or just want to say hi, feel free to reach out!
+        {t('contact.subtitle')}
       </p>
 
       <div className="contact-layout">
         <div className="contact-social-col">
-          <h3>Find me on</h3>
+          <h3>{t('contact.findMeOn')}</h3>
           <div className="contact-links">
             {SOCIAL_LINKS.map((link) => (
               <a
-                key={link.label}
+                key={link.labelKey}
                 href={link.href}
                 className="contact-link"
                 target={link.href.startsWith('mailto') ? undefined : '_blank'}
@@ -59,10 +60,10 @@ export default function Contact() {
                     ? undefined
                     : 'noopener noreferrer'
                 }
-                aria-label={link.label}
+                aria-label={link.labelKey}
               >
                 <link.icon />
-                <span>{link.label}</span>
+                <span>{link.labelKey}</span>
               </a>
             ))}
           </div>
@@ -72,42 +73,42 @@ export default function Contact() {
           {submitted ? (
             <div className="contact-success">
               <span className="contact-success-icon">✓</span>
-              <p>Thanks for reaching out! I&apos;ll get back to you soon.</p>
+              <p>{t('contact.successMessage')}</p>
             </div>
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{t('contact.name')}</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Your name"
+                  placeholder={t('contact.namePlaceholder')}
                   required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t('contact.email')}</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="your@email.com"
+                  placeholder={t('contact.emailPlaceholder')}
                   required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t('contact.message')}</label>
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="What's on your mind?"
+                  placeholder={t('contact.messagePlaceholder')}
                   rows={5}
                   required
                 />
               </div>
               <button type="submit" className="contact-submit">
-                Send Message
+                {t('contact.send')}
               </button>
             </form>
           )}

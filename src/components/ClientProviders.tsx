@@ -3,12 +3,15 @@
 import { ReactNode } from 'react';
 import ThemeProvider from './ThemeProvider';
 import ThemeScript from './ThemeScript';
+import { I18nProvider } from '@/i18n';
 
 export default function ClientProviders({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider>
-      <ThemeScript />
-      {children}
-    </ThemeProvider>
+    <I18nProvider>
+      <ThemeProvider>
+        <ThemeScript />
+        {children}
+      </ThemeProvider>
+    </I18nProvider>
   );
 }
