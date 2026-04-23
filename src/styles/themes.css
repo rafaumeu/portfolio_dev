@@ -3,7 +3,7 @@
 :root {
   --bg-dark: #0A0A0A;
   --text-primary: #FFFFFF;
-  --text-muted: #A1A1AA;
+  --text-muted: #9CA3AF;
   --accent-purple: #A855F7;
   --accent-cyan: #06B6D4;
   --accent-pink: #EC4899;
@@ -16,7 +16,7 @@
 [data-theme='light'] {
   --bg-dark: #FFFFFF;
   --text-primary: #0A0A0A;
-  --text-muted: #6B7280;
+  --text-muted: #52525B;
   --accent-purple: #A855F7;
   --accent-cyan: #06B6D4;
   --accent-pink: #EC4899;

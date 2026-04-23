@@ -21,12 +21,12 @@ export default function Hero() {
         {t('hero.subtitle')}
       </p>
       <div className="hero-ctas">
-        <a href="#projects" className="cta-primary">
+        <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="cta-primary" type="button">
           {t('hero.ctaProjects')}
-        </a>
-        <a href="#contact" className="cta-secondary">
+        </button>
+        <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="cta-secondary" type="button">
           {t('hero.ctaContact')}
-        </a>
+        </button>
       </div>
     </section>
   );
