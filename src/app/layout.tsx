@@ -59,11 +59,12 @@ const jsonLd = {
   name: 'Rafael Dias Zendron',
   url: 'https://rafaeldiaszendron.dev',
   jobTitle: 'Software Engineer',
+  email: 'rafael.zendron22@gmail.com',
   description:
     'Software Engineer specializing in Clean Architecture, DDD, and modern web technologies.',
   sameAs: [
     'https://github.com/rafaumeu',
-    'https://linkedin.com/in/rafaeldiaszendron',
+    'https://www.linkedin.com/in/rafael-dias-zendron-528290132/',
     'https://twitter.com/rafaumeu',
   ],
   knowsAbout: [
