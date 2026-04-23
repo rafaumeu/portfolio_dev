@@ -1,0 +1,103 @@
+.certifications-section {
+  padding: 80px 120px;
+}
+
+.certifications-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.certifications-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-family: var(--font-geist), 'Inter', sans-serif;
+}
+
+.certifications-subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.certifications-count {
+  display: inline-block;
+  background: rgba(168, 85, 247, 0.15);
+  color: var(--accent-purple);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.cert-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.cert-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-platform {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  padding: 3px 10px;
+}
+
+.cert-year {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .certifications-section {
+    padding: 64px 24px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

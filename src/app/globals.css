@@ -1,13 +1,15 @@
+@import '../styles/themes.css';
+
 :root {
   --bg-dark: #0A0A0A;
   --text-primary: #FFFFFF;
-  --text-muted: #71717A;
+  --text-muted: #A1A1AA;
   --accent-purple: #A855F7;
   --accent-cyan: #06B6D4;
   --accent-pink: #EC4899;
   --surface-card: #181818;
   --card-bg: #111111;
-  --border-subtle: #1A1A1A;
+  --border-subtle: #2A2A2A;
 }
 
 *,
@@ -39,6 +41,36 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: var(--accent-purple);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 8px;
+}
+
+/* Focus-visible ring for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-purple);
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {
