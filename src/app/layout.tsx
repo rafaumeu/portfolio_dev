@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: 'googleb25725f4993b60bd',
+  },
 };
 
 export const viewport: Viewport = {
