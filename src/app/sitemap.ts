@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://rafaeldiaszendron.dev',
+      url: 'https://portfoliodev-blush-pi.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

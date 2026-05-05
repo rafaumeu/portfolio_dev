@@ -66,7 +66,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Rafael Dias Zendron',
-  url: 'https://rafaeldiaszendron.dev',
+  url: 'https://portfoliodev-blush-pi.vercel.app',
   jobTitle: 'Software Engineer',
   email: 'rafael.zendron22@gmail.com',
   description:
@@ -74,6 +74,7 @@ const jsonLd = {
   sameAs: [
     'https://github.com/rafaumeu',
     'https://www.linkedin.com/in/rafael-dias-zendron-528290132/',
+    'https://br.fiverr.com/rafaelzendron',
     'https://twitter.com/rafaumeu',
   ],
   knowsAbout: [
@@ -101,6 +102,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <link rel="me" href="https://github.com/rafaumeu" />
+        <link rel="me" href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/" />
+        <link rel="me" href="https://br.fiverr.com/rafaelzendron" />
+        <link rel="me" href="https://twitter.com/rafaumeu" />
       </head>
       <body>
         <a href="#main-content" className="skip-to-content">
