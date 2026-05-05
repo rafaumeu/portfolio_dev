@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF0080&height=150&section=header&text=Portfolio%20Dev&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Fullstack%20Developer%20Portfolio&descSize=16&descAlignY=52"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=150&section=header&text=Portfolio%20Dev&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Fullstack%20Developer%20Portfolio&descSize=16&descAlignY=52"/>
 </div>
 
 <p align="center">
@@ -44,6 +44,6 @@ npm run dev
 MIT
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF0080&height=100&section=footer"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=100&section=footer"/>
   <br/><sub>Built with ❤️ by <a href="https://github.com/rafaumeu">Rafael Zendron</a></sub>
 </div>
