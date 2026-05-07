@@ -8,10 +8,17 @@
   },
   "hero": {
     "badge": "Disponível para Trabalho",
-    "headline": "Engenheiro de Software especializado em Clean Architecture & DDD",
+    "headline": "Software Production-Grade Antes da Formatura",
     "subtitle": "Construindo aplicações escaláveis com tecnologias modernas. Apaixonado por Domain-Driven Design, testes e clean code.",
     "ctaProjects": "Ver Projetos",
-    "ctaContact": "Contato"
+    "ctaFiverr": "Contratar no Fiverr",
+    "ctaContact": "Contato",
+    "stats": {
+      "repos": "Repos",
+      "ci": "CI Pipelines",
+      "signed": "Signed Commits",
+      "experience": "Anos Exp."
+    }
   },
   "projects": {
     "title": "Projetos em Destaque",
@@ -42,21 +49,15 @@
       "pocketApi": {
         "name": "Pocket API",
         "description": "API REST com Drizzle ORM, documentação Swagger e testes automatizados"
-      },
-      "cv": {
-        "name": "CV",
-        "description": "Currículo dinâmico com i18n, otimizado para impressão com múltiplos perfis"
-      },
-      "superTrunfo": {
-        "name": "Super Trunfo",
-        "description": "Jogo de cartas com 3 níveis de dificuldade e gerenciamento de estado"
       }
     }
   },
   "certifications": {
     "title": "Certificações",
     "subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
-    "countLabel": "Certificações"
+    "countLabel": "Certificações",
+    "showAll": "Ver todas",
+    "showLess": "Mostrar menos"
   },
   "about": {
     "title": "Sobre Mim",

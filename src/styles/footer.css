@@ -13,6 +13,39 @@
   font-size: 12px;
 }
 
+.footer-links {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.footer-fiverr {
+  color: #1dbf73 !important;
+  font-weight: 600;
+}
+
+.footer-fiverr:hover {
+  color: #19a463 !important;
+}
+
+.footer-separator {
+  color: var(--border-subtle);
+}
+
 @media (max-width: 768px) {
   .footer-section {
     padding: 32px 24px;

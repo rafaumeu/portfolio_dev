@@ -8,10 +8,17 @@
   },
   "hero": {
     "badge": "Open to Work",
-    "headline": "Software Engineer specializing in Clean Architecture & DDD",
+    "headline": "Production-Grade Software Before Graduation",
     "subtitle": "Building scalable applications with modern technologies. Passionate about Domain-Driven Design, testing, and clean code.",
     "ctaProjects": "View Projects",
-    "ctaContact": "Contact Me"
+    "ctaFiverr": "Hire on Fiverr",
+    "ctaContact": "Contact Me",
+    "stats": {
+      "repos": "Repos",
+      "ci": "CI Pipelines",
+      "signed": "Signed Commits",
+      "experience": "Yrs Exp."
+    }
   },
   "projects": {
     "title": "Featured Projects",
@@ -42,21 +49,15 @@
       "pocketApi": {
         "name": "Pocket API",
         "description": "REST API with Drizzle ORM, Swagger docs, and automated tests"
-      },
-      "cv": {
-        "name": "CV",
-        "description": "Dynamic CV with i18n, print-optimized with multiple profiles"
-      },
-      "superTrunfo": {
-        "name": "Super Trunfo",
-        "description": "Card game with 3 difficulty levels and game state management"
       }
     }
   },
   "certifications": {
     "title": "Certifications",
     "subtitle": "{{count}} Rocketseat certifications in modern web development",
-    "countLabel": "Certifications"
+    "countLabel": "Certifications",
+    "showAll": "Show all",
+    "showLess": "Show less"
   },
   "about": {
     "title": "About Me",
@@ -78,7 +79,7 @@
   },
   "footer": {
     "copyright": "© {{year}} Rafael Dias Zendron. All rights reserved.",
-    "builtWith": "Built with Next.js • Open to Opportunities"
+    "builtWith": "Built with Next.js · Open to Opportunities"
   },
   "theme": {
     "switchToLight": "Switch to light mode",
