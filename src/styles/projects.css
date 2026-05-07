@@ -30,21 +30,42 @@
   background: var(--surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
-  padding: 24px;
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
-.project-card-header {
+.project-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--surface-card);
+  position: relative;
+}
+
+.project-screenshot {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-screenshot {
+  transform: scale(1.03);
+}
+
+.project-card-body {
+  padding: 20px 24px 24px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .project-card h3 {
@@ -54,10 +75,33 @@
   font-family: var(--font-geist), 'Inter', sans-serif;
 }
 
+.project-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.project-tag {
+  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  padding: 4px 12px;
+  color: var(--text-muted);
+}
+
 .project-card-footer {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
 }
@@ -94,33 +138,6 @@
 
 .project-card-link::after {
   content: '↗';
-}
-
-.project-card-link.demo-link::after {
-  content: '↗';
-}
-
-.project-card p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;
-}
-
-.project-tag {
-  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-subtle);
-  border-radius: 9999px;
-  padding: 4px 12px;
-  color: var(--text-muted);
 }
 
 @media (max-width: 768px) {
