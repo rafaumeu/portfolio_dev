@@ -1,7 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslation } from '@/i18n';
 import '@/styles/certifications.css';
+
+const FEATURED = ['Ignite ReactJS', 'Ignite Node.js', 'DDD: Domain-Driven Design', 'Clean Architecture: Arquitetura limpa', 'Terraform: Infraestrutura como código'];
 
 const CERTIFICATIONS = [
   { title: 'Ignite ReactJS', platform: 'Rocketseat', year: '2024' },
@@ -42,6 +45,10 @@ const CERTIFICATIONS = [
 
 export default function Certifications() {
   const { t } = useTranslation();
+  const [showAll, setShowAll] = useState(false);
+
+  const featured = CERTIFICATIONS.filter((c) => FEATURED.includes(c.title));
+  const displayed = showAll ? CERTIFICATIONS : featured;
 
   return (
     <section className="certifications-section" id="certifications">
@@ -55,8 +62,8 @@ export default function Certifications() {
         </span>
       </div>
       <div className="certifications-grid">
-        {CERTIFICATIONS.map((cert) => (
-          <div key={cert.title} className="cert-card">
+        {displayed.map((cert) => (
+          <div key={cert.title} className={`cert-card${FEATURED.includes(cert.title) ? ' cert-featured' : ''}`}>
             <div className="cert-card-title">{cert.title}</div>
             <div className="cert-card-meta">
               <span className="cert-platform">
@@ -67,6 +74,16 @@ export default function Certifications() {
           </div>
         ))}
       </div>
+      {!showAll && CERTIFICATIONS.length > featured.length && (
+        <button className="cert-toggle" onClick={() => setShowAll(true)} type="button">
+          {t('certifications.showAll')} ({CERTIFICATIONS.length - featured.length}+)
+        </button>
+      )}
+      {showAll && (
+        <button className="cert-toggle" onClick={() => setShowAll(false)} type="button">
+          {t('certifications.showLess')}
+        </button>
+      )}
     </section>
   );
 }
