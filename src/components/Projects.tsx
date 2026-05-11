@@ -7,7 +7,7 @@ import "@/styles/projects.css";
 interface Project {
 	key: string;
 	tags: string[];
-	github: string;
+	github?: string;
 	demo?: string;
 	image: string;
 }
@@ -16,14 +16,12 @@ const PROJECTS: Project[] = [
 	{
 		key: "tesourosPortal",
 		tags: ["React", "PWA", "PostgreSQL", "Gamification"],
-		github: "https://github.com/rafaumeu/tesouros-portal",
 		demo: "https://tesouros-portal.vercel.app",
 		image: "/images/tesouros-portal.png",
 	},
 	{
 		key: "estacioPrep",
 		tags: ["Next.js", "Supabase", "TypeScript", "Gamification"],
-		github: "https://github.com/rafaumeu/estacio-prep",
 		demo: "https://estacio-prep.vercel.app",
 		image: "/images/estacio-prep.png",
 	},
@@ -57,7 +55,7 @@ const PROJECTS: Project[] = [
 	},
 	{
 		key: "forum",
-		tags: ["TypeScript", "DDD", "Clean Arch", "Vitest"],
+		tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
 		github: "https://github.com/rafaumeu/forum",
 		demo: "https://web-ten-ashen-76.vercel.app",
 		image: "/images/forum.png",
@@ -112,15 +110,17 @@ export default function Projects() {
 										{t("projects.liveDemo")}
 									</a>
 								)}
-								<a
-									href={project.github}
-									className="project-card-link source-link"
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label={`${t("projects.source")} — ${t(`projects.items.${project.key}.name`)}`}
-								>
-									{t("projects.source")}
-								</a>
+								{project.github && (
+									<a
+										href={project.github}
+										className="project-card-link source-link"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label={`${t("projects.source")} — ${t(`projects.items.${project.key}.name`)}`}
+									>
+										{t("projects.source")}
+									</a>
+								)}
 							</div>
 						</div>
 					</article>
