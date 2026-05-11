@@ -9,7 +9,7 @@ interface MotionWrapperProps {
   className?: string;
 }
 
-export default function MotionWrapper({ children, delay = 0, className }: MotionWrapperProps) {
+export default function MotionWrapper({ children, delay = 0, className }: Readonly<MotionWrapperProps>) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
