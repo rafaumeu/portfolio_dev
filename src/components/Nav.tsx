@@ -82,7 +82,6 @@ export default function Nav() {
         <ul
           className={`nav-links ${isOpen ? 'nav-links--open' : ''}`}
           id={menuId}
-          role="list"
         >
           {NAV_KEYS.map((link) => (
             <li key={link.href}>

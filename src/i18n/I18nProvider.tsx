@@ -6,6 +6,7 @@ import {
   useState,
   useEffect,
   useCallback,
+  useMemo,
   type ReactNode,
 } from 'react';
 import ptBR from './locales/pt-BR.json';
@@ -37,7 +38,7 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string {
 }
 
 function detectLocale(): Locale {
-  if (typeof window === 'undefined') return DEFAULT_LOCALE;
+  if (globalThis.window === undefined) return DEFAULT_LOCALE;
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored && stored in localeMap) return stored as Locale;
   const browserLang = navigator.language;
@@ -53,7 +54,7 @@ interface I18nContextValue {
 
 const I18nContext = createContext<I18nContextValue | null>(null);
 
-export function I18nProvider({ children }: { children: ReactNode }) {
+export function I18nProvider({ children }: { readonly children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
   const [mounted, setMounted] = useState(false);
 
@@ -87,8 +88,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     [locale],
   );
 
+  const contextValue = useMemo(() => ({ locale, setLocale, t }), [locale, setLocale, t]);
+
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t }}>
+    <I18nContext.Provider value={contextValue}>
       {children}
     </I18nContext.Provider>
   );

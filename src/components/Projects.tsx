@@ -77,19 +77,24 @@ export default function Projects() {
 			<h2>{t("projects.title")}</h2>
 			<p className="projects-subtitle">{t("projects.subtitle")}</p>
 			<div className="projects-grid">
-				{PROJECTS.map((project) => (
+				{PROJECTS.map((project) => {
+					const nameText = t(`projects.items.${project.key}.name`);
+					const altText = `${nameText} screenshot`;
+					const demoLabel = `${t("projects.liveDemo")} — ${nameText}`;
+					const sourceLabel = `${t("projects.source")} — ${nameText}`;
+					return (
 					<article key={project.key} className="project-card">
 						<div className="project-card-image">
 							<Image
 								src={project.image}
-								alt={`${t(`projects.items.${project.key}.name`)} screenshot`}
+								alt={altText}
 								width={400}
 								height={225}
 								className="project-screenshot"
 							/>
 						</div>
 						<div className="project-card-body">
-							<h3>{t(`projects.items.${project.key}.name`)}</h3>
+							<h3>{nameText}</h3>
 							<p>{t(`projects.items.${project.key}.description`)}</p>
 							<div className="project-tags">
 								{project.tags.map((tag) => (
@@ -105,7 +110,7 @@ export default function Projects() {
 										className="project-card-link demo-link"
 										target="_blank"
 										rel="noopener noreferrer"
-										aria-label={`${t("projects.liveDemo")} — ${t(`projects.items.${project.key}.name`)}`}
+										aria-label={demoLabel}
 									>
 										{t("projects.liveDemo")}
 									</a>
@@ -116,7 +121,7 @@ export default function Projects() {
 										className="project-card-link source-link"
 										target="_blank"
 										rel="noopener noreferrer"
-										aria-label={`${t("projects.source")} — ${t(`projects.items.${project.key}.name`)}`}
+										aria-label={sourceLabel}
 									>
 										{t("projects.source")}
 									</a>
@@ -124,7 +129,8 @@ export default function Projects() {
 							</div>
 						</div>
 					</article>
-				))}
+				);
+				})}
 			</div>
 		</section>
 	);
