@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from '@/i18n';
 import '@/styles/certifications.css';
 
-const FEATURED = ['Ignite ReactJS', 'Ignite Node.js', 'DDD: Domain-Driven Design', 'Clean Architecture: Arquitetura limpa', 'Terraform: Infraestrutura como código'];
+const FEATURED = new Set(['Ignite ReactJS', 'Ignite Node.js', 'DDD: Domain-Driven Design', 'Clean Architecture: Arquitetura limpa', 'Terraform: Infraestrutura como código']);
 
 const CERTIFICATIONS = [
   { title: 'Ignite ReactJS', platform: 'Rocketseat', year: '2024' },
@@ -47,7 +47,7 @@ export default function Certifications() {
   const { t } = useTranslation();
   const [showAll, setShowAll] = useState(false);
 
-  const featured = CERTIFICATIONS.filter((c) => FEATURED.includes(c.title));
+  const featured = CERTIFICATIONS.filter((c) => FEATURED.has(c.title));
   const displayed = showAll ? CERTIFICATIONS : featured;
 
   return (
@@ -63,7 +63,7 @@ export default function Certifications() {
       </div>
       <div className="certifications-grid">
         {displayed.map((cert) => (
-          <div key={cert.title} className={`cert-card${FEATURED.includes(cert.title) ? ' cert-featured' : ''}`}>
+          <div key={cert.title} className={`cert-card${FEATURED.has(cert.title) ? ' cert-featured' : ''}`}>
             <div className="cert-card-title">{cert.title}</div>
             <div className="cert-card-meta">
               <span className="cert-platform">
