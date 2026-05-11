@@ -58,14 +58,14 @@ const PROJECTS: Project[] = [
 		tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
 		github: "https://github.com/rafaumeu/forum",
 		demo: "https://web-ten-ashen-76.vercel.app",
-		image: "/images/forum.png",
+		image: "/images/forum-v2.png",
 	},
 	{
 		key: "hairday",
 		tags: ["JavaScript", "Webpack", "Responsive", "REST API"],
 		github: "https://github.com/rafaumeu/hairday",
 		demo: "https://hairday-pi.vercel.app",
-		image: "/images/hairday.png",
+		image: "/images/hairday-v2.png",
 	},
 ];
 
