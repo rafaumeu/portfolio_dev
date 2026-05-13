@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
 		key: "inorbitFront",
 		tags: ["React", "TypeScript", "Tailwind", "Vite"],
 		github: "https://github.com/rafaumeu/inorbit-front",
-		demo: "https://rafaumeu.github.io/inorbit-front",
+		demo: "https://tier-inorbit.vercel.app",
 		image: "/images/inorbit-front.png",
 	},
 	{
