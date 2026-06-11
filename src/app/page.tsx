@@ -1,25 +1,35 @@
-import ClientProviders from '@/components/ClientProviders';
-import MotionWrapper from '@/components/MotionWrapper';
-import Analytics from '@/components/Analytics';
-import Nav from '@/components/Nav';
-import Hero from '@/components/Hero';
-import Projects from '@/components/Projects';
-import About from '@/components/About';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-import Certifications from '@/components/Certifications';
+import About from "@/components/About";
+import Analytics from "@/components/Analytics";
+import Certifications from "@/components/Certifications";
+import ClientProviders from "@/components/ClientProviders";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import MotionWrapper from "@/components/MotionWrapper";
+import Nav from "@/components/Nav";
+import Projects from "@/components/Projects";
 
 export default function Home() {
-  return (
-    <ClientProviders>
-      <Nav />
-      <MotionWrapper><Hero /></MotionWrapper>
-      <MotionWrapper delay={0.1}><Projects /></MotionWrapper>
-      <MotionWrapper delay={0.2}><About /></MotionWrapper>
-      <MotionWrapper delay={0.2}><Certifications /></MotionWrapper>
-      <MotionWrapper delay={0.3}><Contact /></MotionWrapper>
-      <Footer />
-      <Analytics />
-    </ClientProviders>
-  );
+	return (
+		<ClientProviders>
+			<Nav />
+			<MotionWrapper>
+				<Hero />
+			</MotionWrapper>
+			<MotionWrapper delay={0.1}>
+				<Projects />
+			</MotionWrapper>
+			<MotionWrapper delay={0.2}>
+				<About />
+			</MotionWrapper>
+			<MotionWrapper delay={0.2}>
+				<Certifications />
+			</MotionWrapper>
+			<MotionWrapper delay={0.3}>
+				<Contact />
+			</MotionWrapper>
+			<Footer />
+			<Analytics />
+		</ClientProviders>
+	);
 }

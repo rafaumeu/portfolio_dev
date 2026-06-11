@@ -1,51 +1,54 @@
 /* Dark theme (default) */
-[data-theme='dark'],
+[data-theme="dark"],
 :root {
-  --bg-dark: #0A0A0A;
-  --text-primary: #FFFFFF;
-  --text-muted: #9CA3AF;
-  --accent-purple: #A855F7;
-  --accent-cyan: #06B6D4;
-  --accent-pink: #EC4899;
-  --surface-card: #181818;
-  --card-bg: #111111;
-  --border-subtle: #2A2A2A;
+	--bg-dark: #0a0a0a;
+	--text-primary: #ffffff;
+	--text-muted: #9ca3af;
+	--accent-purple: #a855f7;
+	--accent-cyan: #06b6d4;
+	--accent-pink: #ec4899;
+	--surface-card: #181818;
+	--card-bg: #111111;
+	--border-subtle: #2a2a2a;
 }
 
 /* Light theme */
-[data-theme='light'] {
-  --bg-dark: #FFFFFF;
-  --text-primary: #0A0A0A;
-  --text-muted: #52525B;
-  --accent-purple: #A855F7;
-  --accent-cyan: #06B6D4;
-  --accent-pink: #EC4899;
-  --surface-card: #F3F4F6;
-  --card-bg: #F9FAFB;
-  --border-subtle: #E5E7EB;
+[data-theme="light"] {
+	--bg-dark: #ffffff;
+	--text-primary: #0a0a0a;
+	--text-muted: #52525b;
+	--accent-purple: #a855f7;
+	--accent-cyan: #06b6d4;
+	--accent-pink: #ec4899;
+	--surface-card: #f3f4f6;
+	--card-bg: #f9fafb;
+	--border-subtle: #e5e7eb;
 }
 
 /* Theme toggle button */
 .theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--border-subtle);
-  background: var(--surface-card);
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-  flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid var(--border-subtle);
+	background: var(--surface-card);
+	color: var(--text-primary);
+	cursor: pointer;
+	transition:
+		background 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease;
+	flex-shrink: 0;
 }
 
 .theme-toggle:hover {
-  background: var(--border-subtle);
-  border-color: var(--accent-purple);
+	background: var(--border-subtle);
+	border-color: var(--accent-purple);
 }
 
 .theme-toggle svg {
-  display: block;
+	display: block;
 }
