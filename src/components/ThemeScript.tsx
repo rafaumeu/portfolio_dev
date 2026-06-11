@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 export default function ThemeScript() {
-  const script = `
+	const script = `
     (function() {
       try {
         var theme = localStorage.getItem('theme');
@@ -16,5 +16,5 @@ export default function ThemeScript() {
     })();
   `;
 
-  return <script dangerouslySetInnerHTML={{ __html: script }} />;
+	return <script dangerouslySetInnerHTML={{ __html: script }} />;
 }
