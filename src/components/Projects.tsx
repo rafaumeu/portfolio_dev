@@ -51,8 +51,8 @@ const PROJECTS: Project[] = [
     {
         key: "hiremeAgent",
         tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
-        demo: "https://hiremeagent.vercel.app/",
-        image: "/images/placeholder.svg",
+        demo: "https://hireme-agent.vercel.app/",
+        image: "/images/hireme-agent.png",
     },
     {
         key: "openSource",
