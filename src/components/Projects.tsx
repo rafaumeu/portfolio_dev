@@ -5,131 +5,132 @@ import { useTranslation } from "@/i18n";
 import "@/styles/projects.css";
 
 interface Project {
-    key: string;
-    tags: string[];
-    github?: string;
-    demo?: string;
-    image: string;
+	key: string;
+	tags: string[];
+	github?: string;
+	demo?: string;
+	image: string;
 }
 
 const PROJECTS: Project[] = [
-    {
-        key: "tesourosPortal",
-        tags: ["React", "PWA", "PostgreSQL", "Gamification"],
-        github: "https://github.com/rafaumeu/tesouros-portal",
-        demo: "https://tesouros-portal.vercel.app/",
-        image: "/images/tesouros-portal.png",
-    },
-    {
-        key: "estacioPrep",
-        tags: ["Next.js", "Supabase", "TypeScript", "Gamification"],
-        github: "https://github.com/rafaumeu/estacio-prep",
-        demo: "https://estacio-prep.vercel.app/",
-        image: "/images/estacio-prep.png",
-    },
-    {
-        key: "ignitecall",
-        tags: ["Next.js", "OAuth", "Prisma", "TypeScript"],
-        github: "https://github.com/rafaumeu/ignitecall-app",
-        demo: "https://ignitecall-app.vercel.app/",
-        image: "/images/ignitecall.png",
-    },
-    {
-        key: "devStore",
-        tags: ["Next.js", "Stripe", "Tailwind", "SSR"],
-        github: "https://github.com/rafaumeu/ecommerce-next",
-        demo: "https://devstorerdz.netlify.app/",
-        image: "/images/devstore.png",
-    },
-    {
-        key: "forum",
-        tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
-        github: "https://github.com/rafaumeu/forum",
-        demo: "https://web-ten-ashen-76.vercel.app/",
-        image: "/images/forum-v2.png",
-    },
-    {
-        key: "hiremeAgent",
-        tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
-        demo: "https://hireme-agent.vercel.app/",
-        image: "/images/hireme-agent.png",
-    },
-    {
-        key: "openSource",
-        tags: ["Hermes Agent", "OpenHive AI", "20+ PRs"],
-        github: "https://github.com/rafaumeu",
-        image: "/images/placeholder.svg",
-    },
-    {
-        key: "rocketseatForumHelper",
-        tags: ["Chrome Extension", "MV3", "TypeScript"],
-        image: "/images/placeholder.svg",
-    },
+	{
+		key: "tesourosPortal",
+		tags: ["React", "PWA", "PostgreSQL", "Gamification"],
+		github: "https://github.com/rafaumeu/tesouros-portal",
+		demo: "https://tesouros-portal.vercel.app/",
+		image: "/images/tesouros-portal.png",
+	},
+	{
+		key: "estacioPrep",
+		tags: ["Next.js", "Supabase", "TypeScript", "Gamification"],
+		github: "https://github.com/rafaumeu/estacio-prep",
+		demo: "https://estacio-prep.vercel.app/",
+		image: "/images/estacio-prep.png",
+	},
+	{
+		key: "ignitecall",
+		tags: ["Next.js", "OAuth", "Prisma", "TypeScript"],
+		github: "https://github.com/rafaumeu/ignitecall-app",
+		demo: "https://ignitecall-app.vercel.app/",
+		image: "/images/ignitecall.png",
+	},
+	{
+		key: "devStore",
+		tags: ["Next.js", "Stripe", "Tailwind", "SSR"],
+		github: "https://github.com/rafaumeu/ecommerce-next",
+		demo: "https://devstorerdz.netlify.app/",
+		image: "/images/devstore.png",
+	},
+	{
+		key: "forum",
+		tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
+		github: "https://github.com/rafaumeu/forum",
+		demo: "https://web-ten-ashen-76.vercel.app/",
+		image: "/images/forum-v2.png",
+	},
+	{
+		key: "hiremeAgent",
+		tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
+		demo: "https://hireme-agent.vercel.app/",
+		image: "/images/hireme-agent.png",
+	},
+	{
+		key: "openSource",
+		tags: ["Hermes Agent", "OpenHive AI", "20+ PRs"],
+		github: "https://github.com/rafaumeu",
+		image: "/images/placeholder.svg",
+	},
+	{
+		key: "rocketseatForumHelper",
+		tags: ["Chrome Extension", "MV3", "TypeScript"],
+		github: "https://github.com/rafaumeu/rocketseat-extractor-v2",
+		image: "/images/placeholder.svg",
+	},
 ];
 
 export default function Projects() {
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 
-    return (
-        <section className="projects-section" id="projects">
-            <h2>{t("projects.title")}</h2>
-            <p className="projects-subtitle">{t("projects.subtitle")}</p>
-            <div className="projects-grid">
-                {PROJECTS.map((project) => {
-                    const nameText = t(`projects.items.${project.key}.name`);
-                    const altText = `${nameText} screenshot`;
-                    const demoLabel = `${t("projects.liveDemo")} — ${nameText}`;
-                    const sourceLabel = `${t("projects.source")} — ${nameText}`;
-                    return (
-                    <article key={project.key} className="project-card">
-                        <div className="project-card-image">
-                            <Image
-                                src={project.image}
-                                alt={altText}
-                                width={400}
-                                height={225}
-                                className="project-screenshot"
-                            />
-                        </div>
-                        <div className="project-card-body">
-                            <h3>{nameText}</h3>
-                            <p>{t(`projects.items.${project.key}.description`)}</p>
-                            <div className="project-tags">
-                                {project.tags.map((tag) => (
-                                    <span key={tag} className="project-tag">
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-                            <div className="project-card-footer">
-                                {project.demo && (
-                                    <a
-                                        href={project.demo}
-                                        className="project-card-link demo-link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label={demoLabel}
-                                    >
-                                        {t("projects.liveDemo")}
-                                    </a>
-                                )}
-                                {project.github && (
-                                    <a
-                                        href={project.github}
-                                        className="project-card-link source-link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label={sourceLabel}
-                                    >
-                                        {t("projects.source")}
-                                    </a>
-                                )}
-                            </div>
-                        </div>
-                    </article>
-                    );
-                })}
-            </div>
-        </section>
-    );
+	return (
+		<section className="projects-section" id="projects">
+			<h2>{t("projects.title")}</h2>
+			<p className="projects-subtitle">{t("projects.subtitle")}</p>
+			<div className="projects-grid">
+				{PROJECTS.map((project) => {
+					const nameText = t(`projects.items.${project.key}.name`);
+					const altText = `${nameText} screenshot`;
+					const demoLabel = `${t("projects.liveDemo")} — ${nameText}`;
+					const sourceLabel = `${t("projects.source")} — ${nameText}`;
+					return (
+						<article key={project.key} className="project-card">
+							<div className="project-card-image">
+								<Image
+									src={project.image}
+									alt={altText}
+									width={400}
+									height={225}
+									className="project-screenshot"
+								/>
+							</div>
+							<div className="project-card-body">
+								<h3>{nameText}</h3>
+								<p>{t(`projects.items.${project.key}.description`)}</p>
+								<div className="project-tags">
+									{project.tags.map((tag) => (
+										<span key={tag} className="project-tag">
+											{tag}
+										</span>
+									))}
+								</div>
+								<div className="project-card-footer">
+									{project.demo && (
+										<a
+											href={project.demo}
+											className="project-card-link demo-link"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label={demoLabel}
+										>
+											{t("projects.liveDemo")}
+										</a>
+									)}
+									{project.github && (
+										<a
+											href={project.github}
+											className="project-card-link source-link"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label={sourceLabel}
+										>
+											{t("projects.source")}
+										</a>
+									)}
+								</div>
+							</div>
+						</article>
+					);
+				})}
+			</div>
+		</section>
+	);
 }
