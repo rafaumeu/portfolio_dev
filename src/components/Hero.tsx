@@ -7,7 +7,7 @@ import '@/styles/hero.css';
 const STATS = [
   { key: 'repos', value: '28+', icon: '📦' },
   { key: 'ci', value: '50+', icon: '✅' },
-  { key: 'signed', value: '100%', icon: '🔐' },
+  { key: 'tests', value: '1000+', icon: '🧪' },
   { key: 'experience', value: '2+', icon: '⏱️' },
 ];
 

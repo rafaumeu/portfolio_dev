@@ -1,100 +1,101 @@
 {
-	"nav": {
-		"toggle": "Abrir navegação",
-		"home": "Início",
-		"projects": "Projetos",
-		"about": "Sobre",
-		"contact": "Contato"
-	},
-	"hero": {
-		"badge": "Disponível para Trabalho",
-		"headline": "Software Production-Grade Antes da Formatura",
-		"subtitle": "Construindo aplicações escaláveis com tecnologias modernas. Apaixonado por Domain-Driven Design, testes e clean code.",
-		"ctaProjects": "Ver Projetos",
-		"ctaFiverr": "Contratar no Fiverr",
-		"ctaContact": "Contato",
-		"stats": {
-			"repos": "Repos",
-			"ci": "CI Pipelines",
-			"signed": "Signed Commits",
-			"experience": "Anos Exp."
-		}
-	},
-	"projects": {
-		"title": "Projetos em Destaque",
-		"subtitle": "Uma seleção dos meus trabalhos recentes",
-		"liveDemo": "Demo ao Vivo",
-		"source": "Código",
-		"items": {
-			"tesourosPortal": {
-				"name": "Tesouros Portal",
-				"description": "Plataforma de gestão de clube com PWA offline-first, gamificação e conformidade LGPD"
-			},
-			"estacioPrep": {
-				"name": "Estacio Prep",
-				"description": "App de estudos gamificado com XP estilo Duolingo, streaks, quizzes e analytics"
-			},
-			"ignitecall": {
-				"name": "IgniteCall",
-				"description": "App de agendamento com Google Calendar OAuth, Design System e CI/CD"
-			},
-			"devStore": {
-				"name": "DevStore",
-				"description": "E-commerce SSR com pagamentos Stripe e design responsivo"
-			},
-			"pizzaShop": {
-				"name": "Pizza Shop",
-				"description": "App de delivery com testes E2E e autenticação via magic link"
-			},
-			"inorbitFront": {
-				"name": "InOrbit",
-				"description": "App de metas com resumo semanal, gráficos de progresso e UI responsiva"
-			},
-			"forum": {
-				"name": "Forum DDD",
-				"description": "Forum full-stack com Domain-Driven Design e Clean Architecture"
-			},
-			"hairday": {
-				"name": "Hairday",
-				"description": "App de agendamento para barbearia com gestão de horários e REST API"
-			}
-		}
-	},
-	"certifications": {
-		"title": "Certificações",
-		"subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
-		"countLabel": "Certificações",
-		"showAll": "Ver todas",
-		"showLess": "Mostrar menos"
-	},
-	"about": {
-		"title": "Sobre Mim",
-		"bio": "Sou um Engenheiro de Software apaixonado por construir aplicações limpas e manuteníveis. Com expertise em Domain-Driven Design e Clean Architecture, foco em criar soluções elegantes e escaláveis. Atualmente buscando oportunidades para contribuir em projetos de impacto.",
-		"techStack": "Tecnologias"
-	},
-	"contact": {
-		"title": "Vamos Trabalhar Juntos",
-		"subtitle": "Estou atualmente aberto a novas oportunidades. Seja para uma pergunta ou só um oi, fique à vontade para entrar em contato!",
-		"findMeOn": "Me encontre em",
-		"successMessage": "Obrigado pelo contato! Responderei em breve.",
-		"name": "Nome",
-		"namePlaceholder": "Seu nome",
-		"email": "E-mail",
-		"emailPlaceholder": "seu@email.com",
-		"message": "Mensagem",
-		"messagePlaceholder": "No que está pensando?",
-		"send": "Enviar Mensagem"
-	},
-	"footer": {
-		"copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
-		"builtWith": "Feito com Next.js • Aberto a Oportunidades"
-	},
-	"theme": {
-		"switchToLight": "Mudar para modo claro",
-		"switchToDark": "Mudar para modo escuro"
-	},
-	"language": {
-		"pt": "🇧🇷 PT",
-		"en": "🇺🇸 EN"
-	}
+    "nav": {
+        "toggle": "Abrir navegação",
+        "home": "Início",
+        "projects": "Projetos",
+        "about": "Sobre",
+        "contact": "Contato"
+    },
+    "hero": {
+        "badge": "Disponível para Trabalho",
+        "headline": "Full Stack Developer • Clean Architecture & DDD",
+        "subtitle": "Código limpo, testes rigorosos, arquitetura bem definida. Transformo requisitos complexos em software de produção.",
+        "ctaProjects": "Ver Projetos",
+        "ctaFiverr": "Contratar no Fiverr",
+        "ctaContact": "Contato",
+        "stats": {
+            "repos": "Repos",
+            "ci": "CI Pipelines",
+            "tests": "Testes Automatizados",
+            "experience": "Anos Exp."
+        }
+    },
+    "projects": {
+        "title": "Projetos em Destaque",
+        "subtitle": "Uma seleção dos meus trabalhos recentes",
+        "liveDemo": "Demo ao Vivo",
+        "source": "Código",
+        "items": {
+            "tesourosPortal": {
+                "name": "Tesouros Portal",
+                "description": "Clube de Aventureiros de Jaú gerenciava tudo em papel. PWA offline-first com gamificação (XP, levels), Supabase + PostgreSQL. RBAC, Playwright tests, LGPD compliance."
+            },
+            "estacioPrep": {
+                "name": "Estacio Prep",
+                "description": "App gamificado com XP estilo Duolingo, streaks, quizzes e analytics. Algoritmo de revisão espaçada, 100% cobertura de testes, CI/CD em < 2 min por PR."
+            },
+            "ignitecall": {
+                "name": "IgniteCall",
+                "description": "App de agendamento com Google Calendar OAuth, Design System próprio e CI/CD automatizado. Prisma ORM + deploy Vercel."
+            },
+            "devStore": {
+                "name": "DevStore",
+                "description": "E-commerce SSR com Stripe payments, caching inteligente e design responsivo. SSR com ISR + 40% redução no tempo de carregamento."
+            },
+            "forum": {
+                "name": "Forum DDD",
+                "description": "Fórum full-stack com Domain-Driven Design e Clean Architecture do zero. Fastify + Prisma + testes de unidade e integração + monorepo com turborepo."
+            },
+            "hiremeAgent": {
+                "name": "HireMe Agent",
+                "description": "AI-powered job search engine com análise de currículos, envio automatizado via IMAP + Nodemailer, CLI com WebSocket. 13 PRs merged no NousResearch Hermes Agent."
+            },
+            "openSource": {
+                "name": "Contribuições Open Source",
+                "description": "20+ PRs merged em projetos reais: 13 PRs no NousResearch Hermes Agent (skill system, delegate_tool, CI/CD) e 7 PRs no OpenHive AI (caption gen, publisher, MCP tools)."
+            },
+            "rocketseatForumHelper": {
+                "name": "Rocketseat Forum Helper",
+                "description": "Chrome Extension MV3 que ajuda alunos da Rocketseat com respostas inteligentes. Publicada na Chrome Web Store, TypeScript, CI/CD, E2E com Playwright."
+            }
+        }
+    },
+    "certifications": {
+        "title": "Certificações",
+        "subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
+        "countLabel": "Certificações",
+        "showAll": "Ver todas",
+        "showLess": "Mostrar menos"
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 20+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
+        "techStack": "Tecnologias"
+    },
+    "contact": {
+        "title": "Vamos Trabalhar Juntos",
+        "subtitle": "Estou atualmente aberto a novas oportunidades. Seja para uma pergunta ou só um oi, fique à vontade para entrar em contato!",
+        "findMeOn": "Me encontre em",
+        "successMessage": "Obrigado pelo contato! Responderei em breve.",
+        "errorMessage": "Erro ao enviar. Tente novamente.",
+        "name": "Nome",
+        "namePlaceholder": "Seu nome",
+        "email": "E-mail",
+        "emailPlaceholder": "seu@email.com",
+        "message": "Mensagem",
+        "messagePlaceholder": "No que está pensando?",
+        "send": "Enviar Mensagem"
+    },
+    "footer": {
+        "copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
+        "builtWith": "Feito com Next.js • Aberto a Oportunidades"
+    },
+    "theme": {
+        "switchToLight": "Mudar para modo claro",
+        "switchToDark": "Mudar para modo escuro"
+    },
+    "language": {
+        "pt": "🇧🇷 PT",
+        "en": "🇺🇸 EN"
+    }
 }
