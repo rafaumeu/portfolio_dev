@@ -31,11 +31,42 @@ const SOCIAL_LINKS = [
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState('');
   const { t } = useTranslation();
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setFormError('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
+          name: formData.get('name'),
+          email: formData.get('email'),
+          message: formData.get('message'),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setFormError(data.message || t('contact.errorMessage'));
+      }
+    } catch {
+      setFormError(t('contact.errorMessage'));
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -77,6 +108,11 @@ export default function Contact() {
             </div>
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
+              {formError && (
+                <div className="contact-form-error" role="alert" style={{color:'#ef4444',marginBottom:'1rem',textAlign:'center'}}>
+                  <p>{formError}</p>
+                </div>
+              )}
               <div className="form-group">
                 <label htmlFor="name">{t('contact.name')}</label>
                 <input
@@ -107,8 +143,8 @@ export default function Contact() {
                   required
                 />
               </div>
-              <button type="submit" className="contact-submit">
-                {t('contact.send')}
+              <button type="submit" className="contact-submit" disabled={isSubmitting}>
+                {isSubmitting ? 'Enviando...' : t('contact.send')}
               </button>
             </form>
           )}
