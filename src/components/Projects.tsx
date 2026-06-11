@@ -51,21 +51,19 @@ const PROJECTS: Project[] = [
     {
         key: "hiremeAgent",
         tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
-        github: "https://github.com/rafaumeu/career-ops",
         demo: "https://hiremeagent.vercel.app/",
-        image: "/images/hireme-agent.png",
+        image: "/images/placeholder.svg",
     },
     {
         key: "openSource",
         tags: ["Hermes Agent", "OpenHive AI", "20+ PRs"],
         github: "https://github.com/rafaumeu",
-        image: "/images/open-source.png",
+        image: "/images/placeholder.svg",
     },
     {
         key: "rocketseatForumHelper",
         tags: ["Chrome Extension", "MV3", "TypeScript"],
-        github: "https://github.com/rafaumeu/rocketseat-forum-helper",
-        image: "/images/forum-helper.png",
+        image: "/images/placeholder.svg",
     },
 ];
 
