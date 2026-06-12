@@ -18,6 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://portfoliodev-blush-pi.vercel.app"),
 	title: "Rafael Dias Zendron — Software Engineer",
 	description:
 		"Software Engineer specializing in Clean Architecture, DDD, and modern web technologies. Building scalable applications with React, Next.js, TypeScript, and Node.js.",
