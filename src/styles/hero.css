@@ -23,27 +23,32 @@
 	height: 158px !important;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 3px solid var(--bg-primary, #0a0a0a);
+	border: 3px solid var(--bg-dark);
 }
 
 .hero-badge {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	background: #0d3320;
+	background: var(--badge-available-bg);
 	padding: 6px 16px;
 	border-radius: 9999px;
 	font-size: 14px;
-	color: #22c55e;
+	color: var(--badge-available-dot);
 	margin-bottom: 24px;
 	font-family: var(--font-inter), "Inter", sans-serif;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-badge:hover {
+	background: var(--badge-available-hover);
 }
 
 .hero-badge-dot {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background: #22c55e;
+	background: var(--badge-available-dot);
 	animation: pulse 2s infinite;
 }
 
@@ -90,7 +95,7 @@
 	gap: 32px;
 	margin-bottom: 32px;
 	padding: 16px 32px;
-	background: var(--surface-card, rgba(255, 255, 255, 0.03));
+	background: var(--surface-card);
 	border: 1px solid var(--border-subtle);
 	border-radius: 12px;
 }
@@ -124,8 +129,8 @@
 }
 
 .cta-primary {
-	background: #7c3aed;
-	color: #fff;
+	background: var(--cta-primary-bg);
+	color: var(--cta-primary-text);
 	padding: 12px 32px;
 	border-radius: 8px;
 	font-size: 16px;
@@ -142,8 +147,8 @@
 }
 
 .cta-fiverr {
-	background: #098049;
-	color: #fff;
+	background: var(--cta-fiverr-bg);
+	color: var(--cta-fiverr-text);
 	padding: 12px 32px;
 	border-radius: 8px;
 	font-size: 16px;

@@ -117,7 +117,7 @@
 
 .contact-submit {
 	background: var(--accent-purple);
-	color: #fff;
+	color: var(--submit-text);
 	font-size: 14px;
 	font-weight: 600;
 	padding: 12px 24px;

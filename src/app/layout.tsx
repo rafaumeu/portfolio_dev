@@ -2,6 +2,7 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import "../styles/themes.css";
 
 const inter = Inter({
 	subsets: ["latin"],
