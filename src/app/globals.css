@@ -129,6 +129,22 @@ select:focus-visible,
 	outline-offset: 2px;
 }
 
+/* Reduced motion — WCAG 2.1 compliance */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	.hero-badge-dot {
+		animation: none !important;
+	}
+}
+
 @media (max-width: 768px) {
 	.nav-inner,
 	.hero,
