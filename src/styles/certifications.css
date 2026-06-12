@@ -56,11 +56,11 @@
 }
 
 .cert-featured {
-	border-color: rgba(168, 85, 247, 0.25);
+	border-color: var(--cert-featured-border);
 	background: linear-gradient(
 		135deg,
 		var(--surface-card),
-		rgba(168, 85, 247, 0.05)
+		var(--cert-featured-bg)
 	);
 }
 
