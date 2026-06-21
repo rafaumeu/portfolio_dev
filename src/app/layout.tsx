@@ -1,136 +1,89 @@
-import { GeistSans } from "geist/font/sans";
-import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, Inter } from "next/font/google";
-import "./globals.css";
-import "../styles/themes.css";
+import "@/app/globals.css";
+import "@/styles/performance.css";
 
-const inter = Inter({
-	subsets: ["latin"],
-	variable: "--font-inter",
-	display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-	subsets: ["latin"],
-	weight: ["400"],
-	variable: "--font-ibm-plex-mono",
-	display: "swap",
-});
-
-export const metadata: Metadata = {
-	metadataBase: new URL("https://portfoliodev-blush-pi.vercel.app"),
-	title: "Rafael Dias Zendron — Software Engineer",
-	description:
-		"Software Engineer specializing in Clean Architecture, DDD, and modern web technologies. Building scalable applications with React, Next.js, TypeScript, and Node.js.",
-	keywords: [
-		"Software Engineer",
-		"Clean Architecture",
-		"DDD",
-		"React",
-		"Next.js",
-		"TypeScript",
-		"Node.js",
-		"Rafael Dias Zendron",
-	],
-	authors: [{ name: "Rafael Dias Zendron" }],
-	alternates: {
-		canonical: "https://portfoliodev-blush-pi.vercel.app",
-	},
+export const metadata = {
+	metadataBase: new URL("https://rafaumeu.github.io"),
+	title: "Rafael Zendron | Full Stack Developer",
+	description: "Full Stack Developer focused on Next.js, TypeScript, and creating scalable web applications. Open source contributor with 20+ PRs to Hermes Agent.",
+	keywords: ["Rafael Zendron", "Full Stack Developer", "Next.js", "TypeScript", "Open Source", "Web Development"],
+	authors: [{ name: "Rafael Zendron" }],
+	creator: "Rafael Zendron",
+	publisher: "Rafael Zendron",
+	robots: "index, follow",
 	openGraph: {
-		title: "Rafael Dias Zendron — Software Engineer",
-		description:
-			"Software Engineer specializing in Clean Architecture, DDD, and modern web technologies.",
-		url: "https://portfoliodev-blush-pi.vercel.app",
-		siteName: "Rafael Dias Zendron Portfolio",
-		locale: "pt_BR",
 		type: "website",
+		locale: "en_US",
+		url: "https://rafaumeu.github.io/",
+		siteName: "Rafael Zendron Portfolio",
+		title: "Rafael Zendron | Full Stack Developer",
+		description: "Full Stack Developer focused on Next.js, TypeScript, and creating scalable web applications.",
 		images: [
 			{
 				url: "/og-image.png",
 				width: 1200,
 				height: 630,
-				alt: "Rafael Dias Zendron Portfolio",
+				alt: "Rafael Zendron Portfolio",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Rafael Dias Zendron — Software Engineer",
-		description:
-			"Software Engineer specializing in Clean Architecture, DDD, and modern web technologies.",
+		title: "Rafael Zendron | Full Stack Developer",
+		description: "Full Stack Developer focused on Next.js, TypeScript, and creating scalable web applications.",
+		images: ["/og-image.png"],
 		creator: "@rafaumeu",
 	},
-	robots: {
-		index: true,
-		follow: true,
-		googleBot: { index: true, follow: true },
+	icons: {
+		icon: "/favicon.ico",
+		shortcut: "/favicon-16x16.png",
+		apple: "/apple-touch-icon.png",
+	},
+	manifest: "/manifest.json",
+	alternates: {
+		canonical: "https://rafaumeu.github.io/",
+		languages: {
+			en: "https://rafaumeu.github.io/en",
+			pt: "https://rafaumeu.github.io/pt",
+		},
 	},
 	verification: {
-		google: "Gjf-et8w9qeR3KFym-bLry4j9i_dlo6_erpc0OYuWdk",
+		google: "your-google-verification-code",
+		yandex: "your-yandex-verification-code",
 	},
+	category: "technology",
 };
 
-export const viewport: Viewport = {
-	themeColor: "#0A0A0A",
-};
-
-const jsonLd = {
-	"@context": "https://schema.org",
-	"@type": "Person",
-	name: "Rafael Dias Zendron",
-	url: "https://portfoliodev-blush-pi.vercel.app",
-	jobTitle: "Software Engineer",
-	email: "rafael.zendron22@gmail.com",
-	description:
-		"Software Engineer specializing in Clean Architecture, DDD, and modern web technologies.",
-	sameAs: [
-		"https://github.com/rafaumeu",
-		"https://www.linkedin.com/in/rafael-dias-zendron-528290132/",
-		"https://br.fiverr.com/rafaelzendron",
-		"https://twitter.com/rafaumeu",
-	],
-	knowsAbout: [
-		"React",
-		"Next.js",
-		"TypeScript",
-		"Node.js",
-		"Clean Architecture",
-		"DDD",
-		"PostgreSQL",
-		"Docker",
-		"Fastify",
-	],
-};
-
-export default function RootLayout({
-	children,
-}: {
-	readonly children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html
-			lang="pt-BR"
-			className={`${inter.variable} ${ibmPlexMono.variable} ${GeistSans.variable}`}
-		>
+		<html lang="en" data-theme="dark">
 			<head>
 				<script
 					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "Person",
+							name: "Rafael Zendron",
+							email: "rafael.zendron22@gmail.com",
+							github: "https://github.com/rafaumeu",
+							linkedIn: "https://linkedin.com/in/rafaelzendron",
+							fiverr: "https://fiverr.com/rafaelz",
+							jobTitle: "Full Stack Developer",
+							worksFor: {
+								"@type": "Organization",
+								name: "Freelance",
+							},
+							sameAs: [
+								"https://github.com/rafaumeu",
+								"https://linkedin.com/in/rafaelzendron",
+								"https://fiverr.com/rafaelz",
+							],
+							knowsAbout: ["Next.js", "TypeScript", "React", "PostgreSQL", "Supabase", "Open Source"],
+						}),
+					}}
 				/>
-				<link rel="me" href="https://github.com/rafaumeu" />
-				<link
-					rel="me"
-					href="https://www.linkedin.com/in/rafael-dias-zendron-528290132/"
-				/>
-				<link rel="me" href="https://br.fiverr.com/rafaelzendron" />
-				<link rel="me" href="https://twitter.com/rafaumeu" />
 			</head>
-			<body>
-				<a href="#main-content" className="skip-to-content">
-					Skip to content
-				</a>
-				<main id="main-content">{children}</main>
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
