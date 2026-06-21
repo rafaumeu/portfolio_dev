@@ -85,7 +85,15 @@
 		"message": "Message",
 		"messagePlaceholder": "What's on your mind?",
 		"send": "Send Message",
-		"sending": "Sending..."
+		"sending": "Sending...",
+		"errors": {
+			"nameRequired": "Name is required",
+			"nameTooShort": "Name must be at least 2 characters",
+			"emailRequired": "Email is required",
+			"emailInvalid": "Please enter a valid email",
+			"messageRequired": "Message is required",
+			"messageTooShort": "Message must be at least 10 characters"
+		}
 	},
 	"footer": {
 		"copyright": "© {{year}} Rafael Dias Zendron. All rights reserved.",
