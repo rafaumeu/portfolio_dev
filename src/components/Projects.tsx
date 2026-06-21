@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslation } from "@/i18n";
+import { useState } from "react";
 import "@/styles/projects.css";
 
 interface Project {
@@ -70,6 +71,15 @@ const PROJECTS: Project[] = [
 
 export default function Projects() {
 	const { t } = useTranslation();
+	const [loadingLink, setLoadingLink] = useState<string | null>(null);
+
+	const handleExternalLink = (url: string) => {
+		setLoadingLink(url);
+		setTimeout(() => {
+			window.open(url, "_blank", "noopener,noreferrer");
+			setLoadingLink(null);
+		}, 300);
+	};
 
 	return (
 		<section className="projects-section" id="projects">
@@ -81,6 +91,7 @@ export default function Projects() {
 					const altText = `${nameText} screenshot`;
 					const demoLabel = `${t("projects.liveDemo")} — ${nameText}`;
 					const sourceLabel = `${t("projects.source")} — ${nameText}`;
+					const isLoading = loadingLink === project.demo || loadingLink === project.github;
 					return (
 						<article key={project.key} className="project-card">
 							<div className="project-card-image">
@@ -90,6 +101,9 @@ export default function Projects() {
 									width={400}
 									height={225}
 									className="project-screenshot"
+									loading="lazy"
+									placeholder="blur"
+									blurDataURL="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAQAcJaQAA3AA/v3AgAA="
 								/>
 							</div>
 							<div className="project-card-body">
@@ -106,23 +120,31 @@ export default function Projects() {
 									{project.demo && (
 										<a
 											href={project.demo}
-											className="project-card-link demo-link"
+											className={`project-card-link demo-link ${isLoading ? "loading" : ""}`}
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label={demoLabel}
+											onClick={(e) => {
+												e.preventDefault();
+												handleExternalLink(project.demo!);
+											}}
 										>
-											{t("projects.liveDemo")}
+											{loadingLink === project.demo ? "⏳" : t("projects.liveDemo")}
 										</a>
 									)}
 									{project.github && (
 										<a
 											href={project.github}
-											className="project-card-link source-link"
+											className={`project-card-link source-link ${isLoading ? "loading" : ""}`}
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label={sourceLabel}
+											onClick={(e) => {
+												e.preventDefault();
+												handleExternalLink(project.github!);
+											}}
 										>
-											{t("projects.source")}
+											{loadingLink === project.github ? "⏳" : t("projects.source")}
 										</a>
 									)}
 								</div>
