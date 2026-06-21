@@ -172,9 +172,86 @@
 	border-top: 1px solid var(--border-subtle);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+	.contact-section {
+		padding: 64px 16px;
+	}
+
+	.contact-section h2 {
+		font-size: 28px;
+	}
+
+	.contact-subtitle {
+		font-size: 15px;
+		margin-bottom: 32px;
+	}
+
+	.contact-layout {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
+	.contact-social-col h3 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.contact-link {
+		padding: 10px 14px;
+		font-size: 13px;
+		gap: 10px;
+	}
+
+	.contact-link svg {
+		font-size: 16px;
+	}
+
+	.form-group label {
+		font-size: 12px;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		padding: 10px 14px;
+		font-size: 13px;
+	}
+
+	.form-group textarea {
+		min-height: 100px;
+	}
+
+	.contact-submit {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
+
+	.contact-success {
+		padding: 32px 20px;
+		min-height: 250px;
+	}
+
+	.contact-success-icon {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+
+	.contact-success p {
+		font-size: 15px;
+	}
+
+	.contact-divider {
+		margin: 48px 16px 0 16px;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
 	.contact-section {
 		padding: 64px 24px;
+	}
+
+	.contact-section h2 {
+		font-size: 32px;
 	}
 
 	.contact-layout {
@@ -183,6 +260,6 @@
 	}
 
 	.contact-divider {
-		margin: 48px 24px 0 24px;
+		margin: 64px 24px 0 24px;
 	}
 }
