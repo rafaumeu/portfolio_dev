@@ -46,7 +46,26 @@
 	color: var(--border-subtle);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+	.footer-section {
+		padding: 32px 16px;
+	}
+
+	.footer-section p {
+		font-size: 13px;
+	}
+
+	.footer-section p + p {
+		font-size: 11px;
+	}
+
+	.footer-links {
+		font-size: 12px;
+		gap: 6px;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
 	.footer-section {
 		padding: 32px 24px;
 	}
