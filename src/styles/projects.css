@@ -142,13 +142,39 @@
 	content: "↗";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 	.projects-section {
-		padding: 64px 24px;
+		padding: 64px 16px;
 	}
 
 	.projects-grid {
 		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.project-card-body {
+		padding: 16px;
+	}
+
+	.project-card h3 {
+		font-size: 16px;
+	}
+
+	.project-card p {
+		font-size: 13px;
+	}
+
+	.project-tag {
+		font-size: 11px;
+		padding: 3px 10px;
+	}
+
+	.project-card-footer {
+		gap: 12px;
+	}
+
+	.project-card-link {
+		font-size: 13px;
 	}
 }
 
