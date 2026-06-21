@@ -85,12 +85,13 @@ export default function Nav() {
 					className={`nav-links ${isOpen ? "nav-links--open" : ""}`}
 					id={menuId}
 				>
-					{NAV_KEYS.map((link) => (
+					{NAV_KEYS.map((link, index) => (
 						<li key={link.href}>
 							<a
 								href={link.href}
 								aria-current={link.href === "#home" ? "page" : undefined}
 								onClick={close}
+								style={{ "--index": index } as React.CSSProperties}
 							>
 								{t(link.labelKey)}
 							</a>
