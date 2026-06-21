@@ -85,7 +85,15 @@
 		"message": "Mensagem",
 		"messagePlaceholder": "No que está pensando?",
 		"send": "Enviar Mensagem",
-		"sending": "Enviando..."
+		"sending": "Enviando...",
+		"errors": {
+			"nameRequired": "Nome é obrigatório",
+			"nameTooShort": "Nome deve ter pelo menos 2 caracteres",
+			"emailRequired": "E-mail é obrigatório",
+			"emailInvalid": "Por favor insira um e-mail válido",
+			"messageRequired": "Mensagem é obrigatória",
+			"messageTooShort": "Mensagem deve ter pelo menos 10 caracteres"
+		}
 	},
 	"footer": {
 		"copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
