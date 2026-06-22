@@ -4,13 +4,15 @@
 		"home": "Home",
 		"projects": "Projects",
 		"about": "About",
-		"contact": "Contact"
+		"contact": "Contact",
+		"blog": "Blog"
 	},
 	"hero": {
 		"badge": "Open to Work",
 		"headline": "Full Stack Developer • Clean Architecture & DDD",
 		"subtitle": "Clean code, thorough tests, well-defined architecture. Turning complex requirements into production-grade software.",
 		"ctaProjects": "View Projects",
+		"ctaBlog": "Read Blog",
 		"ctaFiverr": "Hire on Fiverr",
 		"ctaContact": "Contact Me",
 		"stats": {

@@ -55,6 +55,12 @@ export default function Hero() {
 					{t("hero.ctaProjects")}
 				</button>
 				<a
+					href="/blog"
+					className="cta-secondary"
+				>
+					{t("hero.ctaBlog")}
+				</a>
+				<a
 					href="https://br.fiverr.com/rafaelzendron"
 					target="_blank"
 					rel="noopener noreferrer"
