@@ -110,11 +110,9 @@
 
 .nav-links {
 	position: fixed;
-	top: 64px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: var(--nav-mobile-bg, var(--nav-bg));
+	inset: 64px 0 0 0;
+	background: var(--nav-bg);
+	z-index: 99;
 	backdrop-filter: blur(20px) saturate(180%);
 	-webkit-backdrop-filter: blur(20px) saturate(180%);
 	flex-direction: column;
