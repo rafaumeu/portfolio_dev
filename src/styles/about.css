@@ -42,9 +42,42 @@
 	color: var(--text-primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+	.about-section {
+		padding: 64px 16px;
+	}
+
+	.about-section h2 {
+		font-size: 28px;
+	}
+
+	.about-bio {
+		font-size: 15px;
+		margin-bottom: 24px;
+	}
+
+	.about-section h3 {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.about-skills {
+		gap: 6px;
+	}
+
+	.skill-badge {
+		font-size: 12px;
+		padding: 6px 12px;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
 	.about-section {
 		padding: 64px 24px;
+	}
+
+	.about-section h2 {
+		font-size: 32px;
 	}
 }
 .about-bio {

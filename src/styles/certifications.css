@@ -115,9 +115,49 @@
 	font-family: var(--font-ibm-plex-mono), "IBM Plex Mono", monospace;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+	.certifications-section {
+		padding: 64px 16px;
+	}
+
+	.certifications-header h2 {
+		font-size: 28px;
+	}
+
+	.certifications-subtitle {
+		font-size: 15px;
+	}
+
+	.certifications-grid {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.cert-card {
+		padding: 16px;
+	}
+
+	.cert-card-title {
+		font-size: 13px;
+	}
+
+	.cert-platform {
+		font-size: 11px;
+		padding: 2px 8px;
+	}
+
+	.cert-year {
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
 	.certifications-section {
 		padding: 64px 24px;
+	}
+
+	.certifications-header h2 {
+		font-size: 32px;
 	}
 
 	.certifications-grid {
