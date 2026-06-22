@@ -1,0 +1,39 @@
+---
+title: "Explorando TypeScript Strict Mode"
+date: 2025-02-10
+excerpt: "Como tirar proveito do modo estrito do TypeScript para código mais seguro e confiável."
+tags: ["typescript", "seguranca"]
+lang: pt-BR
+---
+
+# TypeScript Strict Mode
+
+O modo estrito do TypeScript é uma das melhores práticas para garantir qualidade de código. Vamos explorar as principais opções.
+
+## Opções Disponíveis
+
+| Opção | Descrição |
+|-------|-----------|
+| `noImplicitAny` | Impede inferência implícita de `any` |
+| `strictNullChecks` | Verifica rigorosamente valores nulos |
+| `noUnusedLocals` | Erro em variáveis não utilizadas |
+
+## Exemplo
+
+```tsx
+// ❌ Sem strict mode
+function process(data: any) {
+  return data.value;
+}
+
+// ✅ Com strict mode
+interface Data {
+  value: string;
+}
+
+function process(data: Data) {
+  return data.value;
+}
+```
+
+O código fica mais previsível e a IDE oferece melhor autocomplete.
