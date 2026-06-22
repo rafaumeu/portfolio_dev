@@ -14,27 +14,24 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <main className="min-h-screen pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-100">
-          Blog
-        </h1>
-        <p className="text-zinc-400 text-lg">
+    <main className="blog-page">
+      <header className="blog-page-header">
+        <h1 className="blog-page-title">Blog</h1>
+        <p className="blog-page-subtitle">
           Artigos, tutoriais e insights sobre desenvolvimento e tecnologia
         </p>
-      </div>
+      </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="blog-grid">
         {posts.map(post => (
           <BlogCard key={post.slug} post={post} />
         ))}
       </div>
 
       {posts.length === 0 && (
-        <div className="text-center py-12">
-          <p className="text-zinc-500 text-lg">
-            Nenhum post publicado ainda.
-          </p>
+        <div className="blog-empty">
+          <div className="blog-empty-icon">📝</div>
+          <p>Nenhum post publicado ainda.</p>
         </div>
       )}
     </main>

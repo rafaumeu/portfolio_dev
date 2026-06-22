@@ -12,32 +12,29 @@ export function BlogCard({ post }: BlogCardProps) {
   });
 
   return (
-    <a
-      href={`/blog/${post.slug}`}
-      className="group block bg-zinc-900 border border-zinc-800 rounded-lg p-6 hover:border-zinc-600 transition-all duration-300"
-    >
-      <div className="flex flex-wrap gap-2 mb-3">
-        {post.tags.map(tag => (
-          <span
-            key={tag}
-            className="px-2 py-1 text-xs font-medium bg-zinc-800 text-zinc-300 rounded"
-          >
-            {tag}
-          </span>
-        ))}
+    <a href={`/blog/${post.slug}`} className="blog-card">
+      <div className="blog-card-cover">
+        <span className="text-5xl">📚</span>
       </div>
       
-      <h3 className="text-xl font-semibold text-zinc-100 group-hover:text-zinc-200 mb-2">
-        {post.title}
-      </h3>
-      
-      <p className="text-zinc-400 text-sm mb-4 line-clamp-2">
-        {post.excerpt}
-      </p>
-      
-      <div className="flex items-center justify-between text-xs text-zinc-500">
-        <time dateTime={post.date}>{formattedDate}</time>
-        <span>{post.readingTime} min leitura</span>
+      <div className="blog-card-content">
+        <div className="blog-card-meta">
+          <time dateTime={post.date}>{formattedDate}</time>
+          <span>•</span>
+          <span>{post.readingTime} min leitura</span>
+        </div>
+        
+        <h3 className="blog-card-title">{post.title}</h3>
+        
+        <p className="blog-card-excerpt">{post.excerpt}</p>
+        
+        <div className="blog-card-footer">
+          {post.tags.slice(0, 2).map(tag => (
+            <span key={tag} className="blog-card-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </a>
   );
