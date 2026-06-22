@@ -184,6 +184,28 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.nav-links {
+		position: fixed;
+		top: 64px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: var(--nav-mobile-bg);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		transform: translateX(100%);
+		transition: transform .3s ease;
+		padding: 96px 0;
+		border-top: 1px solid var(--border-subtle);
+		border-image: linear-gradient(90deg, var(--accent-cyan), transparent) 1;
+	}
+}
+
 @media (min-width: 1025px) {
 	.nav-links {
 		position: static;
