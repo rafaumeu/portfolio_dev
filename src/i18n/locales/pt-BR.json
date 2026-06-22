@@ -4,13 +4,15 @@
 		"home": "Início",
 		"projects": "Projetos",
 		"about": "Sobre",
-		"contact": "Contato"
+		"contact": "Contato",
+		"blog": "Blog"
 	},
 	"hero": {
 		"badge": "Disponível para Trabalho",
 		"headline": "Full Stack Developer • Clean Architecture & DDD",
 		"subtitle": "Código limpo, testes rigorosos, arquitetura bem definida. Transformo requisitos complexos em software de produção.",
 		"ctaProjects": "Ver Projetos",
+		"ctaBlog": "Ler Blog",
 		"ctaFiverr": "Contratar no Fiverr",
 		"ctaContact": "Contato",
 		"stats": {

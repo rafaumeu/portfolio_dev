@@ -11,6 +11,7 @@ const NAV_KEYS = [
 	{ labelKey: "nav.projects", href: "#projects" },
 	{ labelKey: "nav.about", href: "#about" },
 	{ labelKey: "nav.contact", href: "#contact" },
+	{ labelKey: "nav.blog", href: "/blog" },
 ];
 
 export default function Nav() {
