@@ -60,14 +60,14 @@ interface I18nContextValue {
 const I18nContext = createContext<I18nContextValue | null>(null);
 
 export function I18nProvider({ children }: { readonly children: ReactNode }) {
-	const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		const detected = detectLocale();
-		setLocaleState(detected);
-		setMounted(true);
-	}, []);
+	const [mounted, setMounted] = useState(() => typeof window !== "undefined");
+	const [locale, setLocaleState] = useState<Locale>(() => {
+		if (typeof window === "undefined") return DEFAULT_LOCALE;
+		const stored = localStorage.getItem(STORAGE_KEY);
+		if (stored && stored in localeMap) return stored as Locale;
+		if (navigator.language.startsWith("pt")) return "pt-BR";
+		return "en-US";
+	});
 
 	useEffect(() => {
 		if (mounted) {
