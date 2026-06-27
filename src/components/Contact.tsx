@@ -120,7 +120,6 @@ export default function Contact() {
 		// Track form submission attempt
 		trackEvent("contact_form_submitted", {
 			source: "contact_page",
-			email,
 		});
 
 		try {
@@ -146,7 +145,6 @@ export default function Contact() {
 				// Track successful submission
 				trackEvent("contact_form_success", {
 					source: "contact_page",
-					email,
 				});
 				formRef.current?.reset();
 			} else {
@@ -154,7 +152,6 @@ export default function Contact() {
 				// Track failed submission
 				trackEvent("contact_form_failed", {
 					source: "contact_page",
-					email,
 					error: data.message,
 				});
 			}
@@ -163,7 +160,6 @@ export default function Contact() {
 			// Track error
 			trackEvent("contact_form_error", {
 				source: "contact_page",
-				email,
 				error: error instanceof Error ? error.message : "Unknown error",
 			});
 		} finally {
@@ -171,8 +167,7 @@ export default function Contact() {
 		}
 	}
 
-	const isValidForm =
-		!errors.name && !errors.email && !errors.message && Object.keys(errors).length === 3;
+	const hasErrors = Object.values(errors).some(Boolean);
 
 	return (
 		<section className="contact-section" id="contact">
@@ -308,7 +303,7 @@ export default function Contact() {
 							<button
 								type="submit"
 								className="contact-submit"
-								disabled={isSubmitting || !isValidForm}
+								disabled={isSubmitting || hasErrors}
 							>
 								{isSubmitting ? t("contact.sending") : t("contact.send")}
 							</button>

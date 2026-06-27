@@ -43,29 +43,30 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
-  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
-  
-  if (!fs.existsSync(filePath)) {
-    return null;
+  for (const ext of ['.mdx', '.md']) {
+    const filePath = path.join(CONTENT_DIR, `${slug}${ext}`);
+    if (!fs.existsSync(filePath)) continue;
+
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const { data, content } = matter(fileContent);
+
+    const frontmatter = data as BlogPostFrontmatter;
+    const readingTime = calculateReadingTime(content);
+
+    return {
+      slug,
+      title: frontmatter.title,
+      date: frontmatter.date,
+      excerpt: frontmatter.excerpt,
+      tags: frontmatter.tags || [],
+      cover: frontmatter.cover,
+      lang: frontmatter.lang || 'pt-BR',
+      readingTime,
+      content,
+    };
   }
 
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const { data, content } = matter(fileContent);
-
-  const frontmatter = data as BlogPostFrontmatter;
-  const readingTime = calculateReadingTime(content);
-
-  return {
-    slug,
-    title: frontmatter.title,
-    date: frontmatter.date,
-    excerpt: frontmatter.excerpt,
-    tags: frontmatter.tags || [],
-    cover: frontmatter.cover,
-    lang: frontmatter.lang || 'pt-BR',
-    readingTime,
-    content,
-  };
+  return null;
 }
 
 export function getPostsByTag(tag: string): BlogPost[] {

@@ -17,7 +17,7 @@
 3. Navigate to: Settings > Environment Variables
 4. Add the variable:
    - Name: `NEXT_PUBLIC_WEB3FORMS_KEY`
-   - Value: `7d5b79e7-fbdf-4c39-81d4-80e0b8161b41`
+   - Value: *(your Web3Forms access key)*
    - Environments: Production, Preview, Development
 
 ### Option 3: Vercel API
@@ -30,7 +30,7 @@ curl -X POST https://api.vercel.com/v1/projects/YOUR_PROJECT_ID/env \
   -d '{
     "type": "plain",
     "key": "NEXT_PUBLIC_WEB3FORMS_KEY",
-    "value": "7d5b79e7-fbdf-4c39-81d4-80e0b8161b41",
+    "value": "YOUR_WEB3FORMS_KEY",
     "target": ["production", "preview", "development"]
   }'
 ```
@@ -45,5 +45,5 @@ curl -X POST https://api.vercel.com/v1/projects/YOUR_PROJECT_ID/env \
 
 After adding the variable:
 1. Redeploy the project
-2. Test the contact form: https://rafaumeu.github.io/#contact
-3. Check email: rafael.zendron22@gmail.com
+2. Test the contact form: https://portfoliodev-blush-pi.vercel.app/#contact
+3. Verify submissions in your Web3Forms dashboard
