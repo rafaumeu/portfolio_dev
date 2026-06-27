@@ -3,6 +3,7 @@
 import {
 	createContext,
 	type ReactNode,
+	useCallback,
 	useContext,
 	useEffect,
 	useMemo,
@@ -30,23 +31,21 @@ export default function ThemeProvider({
 }: {
 	readonly children: ReactNode;
 }) {
-	const [theme, setTheme] = useState<Theme>("dark");
-
-	useEffect(() => {
-		const stored = localStorage.getItem("theme") as Theme | null;
-		if (stored === "light" || stored === "dark") {
-			setTheme(stored);
-		}
-	}, []);
+	const [theme, setTheme] = useState<Theme>(() => {
+		if (typeof window === "undefined") return "dark";
+		const stored = localStorage.getItem("theme");
+		if (stored === "light" || stored === "dark") return stored;
+		return "dark";
+	});
 
 	useEffect(() => {
 		document.documentElement.dataset.theme = theme;
 		localStorage.setItem("theme", theme);
 	}, [theme]);
 
-	const toggleTheme = () => {
+	const toggleTheme = useCallback(() => {
 		setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-	};
+	}, []);
 
 	const contextValue = useMemo(
 		() => ({ theme, toggleTheme }),

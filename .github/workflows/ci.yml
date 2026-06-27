@@ -21,6 +21,6 @@ jobs:
           else
             npm install
           fi
-      - run: npx eslint src/ --ext .ts,.tsx
+      - run: npx eslint src/
       - run: npx tsc --noEmit
       - run: npm run build
