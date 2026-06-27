@@ -1,0 +1,12 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <text x="400" y="200" text-anchor="middle" fill="#8b5cf6" font-family="monospace" font-size="48" font-weight="bold">LouvorJA API</text>
+  <text x="400" y="260" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="20">REST API + Swagger UI</text>
+  <text x="400" y="300" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="16">Node.js + Laravel + Security</text>
+</svg>

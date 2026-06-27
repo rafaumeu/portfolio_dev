@@ -17,7 +17,7 @@
 		"ctaContact": "Contato",
 		"stats": {
 			"repos": "Repos",
-			"ci": "CI Pipelines",
+			"prs": "PRs Merged",
 			"tests": "Testes Automatizados",
 			"experience": "Anos Exp."
 		}
@@ -50,15 +50,15 @@
 			},
 			"hiremeAgent": {
 				"name": "HireMe Agent",
-				"description": "AI-powered job search engine com análise de currículos, envio automatizado via IMAP + Nodemailer, CLI com WebSocket. 13 PRs merged no NousResearch Hermes Agent."
+				"description": "AI-powered job search engine com análise de currículos, envio automatizado via IMAP + Nodemailer, CLI com WebSocket. Integrado com Hermes Agent para automação de busca e aplicação."
+			},
+			"louvorjaApi": {
+				"name": "LouvorJA API",
+				"description": "API para gerenciamento de conteúdo musical da IASD Jaú. JWT hardening, multi-key auth, OpenAPI 3.0 + Swagger UI, env validation. 20+ PRs merged com foco em segurança e documentação."
 			},
 			"openSource": {
 				"name": "Contribuições Open Source",
-				"description": "20+ PRs merged em projetos reais: 13 PRs no NousResearch Hermes Agent (skill system, delegate_tool, CI/CD) e 7 PRs no OpenHive AI (caption gen, publisher, MCP tools)."
-			},
-			"rocketseatForumHelper": {
-				"name": "Rocketseat Forum Helper",
-				"description": "Chrome Extension MV3 que ajuda alunos da Rocketseat com respostas inteligentes. Publicada na Chrome Web Store, TypeScript, CI/CD, E2E com Playwright."
+				"description": "480+ PRs merged em projetos reais: Hermes Agent (skill system, delegate_tool, CI/CD), Vercel (fix em Satori), Mattermost (RST docs), Next-Elite (Docker multi-arch) e outros projetos open source."
 			}
 		}
 	},
@@ -71,7 +71,7 @@
 	},
 	"about": {
 		"title": "Sobre Mim",
-		"bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 20+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
+		"bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 480+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\\n\\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\\n\\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase, Laravel.\\nFoco: Clean Architecture, DDD, testes rigorosos, AI/LLM integrations.",
 		"techStack": "Tecnologias"
 	},
 	"contact": {

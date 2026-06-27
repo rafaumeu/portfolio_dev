@@ -17,7 +17,7 @@
 		"ctaContact": "Contact Me",
 		"stats": {
 			"repos": "Repos",
-			"ci": "CI Pipelines",
+			"prs": "PRs Merged",
 			"tests": "Automated Tests",
 			"experience": "Yrs Exp."
 		}
@@ -50,15 +50,15 @@
 			},
 			"hiremeAgent": {
 				"name": "HireMe Agent",
-				"description": "AI-powered job search engine with resume analysis, automated submissions via IMAP + Nodemailer, CLI with WebSocket. 13 PRs merged in NousResearch Hermes Agent."
+				"description": "AI-powered job search engine with resume analysis, automated submissions via IMAP + Nodemailer, CLI with WebSocket. Integrated with Hermes Agent for search and application automation."
+			},
+			"louvorjaApi": {
+				"name": "LouvorJA API",
+				"description": "Music content management API for IASD Jaú. JWT hardening, multi-key auth, OpenAPI 3.0 + Swagger UI, env validation. 20+ merged PRs focused on security and documentation."
 			},
 			"openSource": {
 				"name": "Open Source Contributions",
-				"description": "20+ merged PRs in real projects: 13 PRs in NousResearch Hermes Agent (skill system, delegate_tool, CI/CD) and 7 PRs in OpenHive AI (caption gen, publisher, MCP tools)."
-			},
-			"rocketseatForumHelper": {
-				"name": "Rocketseat Forum Helper",
-				"description": "Chrome Extension MV3 helping Rocketseat students with intelligent forum responses. Published on Chrome Web Store, TypeScript, CI/CD, E2E with Playwright."
+				"description": "480+ merged PRs in real projects: Hermes Agent (skill system, delegate_tool, CI/CD), Vercel (Satori fix), Mattermost (RST docs), Next-Elite (Docker multi-arch) and other open source projects."
 			}
 		}
 	},
@@ -71,7 +71,7 @@
 	},
 	"about": {
 		"title": "About Me",
-		"bio": "From Jaú, Brazil. Started coding in 2024 and within 2 years contributed 20+ PRs to open source projects, built an AI-powered job search engine, and digitized a community club with gamification.\n\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, automated tests, and proper documentation.\n\nCore stack: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFocus: Clean Architecture, DDD, rigorous testing.",
+		"bio": "From Jaú, Brazil. Started coding in 2024 and within 2 years contributed 480+ PRs to open source projects, built an AI-powered job search engine, and digitized a community club with gamification.\\n\\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, automated tests, and proper documentation.\\n\\nCore stack: TypeScript, React, Next.js, Node.js, Fastify, Supabase, Laravel.\\nFocus: Clean Architecture, DDD, rigorous testing, AI/LLM integrations.",
 		"techStack": "Tech Stack"
 	},
 	"contact": {

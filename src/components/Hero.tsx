@@ -5,8 +5,8 @@ import { useTranslation } from "@/i18n";
 import "@/styles/hero.css";
 
 const STATS = [
-	{ key: "repos", value: "28+", icon: "📦" },
-	{ key: "ci", value: "50+", icon: "✅" },
+	{ key: "repos", value: "30+", icon: "📦" },
+	{ key: "prs", value: "480+", icon: "🔀" },
 	{ key: "tests", value: "1000+", icon: "🧪" },
 	{ key: "experience", value: "2+", icon: "⏱️" },
 ];

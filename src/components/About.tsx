@@ -5,8 +5,8 @@ import "@/styles/about.css";
 
 const SKILL_ROWS = [
 	["React", "Next.js", "TypeScript", "Node.js", "Fastify", "NestJS"],
-	["PHP", "Laravel", "PostgreSQL", "Docker", "Terraform"],
-	["Prisma", "Vitest", "Playwright"],
+	["PHP", "Laravel", "PostgreSQL", "Supabase", "Docker"],
+	["Prisma", "Vitest", "Playwright", "CI/CD", "AI/LLM"],
 ];
 
 export default function About() {
