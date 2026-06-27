@@ -16,15 +16,13 @@ interface Project {
 const PROJECTS: Project[] = [
 	{
 		key: "tesourosPortal",
-		tags: ["React", "PWA", "PostgreSQL", "Gamification"],
-		github: "https://github.com/rafaumeu/tesouros-portal",
+		tags: ["React", "PWA", "Supabase", "Gamification"],
 		demo: "https://tesouros-portal.vercel.app/",
 		image: "/images/tesouros-portal.webp",
 	},
 	{
 		key: "estacioPrep",
 		tags: ["Next.js", "Supabase", "TypeScript", "Gamification"],
-		github: "https://github.com/rafaumeu/estacio-prep",
 		demo: "https://estacio-prep.vercel.app/",
 		image: "/images/estacio-prep.webp",
 	},
@@ -51,20 +49,20 @@ const PROJECTS: Project[] = [
 	},
 	{
 		key: "hiremeAgent",
-		tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
+		tags: ["Next.js 16", "AI", "Hermes Agent", "CLI"],
 		demo: "https://hireme-agent.vercel.app/",
 		image: "/images/hireme-agent.webp",
 	},
 	{
-		key: "openSource",
-		tags: ["Hermes Agent", "OpenHive AI", "20+ PRs"],
-		github: "https://github.com/rafaumeu",
-		image: "/images/placeholder.svg",
+		key: "louvorjaApi",
+		tags: ["Node.js", "Laravel", "API", "Security"],
+		github: "https://github.com/louvorja/api",
+		image: "/images/louvorja-api.svg",
 	},
 	{
-		key: "rocketseatForumHelper",
-		tags: ["Chrome Extension", "MV3", "TypeScript"],
-		github: "https://github.com/rafaumeu/rocketseat-extractor-v2",
+		key: "openSource",
+		tags: ["Hermes Agent", "Vercel", "Mattermost", "100+ PRs"],
+		github: "https://github.com/rafaumeu",
 		image: "/images/placeholder.svg",
 	},
 ];
