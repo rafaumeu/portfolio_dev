@@ -5,7 +5,7 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const formattedDate = new Date(post.date).toLocaleDateString('pt-BR', {
+  const formattedDate = new Date(post.date).toLocaleDateString(post.lang || 'pt-BR', {
     day: '2-digit',
     month: 'long',
     year: 'numeric',

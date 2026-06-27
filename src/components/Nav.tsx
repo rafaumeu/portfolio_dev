@@ -85,6 +85,8 @@ export default function Nav() {
 				<ul
 					className={`nav-links ${isOpen ? "nav-links--open" : ""}`}
 					id={menuId}
+					aria-hidden={!isOpen}
+					inert={!isOpen ? true : undefined}
 				>
 					{NAV_KEYS.map((link, index) => (
 						<li key={link.href}>

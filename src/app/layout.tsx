@@ -46,10 +46,7 @@ export const metadata = {
 			pt: "https://rafaumeu.github.io/pt",
 		},
 	},
-	verification: {
-		google: "your-google-verification-code",
-		yandex: "your-yandex-verification-code",
-	},
+
 	category: "technology",
 };
 
