@@ -64,10 +64,6 @@
 				"name": "LouvorJA",
 				"description": "30+ PRs merged na API, App e Desktop do LouvorJA. Hardening de segurança (rotação JWT, fix SQL injection, rate limiting), docs OpenAPI, pipeline CI e prevenção XSS."
 			},
-			"gptRunner": {
-				"name": "GPT Runner",
-				"description": "10 PRs merged no nicepkg/gpt-runner: port para IntelliJ plugin, breakpoint debugging no VS Code, setup de GitHub Actions CI e melhorias de acessibilidade."
-			},
 			"openHive": {
 				"name": "OpenHive",
 				"description": "4 PRs merged no OpenHive AI: UI de publicação multi-plataforma, CRUD de contas sociais, fluxos OAuth e integrações com MCP tools."
