@@ -198,6 +198,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: flex-end;
+		pointer-events: auto;
 	}
 
 	.nav-links a {
