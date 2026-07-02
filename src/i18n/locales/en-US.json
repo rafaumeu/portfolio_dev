@@ -52,9 +52,25 @@
 				"name": "HireMe Agent",
 				"description": "AI-powered job search engine with resume analysis, automated submissions via IMAP + Nodemailer, CLI with WebSocket. 13 PRs merged in NousResearch Hermes Agent."
 			},
-			"openSource": {
-				"name": "Open Source Contributions",
-				"description": "20+ merged PRs in real projects: 13 PRs in NousResearch Hermes Agent (skill system, delegate_tool, CI/CD) and 7 PRs in OpenHive AI (caption gen, publisher, MCP tools)."
+			"testQubit": {
+				"name": "TestQubit",
+				"description": "AI-powered test generation CLI with multi-language adapters (TypeScript, Python, Java, C#, Ruby, Rust, Go). SaaS landing page with Stripe pricing, MCP server, and CI/CD integration."
+			},
+			"hermesAgent": {
+				"name": "Hermes Agent",
+				"description": "13 merged PRs in NousResearch Hermes Agent: skills system architecture, delegate_tool orchestration, CI/CD pipeline, and MCP integration."
+			},
+			"louvorja": {
+				"name": "LouvorJA",
+				"description": "30+ merged PRs across LouvorJA API, App, and Desktop. Security hardening (JWT rotation, SQL injection fixes, rate limiting), OpenAPI docs, CI pipeline, and XSS prevention."
+			},
+			"gptRunner": {
+				"name": "GPT Runner",
+				"description": "10 merged PRs in nicepkg/gpt-runner: IntelliJ plugin port, VS Code breakpoint debugging, GitHub Actions CI setup, and accessibility improvements."
+			},
+			"openHive": {
+				"name": "OpenHive",
+				"description": "4 merged PRs in OpenHive AI: multi-platform publishing UI, social account CRUD, OAuth flows, and MCP tool integrations."
 			},
 			"rocketseatForumHelper": {
 				"name": "Rocketseat Forum Helper",

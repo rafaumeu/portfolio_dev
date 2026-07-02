@@ -14,38 +14,34 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
+	// --- Own Products & Projects ---
 	{
 		key: "tesourosPortal",
 		tags: ["React", "PWA", "PostgreSQL", "Gamification"],
-		github: "https://github.com/rafaumeu/tesouros-portal",
 		demo: "https://tesouros-portal.vercel.app/",
 		image: "/images/tesouros-portal.webp",
 	},
 	{
 		key: "estacioPrep",
 		tags: ["Next.js", "Supabase", "TypeScript", "Gamification"],
-		github: "https://github.com/rafaumeu/estacio-prep",
 		demo: "https://estacio-prep.vercel.app/",
 		image: "/images/estacio-prep.webp",
 	},
 	{
 		key: "ignitecall",
 		tags: ["Next.js", "OAuth", "Prisma", "TypeScript"],
-		github: "https://github.com/rafaumeu/ignitecall-app",
 		demo: "https://ignitecall-app.vercel.app/",
 		image: "/images/ignitecall.webp",
 	},
 	{
 		key: "devStore",
 		tags: ["Next.js", "Stripe", "Tailwind", "SSR"],
-		github: "https://github.com/rafaumeu/ecommerce-next",
 		demo: "https://devstorerdz.netlify.app/",
 		image: "/images/devstore.webp",
 	},
 	{
 		key: "forum",
 		tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
-		github: "https://github.com/rafaumeu/forum",
 		demo: "https://web-ten-ashen-76.vercel.app/",
 		image: "/images/forum-v2.webp",
 	},
@@ -56,11 +52,39 @@ const PROJECTS: Project[] = [
 		image: "/images/hireme-agent.webp",
 	},
 	{
-		key: "openSource",
-		tags: ["Hermes Agent", "OpenHive AI", "20+ PRs"],
-		github: "https://github.com/rafaumeu",
-		image: "/images/placeholder.svg",
+		key: "testQubit",
+		tags: ["AI", "CLI", "TypeScript", "MCP", "Multi-language"],
+		demo: "https://testqubit.vercel.app/",
+		image: "/images/testqubit.webp",
 	},
+
+	// --- Open Source Contributions ---
+	{
+		key: "hermesAgent",
+		tags: ["TypeScript", "AI Agent", "MCP", "Skills System"],
+		github: "https://github.com/nousresearch/hermes-agent",
+		image: "/images/hermes-agent.webp",
+	},
+	{
+		key: "louvorja",
+		tags: ["PHP", "Laravel", "Security", "OpenAPI"],
+		github: "https://github.com/elvieira/LouvorJA",
+		image: "/images/louvorja.webp",
+	},
+	{
+		key: "gptRunner",
+		tags: ["VS Code", "IntelliJ", "TypeScript", "Plugin"],
+		github: "https://github.com/nicepkg/gpt-runner",
+		image: "/images/gpt-runner.webp",
+	},
+	{
+		key: "openHive",
+		tags: ["MCP", "OAuth", "Multi-platform", "Brand-aware AI"],
+		github: "https://github.com/NetoNetoArreche/Projeto-Hive",
+		image: "/images/openhive.webp",
+	},
+
+	// --- Tools & Extensions ---
 	{
 		key: "rocketseatForumHelper",
 		tags: ["Chrome Extension", "MV3", "TypeScript"],
@@ -96,15 +120,18 @@ export default function Projects() {
 						<article key={project.key} className="project-card">
 							<div className="project-card-image">
 								<Image
-									src={project.image}
-									alt={altText}
-									width={400}
-									height={225}
-									className="project-screenshot"
-									loading="lazy"
-									placeholder="blur"
-									blurDataURL="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAQAcJaQAA3AA/v3AgAA="
-								/>
+											src={project.image}
+											alt={altText}
+											width={400}
+											height={225}
+											className="project-screenshot"
+											loading="lazy"
+											{...(!project.image.endsWith(".svg") && {
+												placeholder: "blur" as const,
+												blurDataURL:
+													"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAQAcJaQAA3AA/v3AgAA=",
+											})}
+										/>
 							</div>
 							<div className="project-card-body">
 								<h3>{nameText}</h3>
