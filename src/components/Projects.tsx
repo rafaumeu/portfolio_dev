@@ -72,12 +72,6 @@ const PROJECTS: Project[] = [
 		image: "/images/louvorja.webp",
 	},
 	{
-		key: "gptRunner",
-		tags: ["VS Code", "IntelliJ", "TypeScript", "Plugin"],
-		github: "https://github.com/nicepkg/gpt-runner",
-		image: "/images/gpt-runner.webp",
-	},
-	{
 		key: "openHive",
 		tags: ["MCP", "OAuth", "Multi-platform", "Brand-aware AI"],
 		github: "https://github.com/NetoNetoArreche/Projeto-Hive",
