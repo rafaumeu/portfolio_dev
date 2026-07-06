@@ -29,7 +29,7 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.5.0",
-    "eslint": "^8.57.1",
+    "eslint": "^10.6.0",
     "eslint-config-next": "14.2.29",
     "highlight.js": "^11.11.1",
     "tailwindcss": "^4.3.1",
