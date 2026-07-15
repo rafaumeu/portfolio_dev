@@ -78,6 +78,12 @@ const PROJECTS: Project[] = [
 		image: "/images/openhive.webp",
 	},
 
+	{
+		key: "jornadaDeserto",
+		tags: ["Next.js 16", "Three.js", "R3F", "TypeScript", "Gamepad"],
+		image: "/images/placeholder.svg",
+	},
+
 	// --- Tools & Extensions ---
 	{
 		key: "rocketseatForumHelper",
