@@ -81,7 +81,6 @@ const PROJECTS: Project[] = [
 	{
 		key: "jornadaDeserto",
 		tags: ["Next.js 16", "Three.js", "R3F", "TypeScript", "Gamepad"],
-		github: "https://github.com/rafaumeu/jornada-no-deserto",
 		image: "/images/placeholder.svg",
 	},
 
