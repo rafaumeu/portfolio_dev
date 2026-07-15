@@ -81,6 +81,7 @@ const PROJECTS: Project[] = [
 	{
 		key: "jornadaDeserto",
 		tags: ["Next.js 16", "Three.js", "R3F", "TypeScript", "Gamepad"],
+		demo: "https://jornada-no-deserto.vercel.app/",
 		image: "/images/placeholder.svg",
 	},
 
