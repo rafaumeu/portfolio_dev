@@ -71,6 +71,10 @@
 			"rocketseatForumHelper": {
 				"name": "Rocketseat Forum Helper",
 				"description": "Chrome Extension MV3 helping Rocketseat students with intelligent forum responses. Published on Chrome Web Store, TypeScript, CI/CD, E2E with Playwright."
+			},
+			"jornadaDeserto": {
+				"name": "Journey Through the Desert",
+				"description": "3D biblical board game with Three.js/R3F. Interactive dice, 56 thematic cards, day/night cycle, milestones, gamepad support, and AI bots. Next.js 16, 565 tests, static build."
 			}
 		}
 	},

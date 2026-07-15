@@ -71,6 +71,10 @@
 			"rocketseatForumHelper": {
 				"name": "Rocketseat Forum Helper",
 				"description": "Chrome Extension MV3 que ajuda alunos da Rocketseat com respostas inteligentes. Publicada na Chrome Web Store, TypeScript, CI/CD, E2E com Playwright."
+			},
+			"jornadaDeserto": {
+				"name": "Jornada no Deserto",
+				"description": "Board game bíblico 3D com Three.js/R3F. Dado interativo, 56 cartas temáticas, ciclo dia/noite, milestones, suporte a gamepad e bots com IA. Next.js 16, 565 testes, build estático."
 			}
 		}
 	},
