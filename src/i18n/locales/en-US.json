@@ -1,128 +1,140 @@
 {
-	"nav": {
-		"toggle": "Toggle navigation",
-		"home": "Home",
-		"projects": "Projects",
-		"about": "About",
-		"contact": "Contact",
-		"blog": "Blog"
-	},
-	"hero": {
-		"badge": "Open to Work",
-		"headline": "Full Stack Developer • Clean Architecture & DDD",
-		"subtitle": "Clean code, thorough tests, well-defined architecture. Turning complex requirements into production-grade software.",
-		"ctaProjects": "View Projects",
-		"ctaBlog": "Read Blog",
-		"ctaFiverr": "Hire on Fiverr",
-		"ctaContact": "Contact Me",
-		"stats": {
-			"repos": "Repos",
-			"ci": "CI Pipelines",
-			"tests": "Automated Tests",
-			"experience": "Yrs Exp."
-		}
-	},
-	"projects": {
-		"title": "Featured Projects",
-		"subtitle": "A selection of my recent work",
-		"liveDemo": "Live Demo",
-		"source": "Source",
-		"items": {
-			"tesourosPortal": {
-				"name": "Tesouros Portal",
-				"description": "Adventure Club of Jaú managed everything on paper. Offline-first PWA with gamification (XP, levels), Supabase + PostgreSQL. RBAC, Playwright tests, LGPD compliance."
-			},
-			"estacioPrep": {
-				"name": "Estacio Prep",
-				"description": "Gamified app with Duolingo-style XP, streaks, quizzes and analytics. Spaced repetition algorithm, 100% test coverage, CI/CD under 2 min per PR."
-			},
-			"ignitecall": {
-				"name": "IgniteCall",
-				"description": "Scheduling app with Google Calendar OAuth, custom Design System, automated CI/CD. Prisma ORM + Vercel deploys."
-			},
-			"devStore": {
-				"name": "DevStore",
-				"description": "SSR e-commerce with Stripe payments, smart caching, responsive design. SSR with ISR + 40% load time reduction."
-			},
-			"forum": {
-				"name": "Forum DDD",
-				"description": "Full-stack forum built with Domain-Driven Design and Clean Architecture from scratch. Fastify + Prisma + unit and integration tests + turborepo monorepo."
-			},
-			"hiremeAgent": {
-				"name": "HireMe Agent",
-				"description": "AI-powered job search engine with resume analysis, automated submissions via IMAP + Nodemailer, CLI with WebSocket. 13 PRs merged in NousResearch Hermes Agent."
-			},
-			"testQubit": {
-				"name": "TestQubit",
-				"description": "AI-powered test generation CLI with multi-language adapters (TypeScript, Python, Java, C#, Ruby, Rust, Go). SaaS landing page with Stripe pricing, MCP server, and CI/CD integration."
-			},
-			"hermesAgent": {
-				"name": "Hermes Agent",
-				"description": "13 merged PRs in NousResearch Hermes Agent: skills system architecture, delegate_tool orchestration, CI/CD pipeline, and MCP integration."
-			},
-			"louvorja": {
-				"name": "LouvorJA",
-				"description": "30+ merged PRs across LouvorJA API, App, and Desktop. Security hardening (JWT rotation, SQL injection fixes, rate limiting), OpenAPI docs, CI pipeline, and XSS prevention."
-			},
-			"openHive": {
-				"name": "OpenHive",
-				"description": "4 merged PRs in OpenHive AI: multi-platform publishing UI, social account CRUD, OAuth flows, and MCP tool integrations."
-			},
-			"rocketseatForumHelper": {
-				"name": "Rocketseat Forum Helper",
-				"description": "Chrome Extension MV3 helping Rocketseat students with intelligent forum responses. Published on Chrome Web Store, TypeScript, CI/CD, E2E with Playwright."
-			},
-			"jornadaDeserto": {
-				"name": "Journey Through the Desert",
-				"description": "3D biblical board game with Three.js/R3F. Interactive dice, 56 thematic cards, day/night cycle, milestones, gamepad support, and AI bots. Next.js 16, 565 tests, static build."
-			}
-		}
-	},
-	"certifications": {
-		"title": "Certifications",
-		"subtitle": "{{count}} Rocketseat certifications in modern web development",
-		"countLabel": "Certifications",
-		"showAll": "Show all",
-		"showLess": "Show less"
-	},
-	"about": {
-		"title": "About Me",
-		"bio": "From Jaú, Brazil. Started coding in 2024 and within 2 years contributed 20+ PRs to open source projects, built an AI-powered job search engine, and digitized a community club with gamification.\n\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, automated tests, and proper documentation.\n\nCore stack: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFocus: Clean Architecture, DDD, rigorous testing.",
-		"techStack": "Tech Stack"
-	},
-	"contact": {
-		"title": "Let's Work Together",
-		"subtitle": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
-		"findMeOn": "Find me on",
-		"successMessage": "Thanks for reaching out! I'll get back to you soon.",
-		"errorMessage": "Error sending. Please try again.",
-		"name": "Name",
-		"namePlaceholder": "Your name",
-		"email": "Email",
-		"emailPlaceholder": "your@email.com",
-		"message": "Message",
-		"messagePlaceholder": "What's on your mind?",
-		"send": "Send Message",
-		"sending": "Sending...",
-		"errors": {
-			"nameRequired": "Name is required",
-			"nameTooShort": "Name must be at least 2 characters",
-			"emailRequired": "Email is required",
-			"emailInvalid": "Please enter a valid email",
-			"messageRequired": "Message is required",
-			"messageTooShort": "Message must be at least 10 characters"
-		}
-	},
-	"footer": {
-		"copyright": "© {{year}} Rafael Dias Zendron. All rights reserved.",
-		"builtWith": "Built with Next.js · Open to Opportunities"
-	},
-	"theme": {
-		"switchToLight": "Switch to light mode",
-		"switchToDark": "Switch to dark mode"
-	},
-	"language": {
-		"pt": "🇧🇷 PT",
-		"en": "🇺🇸 EN"
-	}
+  "nav": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Open to Work",
+    "headline": "Full Stack Developer • Clean Architecture & DDD",
+    "subtitle": "Clean code, thorough tests, well-defined architecture. Turning complex requirements into production-grade software.",
+    "ctaProjects": "View Projects",
+    "ctaBlog": "Read Blog",
+    "ctaFiverr": "Hire on Fiverr",
+    "ctaContact": "Contact Me",
+    "stats": {
+      "repos": "Repos",
+      "ci": "CI Pipelines",
+      "tests": "Automated Tests",
+      "experience": "Yrs Exp."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my recent work",
+    "liveDemo": "Live Demo",
+    "source": "Source",
+    "items": {
+      "tesourosPortal": {
+        "name": "Tesouros Portal",
+        "description": "Adventure Club of Jaú managed everything on paper. Offline-first PWA with gamification (XP, levels), Supabase + PostgreSQL. RBAC, Playwright tests, LGPD compliance."
+      },
+      "estacioPrep": {
+        "name": "Estacio Prep",
+        "description": "Gamified app with Duolingo-style XP, streaks, quizzes and analytics. Spaced repetition algorithm, 100% test coverage, CI/CD under 2 min per PR."
+      },
+      "ignitecall": {
+        "name": "IgniteCall",
+        "description": "Scheduling app with Google Calendar OAuth, custom Design System, automated CI/CD. Prisma ORM + Vercel deploys."
+      },
+      "devStore": {
+        "name": "DevStore",
+        "description": "SSR e-commerce with Stripe payments, smart caching, responsive design. SSR with ISR + 40% load time reduction."
+      },
+      "forum": {
+        "name": "Forum DDD",
+        "description": "Full-stack forum built with Domain-Driven Design and Clean Architecture from scratch. Fastify + Prisma + unit and integration tests + turborepo monorepo."
+      },
+      "hiremeAgent": {
+        "name": "HireMe Agent",
+        "description": "AI-powered job search engine with resume analysis, automated sending via IMAP + Nodemailer, CLI with WebSocket. Hermes Agent (NousResearch) contributor."
+      },
+      "testQubit": {
+        "name": "TestQubit",
+        "description": "AI-powered test generation CLI with multi-language adapters (TypeScript, Python, Java, C#, Ruby, Rust, Go). SaaS landing page with Stripe pricing, MCP server, and CI/CD integration."
+      },
+      "hermesAgent": {
+        "name": "Hermes Agent",
+        "description": "Active contributor to NousResearch Hermes Agent: submitted PRs for the skills system (25+ bundled skills), delegate_tool with model/provider override, quota/rate-limit status bar, builtin tools and software-engineering excellence skills."
+      },
+      "pianoLouvorja": {
+        "name": "Piano LouvorJA",
+        "description": "71 merged PRs across the pianolouvorja org (Electron App, Web PWA, Site and APK). Multi-screen desktop app for worship services, security hardening, WebSocket/mDNS/Cast architecture, multi-platform release CI/CD."
+      },
+      "louvorja": {
+        "name": "LouvorJA",
+        "description": "34 merged PRs across the louvorja org (API, App, Desktop). Hymnal API with multi-language catalog (PT/EN/ES), complete audio via json_db + sda-hymnal + MIDI, and continuous ecosystem evolution."
+      },
+      "openHive": {
+        "name": "OpenHive",
+        "description": "4 merged PRs in OpenHive AI: multi-platform publishing UI, social account CRUD, OAuth flows, and MCP tool integrations."
+      },
+      "rocketseatForumHelper": {
+        "name": "Rocketseat Forum Helper",
+        "description": "Chrome Extension MV3 helping Rocketseat students with intelligent forum responses. Published on Chrome Web Store, TypeScript, CI/CD, E2E with Playwright."
+      },
+      "jornadaDeserto": {
+        "name": "Journey Through the Desert",
+        "description": "3D biblical board game with Three.js/R3F. Interactive dice, 56 thematic cards, day/night cycle, milestones, gamepad support, and AI bots. Next.js 16, 565 tests, static build."
+      },
+      "louvorjaMobile": {
+        "name": "LouvorJA Mobile",
+        "description": "Flutter mobile app for LouvorJA: hymns and Bible with real offline catalog, instant global search, persisted download queue with circuit breaker, PT/EN/ES i18n, WCAG AA and Play Store/iOS CI artifacts. 31 merged PRs."
+      },
+      "omniroute": {
+        "name": "OmniRoute",
+        "description": "18 merged PRs to OmniRoute: OpenAI-compatible LLM proxy with multi-provider routing, model fallback and performance optimizations."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "{{count}} Rocketseat certifications in modern web development",
+    "countLabel": "Certifications",
+    "showAll": "Show all",
+    "showLess": "Show less"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "From Jaú, Brazil. Started coding in 2024 and within 2 years contributed 100+ PRs to open source projects, built an AI-powered job search engine, and digitized a community club with gamification.\n\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, automated tests, and proper documentation.\n\nCore stack: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFocus: Clean Architecture, DDD, rigorous testing.",
+    "techStack": "Tech Stack"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+    "findMeOn": "Find me on",
+    "successMessage": "Thanks for reaching out! I'll get back to you soon.",
+    "errorMessage": "Error sending. Please try again.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "What's on your mind?",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameTooShort": "Name must be at least 2 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message must be at least 10 characters"
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Rafael Dias Zendron. All rights reserved.",
+    "builtWith": "Built with Next.js · Open to Opportunities"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "language": {
+    "pt": "🇧🇷 PT",
+    "en": "🇺🇸 EN"
+  }
 }

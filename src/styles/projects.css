@@ -193,3 +193,23 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
+/* Badges (real metrics, green neon) */
+.project-badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 8px;
+}
+
+.project-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 999px;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: rgba(0, 255, 136, 0.95);
+	background: rgba(0, 255, 136, 0.08);
+	border: 1px solid rgba(0, 255, 136, 0.35);
+}

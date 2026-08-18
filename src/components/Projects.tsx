@@ -11,6 +11,7 @@ interface Project {
 	github?: string;
 	demo?: string;
 	image: string;
+	badges?: string[];
 }
 
 const PROJECTS: Project[] = [
@@ -66,10 +67,32 @@ const PROJECTS: Project[] = [
 		image: "/images/hermes-agent.webp",
 	},
 	{
-		key: "louvorja",
-		tags: ["PHP", "Laravel", "Security", "OpenAPI"],
-		github: "https://github.com/elvieira/LouvorJA",
+		key: "louvorjaMobile",
+		tags: ["Flutter", "i18n PT/EN/ES", "Offline-first", "WCAG AA"],
+		github: "https://github.com/pianolouvorja/apk",
+		image: "/images/placeholder.svg",
+		badges: ["31 PRs merged", "Play Store ready"],
+	},
+	{
+		key: "omniroute",
+		tags: ["TypeScript", "LLM Proxy", "AI Router", "OpenAI-compatible"],
+		github: "https://github.com/diegosouzapw/OmniRoute",
+		image: "/images/placeholder.svg",
+		badges: ["18 PRs merged"],
+	},
+	{
+		key: "pianoLouvorja",
+		tags: ["TypeScript", "Electron", "PWA", "Security"],
+		github: "https://github.com/pianolouvorja/app",
 		image: "/images/louvorja.webp",
+		badges: ["71 PRs merged", "4 repositórios"],
+	},
+	{
+		key: "louvorja",
+		tags: ["TypeScript", "API", "Electron", "Desktop"],
+		github: "https://github.com/louvorja/api",
+		image: "/images/placeholder.svg",
+		badges: ["34 PRs merged", "4 repositórios"],
 	},
 	{
 		key: "openHive",
@@ -136,7 +159,16 @@ export default function Projects() {
 							</div>
 							<div className="project-card-body">
 								<h3>{nameText}</h3>
-								<p>{t(`projects.items.${project.key}.description`)}</p>
+									{project.badges && project.badges.length > 0 && (
+										<div className="project-badges">
+											{project.badges.map((badge) => (
+												<span key={badge} className="project-badge">
+													{badge}
+												</span>
+											))}
+										</div>
+									)}
+									<p>{t(`projects.items.${project.key}.description`)}</p>
 								<div className="project-tags">
 									{project.tags.map((tag) => (
 										<span key={tag} className="project-tag">
