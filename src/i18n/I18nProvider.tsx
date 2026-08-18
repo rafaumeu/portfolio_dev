@@ -10,19 +10,21 @@ import {
 	useState,
 } from "react";
 import enUS from "./locales/en-US.json";
+import esES from "./locales/es-ES.json";
 import ptBR from "./locales/pt-BR.json";
 
-export type Locale = "pt-BR" | "en-US";
+export type Locale = "pt-BR" | "en-US" | "es-ES";
 
 const STORAGE_KEY = "locale";
 
 const localeMap: Record<Locale, Record<string, unknown>> = {
 	"pt-BR": ptBR,
 	"en-US": enUS,
+	"es-ES": esES,
 };
 
 export const DEFAULT_LOCALE: Locale = "pt-BR";
-export const AVAILABLE_LOCALES: Locale[] = ["pt-BR", "en-US"];
+export const AVAILABLE_LOCALES: Locale[] = ["pt-BR", "en-US", "es-ES"];
 
 function getNestedValue(obj: Record<string, unknown>, path: string): string {
 	const keys = path.split(".");
@@ -48,6 +50,7 @@ function detectLocale(): Locale {
 	if (stored && stored in localeMap) return stored as Locale;
 	const browserLang = navigator.language;
 	if (browserLang.startsWith("pt")) return "pt-BR";
+	if (browserLang.startsWith("es")) return "es-ES";
 	return "en-US";
 }
 

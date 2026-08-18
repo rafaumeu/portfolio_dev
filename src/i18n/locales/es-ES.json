@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "toggle": "Abrir navegación",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Disponible para Trabajar",
+    "headline": "Full Stack Developer • Clean Architecture & DDD",
+    "subtitle": "Código limpio, pruebas rigurosas, arquitectura bien definida. Transformo requisitos complejos en software de producción.",
+    "ctaProjects": "Ver Proyectos",
+    "ctaBlog": "Leer Blog",
+    "ctaFiverr": "Contratar en Fiverr",
+    "ctaContact": "Contacto",
+    "stats": {
+      "repos": "Repos",
+      "ci": "Pipelines CI",
+      "tests": "Pruebas Automatizadas",
+      "experience": "Años Exp."
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una selección de mis trabajos recientes",
+    "liveDemo": "Demo en Vivo",
+    "source": "Código",
+    "items": {
+      "tesourosPortal": {
+        "name": "Tesouros Portal",
+        "description": "El Club de Aventureros de Jaú gestionaba todo en papel. PWA offline-first con gamificación (XP, niveles), Supabase + PostgreSQL. RBAC, pruebas Playwright, cumplimiento LGPD."
+      },
+      "estacioPrep": {
+        "name": "Estacio Prep",
+        "description": "App gamificada con XP estilo Duolingo, rachas, quizzes y analytics. Algoritmo de repetición espaciada, 100% de cobertura de pruebas, CI/CD en < 2 min por PR."
+      },
+      "ignitecall": {
+        "name": "IgniteCall",
+        "description": "App de agendamiento con Google Calendar OAuth, Design System propio y CI/CD automatizado. Prisma ORM + deploy en Vercel."
+      },
+      "devStore": {
+        "name": "DevStore",
+        "description": "E-commerce SSR con pagos Stripe, caching inteligente y diseño responsive. SSR con ISR + 40% de reducción en el tiempo de carga."
+      },
+      "forum": {
+        "name": "Forum DDD",
+        "description": "Foro full-stack con Domain-Driven Design y Clean Architecture desde cero. Fastify + Prisma + pruebas de unidad e integración + monorepo con turborepo."
+      },
+      "hiremeAgent": {
+        "name": "HireMe Agent",
+        "description": "Buscador de empleo con IA y análisis de currículums, envío automatizado vía IMAP + Nodemailer, CLI con WebSocket. Contribuidor del Hermes Agent (NousResearch)."
+      },
+      "testQubit": {
+        "name": "TestQubit",
+        "description": "CLI de generación de pruebas con IA y adaptadores multi-lenguaje (TypeScript, Python, Java, C#, Ruby, Rust, Go). Landing page SaaS con Stripe, servidor MCP e integración CI/CD."
+      },
+      "hermesAgent": {
+        "name": "Hermes Agent",
+        "description": "Contribuidor activo en NousResearch Hermes Agent: envío de PRs para el sistema de skills (25+ skills incluidas), delegate_tool con override de model/provider, status bar con quota/rate-limit, herramientas builtin y skills de excelencia en ingeniería."
+      },
+      "pianoLouvorja": {
+        "name": "Piano LouvorJA",
+        "description": "71 PRs merged en la org pianolouvorja: App de escritorio Electron multiplataforma (multipantalla, WebSocket/mDNS/Cast), Web PWA (live en app.pianolouvorja.com.br), APK Android/iOS nativo y el sitio pianolouvorja.com.br. Hardening de seguridad, CI/CD con releases multiplataforma y bootstrap del Palco Receiver — integración con TVs smart (repo privado de la org)."
+      },
+      "louvorja": {
+        "name": "LouvorJA",
+        "description": "34 PRs merged en el ecosistema LouvorJA (org louvorja: API, App y Desktop). Desarrollo de la API de himnos con catálogo multi-idioma (PT/EN/ES), audio completo vía json_db + sda-hymnal + MIDI, además de contribuciones en el App y el Desktop."
+      },
+      "openHive": {
+        "name": "OpenHive",
+        "description": "4 PRs merged en OpenHive AI: UI de publicación multiplataforma, CRUD de cuentas sociales, flujos OAuth e integraciones con MCP tools."
+      },
+      "rocketseatForumHelper": {
+        "name": "Rocketseat Forum Helper",
+        "description": "Extensión de Chrome MV3 que ayuda a alumnos de Rocketseat con respuestas inteligentes. Publicada en Chrome Web Store, TypeScript, CI/CD, E2E con Playwright."
+      },
+      "jornadaDeserto": {
+        "name": "Jornada no Deserto",
+        "description": "Juego de mesa bíblico 3D con Three.js/R3F. Dado interactivo, 56 cartas temáticas, ciclo día/noche, hitos, soporte de gamepad y bots con IA. Next.js 16, 565 pruebas, build estático."
+      },
+      "louvorjaMobile": {
+        "name": "LouvorJA Mobile",
+        "description": "App móvil Flutter de LouvorJA: himnos y Biblia con catálogo offline real, búsqueda global instantánea, cola de descargas persistida con circuit breaker, i18n PT/EN/ES, WCAG AA y artefactos Play Store/iOS en CI. 31 PRs merged."
+      },
+      "omniroute": {
+        "name": "OmniRoute",
+        "description": "18 PRs merged en OmniRoute: proxy LLM OpenAI-compatible con enrutamiento multi-provider, fallback de modelos y optimizaciones de performance."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "subtitle": "{{count}} certificaciones de Rocketseat en desarrollo web moderno",
+    "countLabel": "Certificaciones",
+    "showAll": "Ver todas",
+    "showLess": "Mostrar menos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio": "Soy de Jaú, SP. Empecé a programar en 2024 y en 2 años ya contribuí con 100+ PRs en proyectos open source, construí un buscador de empleo con IA y digitalicé un club comunitario con gamificación.\n\nLo que me diferencia: no solo hago cursos — pongo código en producción. Mis proyectos tienen CI/CD, pruebas automatizadas y documentación.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nEnfoque: Clean Architecture, DDD, pruebas rigurosas.",
+    "techStack": "Tecnologías"
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "subtitle": "Actualmente estoy abierto a nuevas oportunidades. Sea para una pregunta o solo un saludo, ¡siéntete libre de contactarme!",
+    "findMeOn": "Encuéntrame en",
+    "successMessage": "¡Gracias por el contacto! Responderé pronto.",
+    "errorMessage": "Error al enviar. Inténtalo de nuevo.",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "¿En qué estás pensando?",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "errors": {
+      "nameRequired": "El nombre es obligatorio",
+      "nameTooShort": "El nombre debe tener al menos 2 caracteres",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Por favor ingresa un correo electrónico válido",
+      "messageRequired": "El mensaje es obligatorio",
+      "messageTooShort": "El mensaje debe tener al menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Rafael Dias Zendron. Todos los derechos reservados.",
+    "builtWith": "Hecho con Next.js • Abierto a Oportunidades"
+  },
+  "theme": {
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
+  },
+  "language": {
+    "pt": "🇧🇷 PT",
+    "en": "🇺🇸 EN",
+    "es": "🇪🇸 ES"
+  }
+}
