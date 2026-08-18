@@ -62,11 +62,11 @@
       },
       "pianoLouvorja": {
         "name": "Piano LouvorJA",
-        "description": "71 PRs merged na org pianolouvorja (App Electron, PWA Web, Site e APK). App desktop multi-tela para acompanhamento de cultos, hardening de segurança, arquitetura WebSocket/mDNS/Cast, pipeline CI/CD com releases multiplataforma."
+        "description": "71 PRs merged na org pianolouvorja: App desktop Electron multiplataforma (multi-tela, WebSocket/mDNS/Cast), Web PWA (live em app.pianolouvorja.com.br), APK Android/iOS nativo e o site pianolouvorja.com.br. Hardening de segurança, CI/CD com releases multiplataforma e bootstrap do Palco Receiver — integração com TVs smart (repo privado da org)."
       },
       "louvorja": {
         "name": "LouvorJA",
-        "description": "34 PRs merged na org louvorja (API, App, Desktop). API de hinos com catálogo multi-idioma (PT/EN/ES), áudio completo via json_db + sda-hymnal + MIDI, e evolução contínua do ecossistema."
+        "description": "34 PRs merged no ecossistema LouvorJA (org louvorja: API, App e Desktop). Desenvolvimento da API de hinos com catálogo multi-idioma (PT/EN/ES), áudio completo via json_db + sda-hymnal + MIDI, além de contribuições no App e Desktop."
       },
       "openHive": {
         "name": "OpenHive",
