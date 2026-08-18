@@ -82,7 +82,7 @@ const PROJECTS: Project[] = [
 	},
 	{
 		key: "pianoLouvorja",
-		tags: ["TypeScript", "Electron", "PWA", "Security"],
+		tags: ["TypeScript", "Electron", "PWA", "Android/iOS", "Smart TV"],
 		github: "https://github.com/pianolouvorja/app",
 		demo: "https://pianolouvorja.com.br/",
 		image: "/images/piano-louvorja-hero.webp",
