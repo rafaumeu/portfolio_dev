@@ -1,0 +1,6 @@
+{
+  "better-sqlite3": true,
+  "puppeteer": true,
+  "sharp": true,
+  "unrs-resolver": true
+}

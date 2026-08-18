@@ -1,128 +1,140 @@
 {
-	"nav": {
-		"toggle": "Abrir navegação",
-		"home": "Início",
-		"projects": "Projetos",
-		"about": "Sobre",
-		"contact": "Contato",
-		"blog": "Blog"
-	},
-	"hero": {
-		"badge": "Disponível para Trabalho",
-		"headline": "Full Stack Developer • Clean Architecture & DDD",
-		"subtitle": "Código limpo, testes rigorosos, arquitetura bem definida. Transformo requisitos complexos em software de produção.",
-		"ctaProjects": "Ver Projetos",
-		"ctaBlog": "Ler Blog",
-		"ctaFiverr": "Contratar no Fiverr",
-		"ctaContact": "Contato",
-		"stats": {
-			"repos": "Repos",
-			"ci": "CI Pipelines",
-			"tests": "Testes Automatizados",
-			"experience": "Anos Exp."
-		}
-	},
-	"projects": {
-		"title": "Projetos em Destaque",
-		"subtitle": "Uma seleção dos meus trabalhos recentes",
-		"liveDemo": "Demo ao Vivo",
-		"source": "Código",
-		"items": {
-			"tesourosPortal": {
-				"name": "Tesouros Portal",
-				"description": "Clube de Aventureiros de Jaú gerenciava tudo em papel. PWA offline-first com gamificação (XP, levels), Supabase + PostgreSQL. RBAC, Playwright tests, LGPD compliance."
-			},
-			"estacioPrep": {
-				"name": "Estacio Prep",
-				"description": "App gamificado com XP estilo Duolingo, streaks, quizzes e analytics. Algoritmo de revisão espaçada, 100% cobertura de testes, CI/CD em < 2 min por PR."
-			},
-			"ignitecall": {
-				"name": "IgniteCall",
-				"description": "App de agendamento com Google Calendar OAuth, Design System próprio e CI/CD automatizado. Prisma ORM + deploy Vercel."
-			},
-			"devStore": {
-				"name": "DevStore",
-				"description": "E-commerce SSR com Stripe payments, caching inteligente e design responsivo. SSR com ISR + 40% redução no tempo de carregamento."
-			},
-			"forum": {
-				"name": "Forum DDD",
-				"description": "Fórum full-stack com Domain-Driven Design e Clean Architecture do zero. Fastify + Prisma + testes de unidade e integração + monorepo com turborepo."
-			},
-			"hiremeAgent": {
-				"name": "HireMe Agent",
-				"description": "AI-powered job search engine com análise de currículos, envio automatizado via IMAP + Nodemailer, CLI com WebSocket. 13 PRs merged no NousResearch Hermes Agent."
-			},
-			"testQubit": {
-				"name": "TestQubit",
-				"description": "CLI de geração de testes com IA e adaptadores multi-linguagem (TypeScript, Python, Java, C#, Ruby, Rust, Go). Landing page SaaS com Stripe, servidor MCP e integração CI/CD."
-			},
-			"hermesAgent": {
-				"name": "Hermes Agent",
-				"description": "13 PRs merged no NousResearch Hermes Agent: arquitetura do sistema de skills, orquestração delegate_tool, pipeline CI/CD e integração MCP."
-			},
-			"louvorja": {
-				"name": "LouvorJA",
-				"description": "30+ PRs merged na API, App e Desktop do LouvorJA. Hardening de segurança (rotação JWT, fix SQL injection, rate limiting), docs OpenAPI, pipeline CI e prevenção XSS."
-			},
-			"openHive": {
-				"name": "OpenHive",
-				"description": "4 PRs merged no OpenHive AI: UI de publicação multi-plataforma, CRUD de contas sociais, fluxos OAuth e integrações com MCP tools."
-			},
-			"rocketseatForumHelper": {
-				"name": "Rocketseat Forum Helper",
-				"description": "Chrome Extension MV3 que ajuda alunos da Rocketseat com respostas inteligentes. Publicada na Chrome Web Store, TypeScript, CI/CD, E2E com Playwright."
-			},
-			"jornadaDeserto": {
-				"name": "Jornada no Deserto",
-				"description": "Board game bíblico 3D com Three.js/R3F. Dado interativo, 56 cartas temáticas, ciclo dia/noite, milestones, suporte a gamepad e bots com IA. Next.js 16, 565 testes, build estático."
-			}
-		}
-	},
-	"certifications": {
-		"title": "Certificações",
-		"subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
-		"countLabel": "Certificações",
-		"showAll": "Ver todas",
-		"showLess": "Mostrar menos"
-	},
-	"about": {
-		"title": "Sobre Mim",
-		"bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 20+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
-		"techStack": "Tecnologias"
-	},
-	"contact": {
-		"title": "Vamos Trabalhar Juntos",
-		"subtitle": "Estou atualmente aberto a novas oportunidades. Seja para uma pergunta ou só um oi, fique à vontade para entrar em contato!",
-		"findMeOn": "Me encontre em",
-		"successMessage": "Obrigado pelo contato! Responderei em breve.",
-		"errorMessage": "Erro ao enviar. Tente novamente.",
-		"name": "Nome",
-		"namePlaceholder": "Seu nome",
-		"email": "E-mail",
-		"emailPlaceholder": "seu@email.com",
-		"message": "Mensagem",
-		"messagePlaceholder": "No que está pensando?",
-		"send": "Enviar Mensagem",
-		"sending": "Enviando...",
-		"errors": {
-			"nameRequired": "Nome é obrigatório",
-			"nameTooShort": "Nome deve ter pelo menos 2 caracteres",
-			"emailRequired": "E-mail é obrigatório",
-			"emailInvalid": "Por favor insira um e-mail válido",
-			"messageRequired": "Mensagem é obrigatória",
-			"messageTooShort": "Mensagem deve ter pelo menos 10 caracteres"
-		}
-	},
-	"footer": {
-		"copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
-		"builtWith": "Feito com Next.js • Aberto a Oportunidades"
-	},
-	"theme": {
-		"switchToLight": "Mudar para modo claro",
-		"switchToDark": "Mudar para modo escuro"
-	},
-	"language": {
-		"pt": "🇧🇷 PT",
-		"en": "🇺🇸 EN"
-	}
+  "nav": {
+    "toggle": "Abrir navegação",
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Disponível para Trabalho",
+    "headline": "Full Stack Developer • Clean Architecture & DDD",
+    "subtitle": "Código limpo, testes rigorosos, arquitetura bem definida. Transformo requisitos complexos em software de produção.",
+    "ctaProjects": "Ver Projetos",
+    "ctaBlog": "Ler Blog",
+    "ctaFiverr": "Contratar no Fiverr",
+    "ctaContact": "Contato",
+    "stats": {
+      "repos": "Repos",
+      "ci": "CI Pipelines",
+      "tests": "Testes Automatizados",
+      "experience": "Anos Exp."
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Uma seleção dos meus trabalhos recentes",
+    "liveDemo": "Demo ao Vivo",
+    "source": "Código",
+    "items": {
+      "tesourosPortal": {
+        "name": "Tesouros Portal",
+        "description": "Clube de Aventureiros de Jaú gerenciava tudo em papel. PWA offline-first com gamificação (XP, levels), Supabase + PostgreSQL. RBAC, Playwright tests, LGPD compliance."
+      },
+      "estacioPrep": {
+        "name": "Estacio Prep",
+        "description": "App gamificado com XP estilo Duolingo, streaks, quizzes e analytics. Algoritmo de revisão espaçada, 100% cobertura de testes, CI/CD em < 2 min por PR."
+      },
+      "ignitecall": {
+        "name": "IgniteCall",
+        "description": "App de agendamento com Google Calendar OAuth, Design System próprio e CI/CD automatizado. Prisma ORM + deploy Vercel."
+      },
+      "devStore": {
+        "name": "DevStore",
+        "description": "E-commerce SSR com Stripe payments, caching inteligente e design responsivo. SSR com ISR + 40% redução no tempo de carregamento."
+      },
+      "forum": {
+        "name": "Forum DDD",
+        "description": "Fórum full-stack com Domain-Driven Design e Clean Architecture do zero. Fastify + Prisma + testes de unidade e integração + monorepo com turborepo."
+      },
+      "hiremeAgent": {
+        "name": "HireMe Agent",
+        "description": "AI-powered job search engine com análise de currículos, envio automatizado via IMAP + Nodemailer, CLI com WebSocket. Contribuidor do Hermes Agent (NousResearch)."
+      },
+      "testQubit": {
+        "name": "TestQubit",
+        "description": "CLI de geração de testes com IA e adaptadores multi-linguagem (TypeScript, Python, Java, C#, Ruby, Rust, Go). Landing page SaaS com Stripe, servidor MCP e integração CI/CD."
+      },
+      "hermesAgent": {
+        "name": "Hermes Agent",
+        "description": "Contribuidor ativo no NousResearch Hermes Agent: envio de PRs para o sistema de skills (25+ skills bundled), delegate_tool com override de model/provider, status bar com quota/rate-limit, ferramentas builtin e skills de excelência em engenharia."
+      },
+      "pianoLouvorja": {
+        "name": "Piano LouvorJA",
+        "description": "71 PRs merged na org pianolouvorja (App Electron, PWA Web, Site e APK). App desktop multi-tela para acompanhamento de cultos, hardening de segurança, arquitetura WebSocket/mDNS/Cast, pipeline CI/CD com releases multiplataforma."
+      },
+      "louvorja": {
+        "name": "LouvorJA",
+        "description": "34 PRs merged na org louvorja (API, App, Desktop). API de hinos com catálogo multi-idioma (PT/EN/ES), áudio completo via json_db + sda-hymnal + MIDI, e evolução contínua do ecossistema."
+      },
+      "openHive": {
+        "name": "OpenHive",
+        "description": "4 PRs merged no OpenHive AI: UI de publicação multi-plataforma, CRUD de contas sociais, fluxos OAuth e integrações com MCP tools."
+      },
+      "rocketseatForumHelper": {
+        "name": "Rocketseat Forum Helper",
+        "description": "Chrome Extension MV3 que ajuda alunos da Rocketseat com respostas inteligentes. Publicada na Chrome Web Store, TypeScript, CI/CD, E2E com Playwright."
+      },
+      "jornadaDeserto": {
+        "name": "Jornada no Deserto",
+        "description": "Board game bíblico 3D com Three.js/R3F. Dado interativo, 56 cartas temáticas, ciclo dia/noite, milestones, suporte a gamepad e bots com IA. Next.js 16, 565 testes, build estático."
+      },
+      "louvorjaMobile": {
+        "name": "LouvorJA Mobile",
+        "description": "App mobile Flutter do LouvorJA: hinos e Bíblia com catálogo offline real, busca global instantânea, fila de downloads persistida com circuit breaker, i18n PT/EN/ES, WCAG AA e artefatos Play Store/iOS no CI. 31 PRs merged."
+      },
+      "omniroute": {
+        "name": "OmniRoute",
+        "description": "18 PRs merged no OmniRoute: proxy LLM OpenAI-compatible com roteamento multi-provider, fallback de modelos e otimizações de performance."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificações",
+    "subtitle": "{{count}} certificações da Rocketseat em desenvolvimento web moderno",
+    "countLabel": "Certificações",
+    "showAll": "Ver todas",
+    "showLess": "Mostrar menos"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 100+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
+    "techStack": "Tecnologias"
+  },
+  "contact": {
+    "title": "Vamos Trabalhar Juntos",
+    "subtitle": "Estou atualmente aberto a novas oportunidades. Seja para uma pergunta ou só um oi, fique à vontade para entrar em contato!",
+    "findMeOn": "Me encontre em",
+    "successMessage": "Obrigado pelo contato! Responderei em breve.",
+    "errorMessage": "Erro ao enviar. Tente novamente.",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "message": "Mensagem",
+    "messagePlaceholder": "No que está pensando?",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "errors": {
+      "nameRequired": "Nome é obrigatório",
+      "nameTooShort": "Nome deve ter pelo menos 2 caracteres",
+      "emailRequired": "E-mail é obrigatório",
+      "emailInvalid": "Por favor insira um e-mail válido",
+      "messageRequired": "Mensagem é obrigatória",
+      "messageTooShort": "Mensagem deve ter pelo menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Rafael Dias Zendron. Todos os direitos reservados.",
+    "builtWith": "Feito com Next.js • Aberto a Oportunidades"
+  },
+  "theme": {
+    "switchToLight": "Mudar para modo claro",
+    "switchToDark": "Mudar para modo escuro"
+  },
+  "language": {
+    "pt": "🇧🇷 PT",
+    "en": "🇺🇸 EN"
+  }
 }
