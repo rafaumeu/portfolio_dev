@@ -9,8 +9,6 @@ export default function Footer() {
 
 	return (
 		<footer className="footer-section" role="contentinfo">
-			<p>{t("footer.copyright", { year })}</p>
-			<p>{t("footer.builtWith")}</p>
 			<div className="footer-links">
 				<a
 					href="https://github.com/rafaumeu"
@@ -37,6 +35,15 @@ export default function Footer() {
 					Fiverr
 				</a>
 			</div>
+			<div className="footer-links">
+				<a href="/politica-de-privacidade">{t("footer.privacy")}</a>
+				<span className="footer-separator">·</span>
+				<a href="/termos-de-uso">{t("footer.terms")}</a>
+				<span className="footer-separator">·</span>
+				<a href="mailto:rafael.zendron22@gmail.com">DPO: rafael.zendron22@gmail.com</a>
+			</div>
+			<p>{t("footer.copyright", { year })}</p>
+			<p>{t("footer.builtWith")}</p>
 		</footer>
 	);
 }
