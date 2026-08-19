@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslation } from "@/i18n";
 
 export default function SkipToContent() {
 	const [isFocused, setIsFocused] = useState(false);
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const handleEsc = (e: KeyboardEvent) => {
@@ -23,7 +25,7 @@ export default function SkipToContent() {
 			onFocus={() => setIsFocused(true)}
 			onBlur={() => setIsFocused(false)}
 		>
-			Skip to main content
+			{t("skipToContent")}
 		</a>
 	);
 }

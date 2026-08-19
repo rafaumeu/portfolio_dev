@@ -1,5 +1,7 @@
 import { getAllPosts } from '@/lib/blog/posts';
 
+const SITE_URL = 'https://portfoliodev-blush-pi.vercel.app';
+
 export const dynamic = 'force-static';
 
 export async function GET() {
@@ -9,10 +11,10 @@ export async function GET() {
     .map(post => `
       <item>
         <title><![CDATA[${post.title}]]></title>
-        <link>https://rafaumeu.github.io/blog/${post.slug}</link>
+        <link>${SITE_URL}/blog/${post.slug}</link>
         <description><![CDATA[${post.excerpt}]]></description>
         <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-        <guid isPermaLink="true">https://rafaumeu.github.io/blog/${post.slug}</guid>
+        <guid isPermaLink="true">${SITE_URL}/blog/${post.slug}</guid>
         <category>${post.tags.join(',')}</category>
       </item>
     `)
@@ -23,8 +25,8 @@ export async function GET() {
   <channel>
     <title><![CDATA[Blog | Rafael Zendron]]></title>
     <description><![CDATA[Artigos sobre desenvolvimento, tecnologia e projetos]]></description>
-    <link>https://rafaumeu.github.io/blog</link>
-    <atom:link href="https://rafaumeu.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <link>${SITE_URL}/blog</link>
+    <atom:link href="${SITE_URL}/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
     ${rssItems}
   </channel>
