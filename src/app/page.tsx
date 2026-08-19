@@ -3,6 +3,7 @@ import Analytics from "@/components/Analytics";
 import Certifications from "@/components/Certifications";
 import ClientProviders from "@/components/ClientProviders";
 import Contact from "@/components/Contact";
+import CookieBanner from "@/components/CookieBanner";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MotionWrapper from "@/components/MotionWrapper";
@@ -35,6 +36,7 @@ export default function Home() {
 			</main>
 			<Footer />
 			<Analytics />
+			<CookieBanner />
 		</ClientProviders>
 	);
 }

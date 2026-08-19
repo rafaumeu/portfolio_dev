@@ -37,6 +37,7 @@ export default function Contact() {
 	const [submitted, setSubmitted] = useState(false);
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [formError, setFormError] = useState("");
+	const [consentGiven, setConsentGiven] = useState(false);
 	const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
 	const formRef = useRef<HTMLFormElement>(null);
 	const { t } = useTranslation();
@@ -120,7 +121,6 @@ export default function Contact() {
 		// Track form submission attempt
 		trackEvent("contact_form_submitted", {
 			source: "contact_page",
-			email,
 		});
 
 		try {
@@ -146,7 +146,6 @@ export default function Contact() {
 				// Track successful submission
 				trackEvent("contact_form_success", {
 					source: "contact_page",
-					email,
 				});
 				formRef.current?.reset();
 			} else {
@@ -154,7 +153,6 @@ export default function Contact() {
 				// Track failed submission
 				trackEvent("contact_form_failed", {
 					source: "contact_page",
-					email,
 					error: data.message,
 				});
 			}
@@ -163,7 +161,6 @@ export default function Contact() {
 			// Track error
 			trackEvent("contact_form_error", {
 				source: "contact_page",
-				email,
 				error: error instanceof Error ? error.message : "Unknown error",
 			});
 		} finally {
@@ -305,10 +302,30 @@ export default function Contact() {
 								)}
 							</div>
 
+							<div className="form-group form-group-consent">
+								<label className="contact-consent-label">
+									<input
+										type="checkbox"
+										name="lgpd_consent"
+										id="lgpd-consent"
+										required
+										onChange={(e) => setConsentGiven(e.target.checked)}
+										checked={consentGiven}
+									/>
+									<span className="contact-consent-text">
+										{t("contact.consentLabel")}{" "}
+										<a href="/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
+											{t("contact.consentLink")}
+										</a>
+										.
+									</span>
+								</label>
+							</div>
+
 							<button
 								type="submit"
 								className="contact-submit"
-								disabled={isSubmitting || !isValidForm}
+								disabled={isSubmitting || !isValidForm || !consentGiven}
 							>
 								{isSubmitting ? t("contact.sending") : t("contact.send")}
 							</button>
