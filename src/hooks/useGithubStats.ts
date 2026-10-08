@@ -92,7 +92,9 @@ export function useGithubStats(): GithubStats {
 	return stats;
 }
 
-/** Round down to the nearest 10 and append "+" — numbers stay true and age well. */
+/** Round down to a human-friendly step and append "+" — numbers stay true and age well. */
 export function formatPlus(n: number): string {
-	return `${Math.floor(n / 10) * 10}+`;
+	if (n >= 100) return `${Math.floor(n / 10) * 10}+`; // 342 → "340+"
+	if (n >= 10) return `${Math.floor(n / 5) * 5}+`; // 17 → "15+"
+	return n > 0 ? `${n}` : "—"; // 6 → "6"; 0 → "—" (nada a mostrar)
 }
