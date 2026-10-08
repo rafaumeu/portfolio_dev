@@ -70,14 +70,14 @@ const PROJECTS: Project[] = [
 		key: "louvorjaMobile",
 		tags: ["Flutter", "i18n PT/EN/ES", "Offline-first", "WCAG AA"],
 		github: "https://github.com/pianolouvorja/apk",
-		image: "/images/placeholder.svg",
+		image: "/images/louvorja-mobile.webp",
 		badges: ["31 PRs merged", "Play Store ready"],
 	},
 	{
 		key: "omniroute",
 		tags: ["TypeScript", "LLM Proxy", "AI Router", "OpenAI-compatible"],
 		github: "https://github.com/diegosouzapw/OmniRoute",
-		image: "/images/placeholder.svg",
+		image: "/images/omniroute.webp",
 		badges: ["18 PRs merged"],
 	},
 	{
@@ -92,7 +92,7 @@ const PROJECTS: Project[] = [
 		key: "louvorja",
 		tags: ["TypeScript", "API", "Electron", "Desktop"],
 		github: "https://github.com/louvorja/api",
-		image: "/images/placeholder.svg",
+		image: "/images/louvorja-api.webp",
 		badges: ["34 PRs merged", "4 repositórios"],
 	},
 	{
@@ -106,16 +106,11 @@ const PROJECTS: Project[] = [
 		key: "jornadaDeserto",
 		tags: ["Next.js 16", "Three.js", "R3F", "TypeScript", "Gamepad"],
 		demo: "https://jornada-no-deserto.vercel.app/",
-		image: "/images/placeholder.svg",
+		image: "/images/jornada.webp",
 	},
 
 	// --- Tools & Extensions ---
-	{
-		key: "rocketseatForumHelper",
-		tags: ["Chrome Extension", "MV3", "TypeScript"],
-		github: "https://github.com/rafaumeu/rocketseat-extractor-v2",
-		image: "/images/placeholder.svg",
-	},
+	// rocketseat-extractor-v2 removido: repo 404 (privado/renomeado) — card só volta com repo público
 ];
 
 export default function Projects() {
