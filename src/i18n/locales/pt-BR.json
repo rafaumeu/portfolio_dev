@@ -16,9 +16,9 @@
     "ctaFiverr": "Contratar no Fiverr",
     "ctaContact": "Contato",
     "stats": {
-      "repos": "Repos",
-      "ci": "CI Pipelines",
-      "tests": "Testes Automatizados",
+      "mergedThirdParty": "PRs merged em projetos de terceiros",
+      "repos": "Repos públicos",
+      "bigTech": "PRs em Big Techs (Vercel, Redux, Dokploy, Mattermost)",
       "experience": "Anos Exp."
     }
   },
@@ -99,7 +99,7 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já contribuí com 100+ PRs em projetos open source, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
+    "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já superei 340+ PRs merged em projetos de terceiros (Vercel, Redux, Dokploy, Mattermost) e mantenho uma org própria com produtos em produção, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
     "techStack": "Tecnologias"
   },
   "contact": {

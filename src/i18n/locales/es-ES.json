@@ -16,9 +16,9 @@
     "ctaFiverr": "Contratar en Fiverr",
     "ctaContact": "Contacto",
     "stats": {
-      "repos": "Repos",
-      "ci": "Pipelines CI",
-      "tests": "Pruebas Automatizadas",
+      "mergedThirdParty": "PRs merged en proyectos de terceros",
+      "repos": "Repos públicos",
+      "bigTech": "PRs en Big Techs (Vercel, Redux, Dokploy, Mattermost)",
       "experience": "Años Exp."
     }
   },
