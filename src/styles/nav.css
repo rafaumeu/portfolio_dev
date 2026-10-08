@@ -193,6 +193,8 @@
 @media (min-width: 1025px) {
 	.nav-links {
 		position: static;
+		inset: auto;
+		z-index: auto;
 		transform: none;
 		opacity: 1;
 		background: transparent;
