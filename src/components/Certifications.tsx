@@ -9,7 +9,8 @@ const FEATURED = new Set([
 	"Ignite Node.js",
 	"DDD: Domain-Driven Design",
 	"Clean Architecture: Arquitetura limpa",
-	"Terraform: Infraestrutura como código",
+	"Testes unitários com Vitest",
+	"Testes E2E com Playwright",
 ]);
 
 const CERTIFICATIONS = [

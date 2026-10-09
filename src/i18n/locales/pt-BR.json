@@ -114,8 +114,15 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e em 2 anos já superei 340+ PRs merged em projetos de terceiros (Vercel, Redux, Dokploy, Mattermost) e mantenho uma org própria com produtos em produção, construí um AI-powered job search engine e digitalizei um clube comunitário com gamificação.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFoco: Clean Architecture, DDD, testes rigorosos.",
-    "techStack": "Tecnologias"
+    "bio": "Sou de Jaú, SP. Comecei a programar em 2024 e já superei 565+ PRs merged, sendo 340+ em projetos de terceiros (Vercel, Redux, Dokploy, Mattermost). Como Tech Lead no PIANO LouvorJA, lidero site, API e qualidade de uma suíte em produção (web, desktop, mobile e Smart TV) com ~1.440 commits.\n\nO que me diferencia: não faço só cursos — coloco código em produção. Meus projetos têm CI/CD, 2.700+ testes automatizados e documentação.\n\nStack principal: TypeScript, React, Next.js, Node.js, Fastify.\nFoco: Clean Architecture, DDD, testes rigorosos.",
+    "techStack": "Tecnologias",
+    "skillGroups": {
+      "principal": "Principal",
+      "backend": "Back-end & Dados",
+      "plataformas": "Plataformas",
+      "qualidade": "Qualidade & CI",
+      "arquitetura": "Arquitetura"
+    }
   },
   "contact": {
     "title": "Vamos Trabalhar Juntos",

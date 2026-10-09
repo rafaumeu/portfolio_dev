@@ -114,8 +114,15 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "From Jaú, Brazil. Started coding in 2024 and within 2 years contributed 100+ PRs to open source projects, built an AI-powered job search engine, and digitized a community club with gamification.\n\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, automated tests, and proper documentation.\n\nCore stack: TypeScript, React, Next.js, Node.js, Fastify, Supabase.\nFocus: Clean Architecture, DDD, rigorous testing.",
-    "techStack": "Tech Stack"
+    "bio": "I'm from Jaú, Brazil. I started programming in 2024 and have already landed 565+ merged PRs, 340+ of them in third-party projects (Vercel, Redux, Dokploy, Mattermost). As Tech Lead at PIANO LouvorJA, I lead the website, API and quality of a production suite (web, desktop, mobile and Smart TV) with ~1,440 commits.\n\nWhat sets me apart: I don't just take courses — I ship code to production. My projects have CI/CD, 2,700+ automated tests and real documentation.\n\nCore stack: TypeScript, React, Next.js, Node.js, Fastify.\nFocus: Clean Architecture, DDD, rigorous testing.",
+    "techStack": "Tech Stack",
+    "skillGroups": {
+      "principal": "Core",
+      "backend": "Back-end & Data",
+      "plataformas": "Platforms",
+      "qualidade": "Quality & CI",
+      "arquitetura": "Architecture"
+    }
   },
   "contact": {
     "title": "Let's Work Together",
