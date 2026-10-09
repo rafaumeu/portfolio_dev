@@ -220,5 +220,11 @@
     "lawText": "Estos términos se rigen por la legislación brasileña, incluyendo la LGPD (Ley nº 13.709/2018) y el Marco Civil de Internet (Ley nº 12.965/2014).",
     "contactInfoTitle": "9. Contacto",
     "contactInfoText": "Para preguntas sobre estos términos, contacte: rafael.zendron22@gmail.com."
+  },
+  "opensource": {
+    "title": "Contribuciones Open Source",
+    "subtitle": "{count} Pull Requests merged en proyectos usados por desarrolladores de todo el mundo. Cada tarjeta abre el PR original.",
+    "countLabel": "PRs merged en proyectos de terceros",
+    "viewPr": "Ver Pull Request"
   }
 }
