@@ -16,9 +16,9 @@
     "ctaFiverr": "Hire on Fiverr",
     "ctaContact": "Contact Me",
     "stats": {
-      "repos": "Repos",
-      "ci": "CI Pipelines",
-      "tests": "Automated Tests",
+      "mergedThirdParty": "PRs merged in third-party projects",
+      "repos": "Public Repos",
+      "bigTech": "PRs in Big Techs (Vercel, Redux, Dokploy, Mattermost)",
       "experience": "Yrs Exp."
     }
   },

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "fetchedAt": "2026-10-09T00:01:35Z",
+  "live": true,
+  "repos": 128,
+  "followers": 129,
+  "mergedThirdParty": 343,
+  "mergedTotal": 562,
+  "bigTechMerged": 6,
+  "bigTechByOrg": {
+    "vercel": 2,
+    "Dokploy": 2,
+    "reduxjs": 1,
+    "mattermost": 1
+  }
+}

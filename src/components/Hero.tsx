@@ -2,17 +2,19 @@
 
 import Image from "next/image";
 import { useTranslation } from "@/i18n";
+import { useGithubStats, formatPlus } from "@/hooks/useGithubStats";
 import "@/styles/hero.css";
-
-const STATS = [
-	{ key: "repos", value: "28+", icon: "📦" },
-	{ key: "ci", value: "50+", icon: "✅" },
-	{ key: "tests", value: "1000+", icon: "🧪" },
-	{ key: "experience", value: "2+", icon: "⏱️" },
-];
 
 export default function Hero() {
 	const { t } = useTranslation();
+	const stats = useGithubStats();
+
+	const STATS = [
+		{ key: "mergedThirdParty", value: formatPlus(stats.mergedThirdParty), icon: "🔀" },
+		{ key: "repos", value: `${stats.repos}`, icon: "📦" },
+		{ key: "bigTech", value: formatPlus(stats.bigTechMerged), icon: "🏆" },
+		{ key: "experience", value: "2+", icon: "⏱️" },
+	];
 
 	return (
 		<section className="hero" id="home">
