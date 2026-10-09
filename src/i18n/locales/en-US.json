@@ -81,8 +81,8 @@
         "description": "3D biblical board game with Three.js/R3F. Interactive dice, 56 thematic cards, day/night cycle, milestones, gamepad support, and AI bots. Next.js 16, 565 tests, static build."
       },
       "louvorjaMobile": {
-        "name": "LouvorJA Mobile",
-        "description": "Flutter mobile app for LouvorJA: hymns and Bible with real offline catalog, instant global search, persisted download queue with circuit breaker, PT/EN/ES i18n, WCAG AA and Play Store/iOS CI artifacts. 31 merged PRs."
+        "name": "PIANO LouvorJA Mobile",
+        "description": "Flutter mobile app for PIANO LouvorJA (~83% of commits): hymns and Bible with real offline catalog, instant global search, persisted download queue with circuit breaker, PT/EN/ES i18n, WCAG AA and Play Store/iOS artifacts in CI."
       },
       "omniroute": {
         "name": "OmniRoute",

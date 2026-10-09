@@ -9,7 +9,7 @@
   },
   "hero": {
     "badge": "Disponible para Trabajar",
-    "headline": "Full Stack Developer • Clean Architecture & DDD",
+    "headline": "Desarrollador Full Stack • Arquitectura Limpia y DDD",
     "subtitle": "Código limpio, pruebas rigurosas, arquitectura bien definida. Transformo requisitos complejos en software de producción.",
     "ctaProjects": "Ver Proyectos",
     "ctaBlog": "Leer Blog",
@@ -81,8 +81,8 @@
         "description": "Juego de mesa bíblico 3D con Three.js/R3F. Dado interactivo, 56 cartas temáticas, ciclo día/noche, hitos, soporte de gamepad y bots con IA. Next.js 16, 565 pruebas, build estático."
       },
       "louvorjaMobile": {
-        "name": "LouvorJA Mobile",
-        "description": "App móvil Flutter de LouvorJA: himnos y Biblia con catálogo offline real, búsqueda global instantánea, cola de descargas persistida con circuit breaker, i18n PT/EN/ES, WCAG AA y artefactos Play Store/iOS en CI. 31 PRs merged."
+        "name": "PIANO LouvorJA Móvil",
+        "description": "App móvil Flutter de PIANO LouvorJA (~83% de los commits): himnos y Biblia con catálogo offline real, búsqueda global instantánea, cola de descargas persistida con circuit breaker, i18n PT/EN/ES, WCAG AA y artefactos de Play Store/iOS en CI."
       },
       "omniroute": {
         "name": "OmniRoute",

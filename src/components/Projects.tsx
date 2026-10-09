@@ -69,7 +69,7 @@ const PROJECTS: Project[] = [
 	{
 		key: "louvorjaMobile",
 		tags: ["Flutter", "i18n PT/EN/ES", "Offline-first", "WCAG AA"],
-		github: "https://github.com/pianolouvorja/apk",
+		github: "https://github.com/Piano-Louvor-JA/apk",
 		image: "/images/louvorja-mobile.webp",
 		badges: ["31 PRs merged", "Play Store ready"],
 	},
