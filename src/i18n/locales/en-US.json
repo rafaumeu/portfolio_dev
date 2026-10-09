@@ -226,5 +226,26 @@
     "subtitle": "{{count}} merged Pull Requests in projects used by developers worldwide. Every card opens the original PR.",
     "countLabel": "PRs merged in third-party projects",
     "viewPr": "View Pull Request"
+  },
+  "piano": {
+    "title": "PIANO LouvorJA — Product in Production",
+    "subtitle": "Co-creator of PIANO LouvorJA: a worship support ecosystem for the Seventh-day Adventist Church (liturgy, hymns, Bible, multi-screen projection). A living system with real users every weekend.",
+    "badgeProduction": "in production",
+    "badgeReleases": "releases published",
+    "badgePlatforms": "platforms (desktop, web, mobile, TV)",
+    "leadContributor": "lead contributor",
+    "collab": "Project in collaboration with @ezequiasfonseca — mandatory review on every merge.",
+    "products": {
+      "desktop": "Operator desktop app: live liturgy, multi-screen, WebSocket/mDNS, TV casting.",
+      "site": "Institutional site and docs — practically all the code is mine (76% of commits).",
+      "mobile": "Android operator app: field control, navigation and playback (~83% of commits).",
+      "pwa": "PWA web app used directly in the browser during worship services.",
+      "tv": "TV receivers (webOS, Tizen, AndroidTV, Web): TV = dumb display (~76% of commits).",
+      "api": "REST API with OpenAPI/Scalar, living documentation, telemetry and security hardening."
+    }
+  },
+  "louvorja": {
+    "title": "LouvorJA — legacy API (contributions)",
+    "subtitle": "Contributions to the original LouvorJA API (third-party org): security, OpenAPI docs and a RAG chatbot. Every card opens the original PR."
   }
 }

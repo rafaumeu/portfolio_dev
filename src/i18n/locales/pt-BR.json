@@ -226,5 +226,26 @@
     "subtitle": "{{count}} Pull Requests merged em projetos que desenvolvedores usam no mundo todo. Cada card abre a PR original.",
     "countLabel": "PRs merged em projetos de terceiros",
     "viewPr": "Ver Pull Request"
+  },
+  "piano": {
+    "title": "PIANO LouvorJA — Produto em Produção",
+    "subtitle": "Co-criador do PIANO LouvorJA: ecossistema de apoio a cultos da Igreja Adventista (liturgia, hinos, bíblia, projeção multi-tela). Sistema vivo, com usuários reais nos cultos de fim de semana.",
+    "badgeProduction": "em produção",
+    "badgeReleases": "releases publicadas",
+    "badgePlatforms": "plataformas (desktop, web, mobile, TV)",
+    "leadContributor": "lead contributor",
+    "collab": "Projeto em colaboração com @ezequiasfonseca — review obrigatória em todos os merges.",
+    "products": {
+      "desktop": "App desktop do operador: liturgia ao vivo, multi-tela, WebSocket/mDNS, cast para TVs.",
+      "site": "Site institucional e documentação — praticamente todo o código é meu (76% dos commits).",
+      "mobile": "App Android do operador: controle, navegação e reprodução em campo (~83% dos commits).",
+      "pwa": "Web app PWA usado diretamente no navegador durante os cultos.",
+      "tv": "Receivers de TV (webOS, Tizen, AndroidTV, Web): TV = dumb display (~76% dos commits).",
+      "api": "REST API com OpenAPI/Scalar, documentação viva, telemetria e hardening de segurança."
+    }
+  },
+  "louvorja": {
+    "title": "LouvorJA — API legada (contribuições)",
+    "subtitle": "Contribuições na API original do LouvorJA (org de terceiros): segurança, documentação OpenAPI e chatbot com RAG. Cada card abre a PR original."
   }
 }
