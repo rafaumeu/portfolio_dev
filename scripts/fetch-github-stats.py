@@ -54,11 +54,22 @@ def main() -> int:
         user = fetch(f"https://api.github.com/users/{USER}")  # type: ignore[assignment]
         merged_third = search_count(QUERIES["mergedThirdParty"])
         merged_total = search_count(QUERIES["mergedTotal"])
+        prev_by_org: dict = {}
+        if OUT.exists():
+            try:
+                prev_by_org = json.loads(OUT.read_text()).get("bigTechByOrg", {}) or {}
+            except Exception:  # noqa: BLE001 — corrupt previous snapshot
+                prev_by_org = {}
         big_tech: dict[str, int] = {}
         for org in BIG_TECH_ORGS:
             c = search_count(f"author:{USER} type:pr is:merged org:{org}")
             if c is not None:
                 big_tech[org] = c
+            elif org in prev_by_org:
+                big_tech[org] = int(prev_by_org[org])  # reuse last good value
+                print(f"[github-stats] WARN: org {org} fetch failed, reusing {prev_by_org[org]} from previous snapshot", file=sys.stderr)
+            else:
+                raise RuntimeError(f"org count unavailable and no previous snapshot: {org}")
         if merged_third is None or merged_total is None:
             raise RuntimeError("search counts unavailable")
         snapshot.update({

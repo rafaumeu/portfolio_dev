@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "fetchedAt": "2026-10-08T23:53:49Z",
+  "fetchedAt": "2026-10-09T00:01:35Z",
   "live": true,
   "repos": 128,
   "followers": 129,
-  "mergedThirdParty": 342,
-  "mergedTotal": 561,
+  "mergedThirdParty": 343,
+  "mergedTotal": 562,
   "bigTechMerged": 6,
   "bigTechByOrg": {
     "vercel": 2,
