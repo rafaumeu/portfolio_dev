@@ -223,7 +223,7 @@
   },
   "opensource": {
     "title": "Contribuciones Open Source",
-    "subtitle": "{count} Pull Requests merged en proyectos usados por desarrolladores de todo el mundo. Cada tarjeta abre el PR original.",
+    "subtitle": "{{count}} Pull Requests merged en proyectos usados por desarrolladores de todo el mundo. Cada tarjeta abre el PR original.",
     "countLabel": "PRs merged en proyectos de terceros",
     "viewPr": "Ver Pull Request"
   }

@@ -223,7 +223,7 @@
   },
   "opensource": {
     "title": "Open Source Contributions",
-    "subtitle": "{count} merged Pull Requests in projects used by developers worldwide. Every card opens the original PR.",
+    "subtitle": "{{count}} merged Pull Requests in projects used by developers worldwide. Every card opens the original PR.",
     "countLabel": "PRs merged in third-party projects",
     "viewPr": "View Pull Request"
   }
