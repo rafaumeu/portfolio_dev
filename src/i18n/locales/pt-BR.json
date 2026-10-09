@@ -16,11 +16,15 @@
     "ctaFiverr": "Contratar no Fiverr",
     "ctaContact": "Contato",
     "stats": {
-      "mergedThirdParty": "PRs merged em projetos de terceiros",
+      "mergedThirdParty": "PRs merged em projetos públicos",
       "repos": "Repos públicos",
       "bigTech": "PRs em Big Techs (Vercel, Redux, Dokploy, Mattermost)",
-      "experience": "Anos Exp."
-    }
+      "experience": "Anos Exp.",
+      "tests": "Testes automatizados em produtos e projetos",
+      "production": "Código em produção com usuários reais",
+      "platforms": "Web · Desktop · Mobile · Smart TV"
+    },
+    "ctaCV": "Baixar CV"
   },
   "projects": {
     "title": "Projetos em Destaque",
@@ -87,6 +91,10 @@
       "omniroute": {
         "name": "OmniRoute",
         "description": "18 PRs merged no OmniRoute: proxy LLM OpenAI-compatible com roteamento multi-provider, fallback de modelos e otimizações de performance."
+      },
+      "agenva": {
+        "name": "AGENVA — Agendamento",
+        "description": "Sistema de agendamento para salões e barbearias (Kidev-Tec). F0–F5 entregues via PRs merged: checkout Asaas, confirmação via WhatsApp, link público por slug, lembretes, bloqueios, lista de espera e billing."
       }
     }
   },
