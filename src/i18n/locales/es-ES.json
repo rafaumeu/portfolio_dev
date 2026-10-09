@@ -9,18 +9,22 @@
   },
   "hero": {
     "badge": "Disponible para Trabajar",
-    "headline": "Full Stack Developer • Clean Architecture & DDD",
+    "headline": "Desarrollador Full Stack • Arquitectura Limpia y DDD",
     "subtitle": "Código limpio, pruebas rigurosas, arquitectura bien definida. Transformo requisitos complejos en software de producción.",
     "ctaProjects": "Ver Proyectos",
     "ctaBlog": "Leer Blog",
     "ctaFiverr": "Contratar en Fiverr",
     "ctaContact": "Contacto",
     "stats": {
-      "mergedThirdParty": "PRs merged en proyectos de terceros",
+      "mergedThirdParty": "PRs merged en proyectos públicos",
       "repos": "Repos públicos",
       "bigTech": "PRs en Big Techs (Vercel, Redux, Dokploy, Mattermost)",
-      "experience": "Años Exp."
-    }
+      "experience": "Años Exp.",
+      "tests": "Tests automatizados en productos y proyectos",
+      "production": "Código en producción con usuarios reales",
+      "platforms": "Web · Escritorio · Móvil · Smart TV"
+    },
+    "ctaCV": "Descargar CV"
   },
   "projects": {
     "title": "Proyectos Destacados",
@@ -81,13 +85,24 @@
         "description": "Juego de mesa bíblico 3D con Three.js/R3F. Dado interactivo, 56 cartas temáticas, ciclo día/noche, hitos, soporte de gamepad y bots con IA. Next.js 16, 565 pruebas, build estático."
       },
       "louvorjaMobile": {
-        "name": "LouvorJA Mobile",
-        "description": "App móvil Flutter de LouvorJA: himnos y Biblia con catálogo offline real, búsqueda global instantánea, cola de descargas persistida con circuit breaker, i18n PT/EN/ES, WCAG AA y artefactos Play Store/iOS en CI. 31 PRs merged."
+        "name": "PIANO LouvorJA Móvil",
+        "description": "App móvil Flutter de PIANO LouvorJA (~83% de los commits): himnos y Biblia con catálogo offline real, búsqueda global instantánea, cola de descargas persistida con circuit breaker, i18n PT/EN/ES, WCAG AA y artefactos de Play Store/iOS en CI."
       },
       "omniroute": {
         "name": "OmniRoute",
         "description": "18 PRs merged en OmniRoute: proxy LLM OpenAI-compatible con enrutamiento multi-provider, fallback de modelos y optimizaciones de performance."
+      },
+      "agenva": {
+        "name": "AGENVA — Agendamiento",
+        "description": "Sistema de agendamiento para salones y barberías (Kidev-Tec). F0–F5 entregados vía PRs merged: checkout Asaas, confirmación por WhatsApp, enlace público por slug, recordatorios, bloqueos, lista de espera y billing."
       }
+    },
+    "badges": {
+      "pianoCommits": "~1.440 commits",
+      "pianoRepos": "6 repos",
+      "pianoProd": "En producción",
+      "agenvaPhases": "F0–F5 merged",
+      "agenvaBilling": "Facturación Asaas"
     }
   },
   "certifications": {
@@ -226,5 +241,26 @@
     "subtitle": "{{count}} Pull Requests merged en proyectos usados por desarrolladores de todo el mundo. Cada tarjeta abre el PR original.",
     "countLabel": "PRs merged en proyectos de terceros",
     "viewPr": "Ver Pull Request"
+  },
+  "piano": {
+    "title": "PIANO LouvorJA — Producto en Producción",
+    "subtitle": "Co-creador de PIANO LouvorJA: ecosistema de apoyo a cultos de la Iglesia Adventista (liturgia, himnos, Biblia, proyección multi-pantalla). Sistema vivo, con usuarios reales cada fin de semana.",
+    "badgeProduction": "en producción",
+    "badgeReleases": "releases publicadas",
+    "badgePlatforms": "plataformas (desktop, web, móvil, TV)",
+    "leadContributor": "lead contributor",
+    "collab": "Proyecto en colaboración con @ezequiasfonseca — review obligatoria en cada merge.",
+    "products": {
+      "desktop": "App desktop del operador: liturgia en vivo, multi-pantalla, WebSocket/mDNS, cast a TVs.",
+      "site": "Sitio institucional y documentación — prácticamente todo el código es mío (76% de los commits).",
+      "mobile": "App Android del operador: control, navegación y reproducción en campo (~83% de los commits).",
+      "pwa": "Web app PWA usada directamente en el navegador durante los cultos.",
+      "tv": "Receptores de TV (webOS, Tizen, AndroidTV, Web): TV = dumb display (~76% de los commits).",
+      "api": "REST API con OpenAPI/Scalar, documentación viva, telemetría y hardening de seguridad."
+    }
+  },
+  "louvorja": {
+    "title": "LouvorJA — API legada (contribuciones)",
+    "subtitle": "Contribuciones en la API original del LouvorJA (org de terceros): seguridad, documentación OpenAPI y chatbot con RAG. Cada tarjeta abre el PR original."
   }
 }

@@ -16,11 +16,15 @@
     "ctaFiverr": "Hire on Fiverr",
     "ctaContact": "Contact Me",
     "stats": {
-      "mergedThirdParty": "PRs merged in third-party projects",
+      "mergedThirdParty": "PRs merged in public projects",
       "repos": "Public Repos",
       "bigTech": "PRs in Big Techs (Vercel, Redux, Dokploy, Mattermost)",
-      "experience": "Yrs Exp."
-    }
+      "experience": "Yrs Exp.",
+      "tests": "Automated tests in products and projects",
+      "production": "Production code with real users",
+      "platforms": "Web · Desktop · Mobile · Smart TV"
+    },
+    "ctaCV": "Download CV"
   },
   "projects": {
     "title": "Featured Projects",
@@ -81,13 +85,24 @@
         "description": "3D biblical board game with Three.js/R3F. Interactive dice, 56 thematic cards, day/night cycle, milestones, gamepad support, and AI bots. Next.js 16, 565 tests, static build."
       },
       "louvorjaMobile": {
-        "name": "LouvorJA Mobile",
-        "description": "Flutter mobile app for LouvorJA: hymns and Bible with real offline catalog, instant global search, persisted download queue with circuit breaker, PT/EN/ES i18n, WCAG AA and Play Store/iOS CI artifacts. 31 merged PRs."
+        "name": "PIANO LouvorJA Mobile",
+        "description": "Flutter mobile app for PIANO LouvorJA (~83% of commits): hymns and Bible with real offline catalog, instant global search, persisted download queue with circuit breaker, PT/EN/ES i18n, WCAG AA and Play Store/iOS artifacts in CI."
       },
       "omniroute": {
         "name": "OmniRoute",
         "description": "18 merged PRs to OmniRoute: OpenAI-compatible LLM proxy with multi-provider routing, model fallback and performance optimizations."
+      },
+      "agenva": {
+        "name": "AGENVA — Scheduling",
+        "description": "Scheduling system for salons and barbershops (Kidev-Tec). F0–F5 shipped via merged PRs: Asaas checkout, WhatsApp confirmation, public slug link, reminders, blocks, waitlist and billing."
       }
+    },
+    "badges": {
+      "pianoCommits": "~1,440 commits",
+      "pianoRepos": "6 repos",
+      "pianoProd": "In production",
+      "agenvaPhases": "F0–F5 merged",
+      "agenvaBilling": "Asaas billing"
     }
   },
   "certifications": {
@@ -226,5 +241,26 @@
     "subtitle": "{{count}} merged Pull Requests in projects used by developers worldwide. Every card opens the original PR.",
     "countLabel": "PRs merged in third-party projects",
     "viewPr": "View Pull Request"
+  },
+  "piano": {
+    "title": "PIANO LouvorJA — Product in Production",
+    "subtitle": "Co-creator of PIANO LouvorJA: a worship support ecosystem for the Seventh-day Adventist Church (liturgy, hymns, Bible, multi-screen projection). A living system with real users every weekend.",
+    "badgeProduction": "in production",
+    "badgeReleases": "releases published",
+    "badgePlatforms": "platforms (desktop, web, mobile, TV)",
+    "leadContributor": "lead contributor",
+    "collab": "Project in collaboration with @ezequiasfonseca — mandatory review on every merge.",
+    "products": {
+      "desktop": "Operator desktop app: live liturgy, multi-screen, WebSocket/mDNS, TV casting.",
+      "site": "Institutional site and docs — practically all the code is mine (76% of commits).",
+      "mobile": "Android operator app: field control, navigation and playback (~83% of commits).",
+      "pwa": "PWA web app used directly in the browser during worship services.",
+      "tv": "TV receivers (webOS, Tizen, AndroidTV, Web): TV = dumb display (~76% of commits).",
+      "api": "REST API with OpenAPI/Scalar, living documentation, telemetry and security hardening."
+    }
+  },
+  "louvorja": {
+    "title": "LouvorJA — legacy API (contributions)",
+    "subtitle": "Contributions to the original LouvorJA API (third-party org): security, OpenAPI docs and a RAG chatbot. Every card opens the original PR."
   }
 }

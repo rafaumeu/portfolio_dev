@@ -15,7 +15,44 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
-	// --- Own Products & Projects ---
+	// --- Experiência & Contribuições em produtos (primeiro: produção > colaboração > próprio) ---
+	{
+		key: "pianoLouvorja",
+		tags: ["TypeScript", "Electron", "PWA", "Android/iOS", "Smart TV"],
+		github: "https://github.com/Piano-Louvor-JA/app",
+		demo: "https://pianolouvorja.com.br/",
+		image: "/images/piano-louvorja-hero.webp",
+		badges: ["pianoCommits", "pianoRepos", "pianoProd"],
+	},
+	{
+		key: "agenva",
+		tags: ["Hono", "Drizzle", "PostgreSQL", "Redis", "Asaas", "WhatsApp", "Flutter"],
+		github: "https://github.com/kidev-tec/api-myschedule",
+		image: "/images/agenva.svg",
+		badges: ["agenvaPhases", "agenvaBilling"],
+	},
+	{
+		key: "hermesAgent",
+		tags: ["TypeScript", "AI Agent", "MCP", "Skills System"],
+		github: "https://github.com/nousresearch/hermes-agent",
+		image: "/images/hermes-agent.webp",
+	},
+	{
+		key: "omniroute",
+		tags: ["TypeScript", "LLM Proxy", "AI Router", "OpenAI-compatible"],
+		github: "https://github.com/diegosouzapw/OmniRoute",
+		image: "/images/omniroute.webp",
+		badges: ["18 PRs merged"],
+	},
+	{
+		key: "louvorja",
+		tags: ["TypeScript", "API", "Rate Limiting", "OpenAPI"],
+		github: "https://github.com/louvorja/api",
+		image: "/images/louvorja-api.webp",
+		badges: ["7 PRs merged"],
+	},
+
+	// --- Projetos próprios ---
 	{
 		key: "tesourosPortal",
 		tags: ["React", "PWA", "PostgreSQL", "Gamification"],
@@ -29,88 +66,11 @@ const PROJECTS: Project[] = [
 		image: "/images/estacio-prep.webp",
 	},
 	{
-		key: "ignitecall",
-		tags: ["Next.js", "OAuth", "Prisma", "TypeScript"],
-		demo: "https://ignitecall-app.vercel.app/",
-		image: "/images/ignitecall.webp",
-	},
-	{
-		key: "devStore",
-		tags: ["Next.js", "Stripe", "Tailwind", "SSR"],
-		demo: "https://devstorerdz.netlify.app/",
-		image: "/images/devstore.webp",
-	},
-	{
-		key: "forum",
-		tags: ["TypeScript", "Fastify", "DDD", "Clean Arch"],
-		demo: "https://web-ten-ashen-76.vercel.app/",
-		image: "/images/forum-v2.webp",
-	},
-	{
 		key: "hiremeAgent",
 		tags: ["Next.js 16", "AI", "CLI", "IMAP", "WebSocket"],
 		demo: "https://hireme-agent.vercel.app/",
 		image: "/images/hireme-agent.webp",
 	},
-	{
-		key: "testQubit",
-		tags: ["AI", "CLI", "TypeScript", "MCP", "Multi-language"],
-		demo: "https://testqubit.vercel.app/",
-		image: "/images/testqubit.webp",
-	},
-
-	// --- Open Source Contributions ---
-	{
-		key: "hermesAgent",
-		tags: ["TypeScript", "AI Agent", "MCP", "Skills System"],
-		github: "https://github.com/nousresearch/hermes-agent",
-		image: "/images/hermes-agent.webp",
-	},
-	{
-		key: "louvorjaMobile",
-		tags: ["Flutter", "i18n PT/EN/ES", "Offline-first", "WCAG AA"],
-		github: "https://github.com/pianolouvorja/apk",
-		image: "/images/louvorja-mobile.webp",
-		badges: ["31 PRs merged", "Play Store ready"],
-	},
-	{
-		key: "omniroute",
-		tags: ["TypeScript", "LLM Proxy", "AI Router", "OpenAI-compatible"],
-		github: "https://github.com/diegosouzapw/OmniRoute",
-		image: "/images/omniroute.webp",
-		badges: ["18 PRs merged"],
-	},
-	{
-		key: "pianoLouvorja",
-		tags: ["TypeScript", "Electron", "PWA", "Android/iOS", "Smart TV"],
-		github: "https://github.com/pianolouvorja/app",
-		demo: "https://pianolouvorja.com.br/",
-		image: "/images/piano-louvorja-hero.webp",
-		badges: ["71 PRs merged", "4 repositórios"],
-	},
-	{
-		key: "louvorja",
-		tags: ["TypeScript", "API", "Electron", "Desktop"],
-		github: "https://github.com/louvorja/api",
-		image: "/images/louvorja-api.webp",
-		badges: ["34 PRs merged", "4 repositórios"],
-	},
-	{
-		key: "openHive",
-		tags: ["MCP", "OAuth", "Multi-platform", "Brand-aware AI"],
-		github: "https://github.com/NetoNetoArreche/Projeto-Hive",
-		image: "/images/openhive.webp",
-	},
-
-	{
-		key: "jornadaDeserto",
-		tags: ["Next.js 16", "Three.js", "R3F", "TypeScript", "Gamepad"],
-		demo: "https://jornada-no-deserto.vercel.app/",
-		image: "/images/jornada.webp",
-	},
-
-	// --- Tools & Extensions ---
-	// rocketseat-extractor-v2 removido: repo 404 (privado/renomeado) — card só volta com repo público
 ];
 
 export default function Projects() {
@@ -157,11 +117,17 @@ export default function Projects() {
 								<h3>{nameText}</h3>
 									{project.badges && project.badges.length > 0 && (
 										<div className="project-badges">
-											{project.badges.map((badge) => (
-												<span key={badge} className="project-badge">
-													{badge}
-												</span>
-											))}
+											{project.badges.map((badge) => {
+												const localized = t(`projects.badges.${badge}`);
+												const label = localized.startsWith("projects.badges.")
+													? badge
+													: localized;
+												return (
+													<span key={badge} className="project-badge">
+														{label}
+													</span>
+												);
+											})}
 										</div>
 									)}
 									<p>{t(`projects.items.${project.key}.description`)}</p>

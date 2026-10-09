@@ -9,6 +9,7 @@ import Hero from "@/components/Hero";
 import MotionWrapper from "@/components/MotionWrapper";
 import Nav from "@/components/Nav";
 import OpenSource from "@/components/OpenSource";
+import PianoShowcase from "@/components/PianoShowcase";
 import Projects from "@/components/Projects";
 import SkipToContent from "@/components/SkipToContent";
 import "@/styles/skip-content.css";
@@ -27,6 +28,9 @@ export default function Home() {
 				</MotionWrapper>
 				<MotionWrapper delay={0.2}>
 					<OpenSource />
+				</MotionWrapper>
+				<MotionWrapper delay={0.2}>
+					<PianoShowcase />
 				</MotionWrapper>
 				<MotionWrapper delay={0.2}>
 					<About />

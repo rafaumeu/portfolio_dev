@@ -1,0 +1,172 @@
+.piano-section {
+	padding: 4rem 1.5rem;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.piano-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.piano-header h2 {
+	font-size: clamp(1.6rem, 4vw, 2.2rem);
+	margin-bottom: 0.5rem;
+}
+
+.piano-subtitle {
+	opacity: 0.8;
+	max-width: 700px;
+	margin: 0 auto 1rem;
+}
+
+.piano-badges {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.piano-badge {
+	padding: 0.25rem 0.9rem;
+	border-radius: 999px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	background: var(--muted, rgba(128, 128, 128, 0.12));
+}
+
+.piano-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.piano-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	padding: 1.1rem 1.2rem;
+	border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+	border-radius: 12px;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.piano-card:hover {
+	transform: translateY(-2px);
+	border-color: var(--accent, #6366f1);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.piano-card-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.piano-card-repo {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.piano-card-share {
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: var(--accent, #6366f1);
+}
+
+.piano-card-stack {
+	font-size: 0.8rem;
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.piano-card-desc {
+	font-size: 0.88rem;
+	line-height: 1.4;
+	opacity: 0.85;
+}
+
+.piano-card-meta {
+	margin-top: auto;
+	padding-top: 0.4rem;
+}
+
+.piano-lead-badge {
+	font-size: 0.78rem;
+	opacity: 0.75;
+}
+
+.piano-collab {
+	text-align: center;
+	margin-top: 1.2rem;
+	font-size: 0.85rem;
+	opacity: 0.65;
+}
+
+.louvorja-block {
+	margin-top: 3.5rem;
+	padding-top: 2rem;
+	border-top: 1px solid var(--border, rgba(128, 128, 128, 0.18));
+}
+
+.louvorja-block h3 {
+	font-size: 1.3rem;
+	margin-bottom: 0.4rem;
+	text-align: center;
+}
+
+.louvorja-subtitle {
+	text-align: center;
+	opacity: 0.75;
+	max-width: 640px;
+	margin: 0 auto 1.5rem;
+	font-size: 0.92rem;
+}
+
+.louvorja-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 0.8rem;
+}
+
+.louvorja-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid var(--border, rgba(128, 128, 128, 0.25));
+	border-radius: 10px;
+	text-decoration: none;
+	color: inherit;
+	font-size: 0.88rem;
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.louvorja-card:hover {
+	border-color: var(--accent, #6366f1);
+	transform: translateY(-1px);
+}
+
+.louvorja-badge {
+	font-size: 0.75rem;
+	opacity: 0.8;
+}
+
+.louvorja-title {
+	line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+	.piano-section {
+		padding: 3rem 1rem;
+	}
+
+	.piano-grid,
+	.louvorja-grid {
+		grid-template-columns: 1fr;
+	}
+}

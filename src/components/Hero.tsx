@@ -10,10 +10,10 @@ export default function Hero() {
 	const stats = useGithubStats();
 
 	const STATS = [
-		{ key: "mergedThirdParty", value: formatPlus(stats.mergedThirdParty), icon: "🔀" },
-		{ key: "repos", value: `${stats.repos}`, icon: "📦" },
-		{ key: "bigTech", value: formatPlus(stats.bigTechMerged), icon: "🏆" },
-		{ key: "experience", value: "2+", icon: "⏱️" },
+		{ key: "mergedThirdParty", value: formatPlus(stats.mergedTotal), icon: "🔀" },
+		{ key: "tests", value: "2.700+", icon: "✅" },
+		{ key: "production", value: "🚀", icon: "" },
+		{ key: "platforms", value: "🖥️", icon: "" },
 	];
 
 	return (
@@ -57,18 +57,11 @@ export default function Hero() {
 					{t("hero.ctaProjects")}
 				</button>
 				<a
-					href="/blog"
+					href="/cv-rafael-zendron.pdf"
+					download="Rafael-Dias-Zendron-CV.pdf"
 					className="cta-secondary"
 				>
-					{t("hero.ctaBlog")}
-				</a>
-				<a
-					href="https://br.fiverr.com/rafaelzendron"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="cta-fiverr"
-				>
-					{t("hero.ctaFiverr")}
+					{t("hero.ctaCV")}
 				</a>
 				<button
 					onClick={() =>
