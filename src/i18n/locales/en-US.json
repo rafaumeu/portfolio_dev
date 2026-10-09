@@ -220,5 +220,11 @@
     "lawText": "These terms are governed by Brazilian law, including LGPD (Law No. 13,709/2018) and the Brazilian Civil Rights Framework for the Internet (Law No. 12,965/2014).",
     "contactInfoTitle": "9. Contact",
     "contactInfoText": "For questions about these terms, please contact: rafael.zendron22@gmail.com."
+  },
+  "opensource": {
+    "title": "Open Source Contributions",
+    "subtitle": "{{count}} merged Pull Requests in projects used by developers worldwide. Every card opens the original PR.",
+    "countLabel": "PRs merged in third-party projects",
+    "viewPr": "View Pull Request"
   }
 }

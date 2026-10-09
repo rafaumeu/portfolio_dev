@@ -220,5 +220,11 @@
     "lawText": "Estes termos são regidos pela legislação brasileira, incluindo a LGPD (Lei nº 13.709/2018) e o Marco Civil da Internet (Lei nº 12.965/2014).",
     "contactInfoTitle": "9. Contato",
     "contactInfoText": "Para dúvidas sobre estes termos, entre em contato pelo e-mail: rafael.zendron22@gmail.com."
+  },
+  "opensource": {
+    "title": "Contribuições Open Source",
+    "subtitle": "{{count}} Pull Requests merged em projetos que desenvolvedores usam no mundo todo. Cada card abre a PR original.",
+    "countLabel": "PRs merged em projetos de terceiros",
+    "viewPr": "Ver Pull Request"
   }
 }
