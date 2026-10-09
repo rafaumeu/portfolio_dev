@@ -96,6 +96,13 @@
         "name": "AGENVA — Scheduling",
         "description": "Scheduling system for salons and barbershops (Kidev-Tec). F0–F5 shipped via merged PRs: Asaas checkout, WhatsApp confirmation, public slug link, reminders, blocks, waitlist and billing."
       }
+    },
+    "badges": {
+      "pianoCommits": "~1,440 commits",
+      "pianoRepos": "6 repos",
+      "pianoProd": "In production",
+      "agenvaPhases": "F0–F5 merged",
+      "agenvaBilling": "Asaas billing"
     }
   },
   "certifications": {

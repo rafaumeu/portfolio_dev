@@ -22,14 +22,14 @@ const PROJECTS: Project[] = [
 		github: "https://github.com/Piano-Louvor-JA/app",
 		demo: "https://pianolouvorja.com.br/",
 		image: "/images/piano-louvorja-hero.webp",
-		badges: ["~1.440 commits", "6 repos", "Em produção"],
+		badges: ["pianoCommits", "pianoRepos", "pianoProd"],
 	},
 	{
 		key: "agenva",
 		tags: ["Hono", "Drizzle", "PostgreSQL", "Redis", "Asaas", "WhatsApp", "Flutter"],
 		github: "https://github.com/kidev-tec/api-myschedule",
 		image: "/images/agenva.svg",
-		badges: ["F0–F5 merged", "Billing Asaas"],
+		badges: ["agenvaPhases", "agenvaBilling"],
 	},
 	{
 		key: "hermesAgent",
@@ -117,11 +117,17 @@ export default function Projects() {
 								<h3>{nameText}</h3>
 									{project.badges && project.badges.length > 0 && (
 										<div className="project-badges">
-											{project.badges.map((badge) => (
-												<span key={badge} className="project-badge">
-													{badge}
-												</span>
-											))}
+											{project.badges.map((badge) => {
+												const localized = t(`projects.badges.${badge}`);
+												const label = localized.startsWith("projects.badges.")
+													? badge
+													: localized;
+												return (
+													<span key={badge} className="project-badge">
+														{label}
+													</span>
+												);
+											})}
 										</div>
 									)}
 									<p>{t(`projects.items.${project.key}.description`)}</p>
