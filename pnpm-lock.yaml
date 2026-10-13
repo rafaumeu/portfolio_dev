@@ -73,7 +73,7 @@ importers:
         specifier: 14.2.29
         version: 14.2.29(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
       highlight.js:
-        specifier: ^11.11.1
+        specifier: ^11.12.0
         version: 11.12.0
       tailwindcss:
         specifier: ^4.3.1
